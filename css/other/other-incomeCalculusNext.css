@@ -1,0 +1,112 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/*global*/
+body{
+	font-family: "微软雅黑";
+	color: #757575;
+}
+.gap{
+	width: 100%;
+	height: 1px;
+	background-color: #CCCCCC;
+}
+/*title*/
+.mui-bar {
+    background-color: white;
+}
+.mui-title {
+    text-align: left;
+}
+/*alertInfo*/
+#alertInfo{
+	width: 100%;
+	height: 10%;
+	background-color: #FFE3CE;
+	margin-top: 8px;
+}
+#alertInfo p{
+    padding-top: 6px;
+    margin-bottom: 5px;
+    color:#696969;
+    margin-left: 4%;
+}
+.mui-h6, h6 {
+    font-size: 13px;
+    color:#696969;
+    margin-left: 4%;
+}
+/*list*/
+#list{
+	margin-top: 8px;
+}
+.mui-table-view-cell p {
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: #696969;
+}
+.mui-navigate-right:after, .mui-push-right:after {
+    left: 15px;
+    content: '\e583';
+}
+#increaseMemberInfo {
+    width: 170px;
+    left: 10%;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    position: relative;
+}
+#increaseMemberInfo p {
+    margin-left: 32px;
+}
+#increaseMemberInfo img {
+    left: 0;
+    position: absolute;
+    top: 10%;
+}
+#increaseMemberInfo .mui-h3, h3 {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    left: 34%;
+    margin-top: 8px;
+}
+.choose{
+	color: #FF750F;
+}
+.choose1{
+	color: #FF750F;
+	font-weight: bold;
+}
+strong{
+	font-weight: normal;
+}
+#list .mui-table-view-cell.mui-active {
+    background-color: white;
+}
+#list .mui-table-view-cell.mui-active .mui-navigate-right{
+	border-bottom: 1px solid #FF750F;
+}
+#list .mui-table-view-cell.mui-active .mui-navigate-right p{
+	color: #FF750F;
+}
+
+#list .mui-table-view-cell:after {
+    left: 0;
+}
+#list .mui-table-view-cell.mui-collapse.mui-active>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse.mui-active>.mui-push-right:after {
+    color: #FF750F;
+}
+#list .mui-table-view-cell.mui-collapse>.mui-navigate-right:after, .mui-table-view-cell.mui-collapse>.mui-push-right:after {
+    font-weight: bold;
+    color: #696969;
+}
+#allIncomeNum{
+	font-size: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #FF750F;
+}

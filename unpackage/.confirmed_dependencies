@@ -1,0 +1,316 @@
+{
+	"html/index.html": {
+		"resources": [
+			"img/bottom/mine.png",
+			"fonts/mui.ttf",
+			"js/commConfig.js",
+			"css/mui.min.css",
+			"img/bottom/index.png",
+			"img/bottom/store.png",
+			"js/index.js",
+			"js/require.js",
+			"img/bottom/other.png",
+			"html/store/store.html",
+			"html/mine/mine.html",
+			"js/lib/bluebird.core.js",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/aes.js",
+			"js/lib/cryptojs/hmac.js",
+			"html/home/home.html",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"js/lib/MD5Encrypt.js",
+			"js/mui.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/lib/cryptojs/aes.js",
+			"js/lib/authApi.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/xrjAPI.js",
+			"img/bottom/index-filled.png",
+			"js/lib/cryptojs/evpkdf.js",
+			"img/bottom/store-filled.png",
+			"img/bottom/other-filled.png",
+			"img/bottom/mine-filled.png",
+			"img/bottom/home.png",
+			"img/bottom/home-filled.png",
+			"css/index.css",
+			"js/lib/template.js",
+			"js/lib/tplgen.js",
+			"js/lib/mui.js",
+			"js/lib/xrjapi.js"
+		],
+		"refer": [
+			"html/other/other.html",
+			"html/store/store.html",
+			"html/home/home.html",
+			"html/mine/mine.html"
+		]
+	},
+	"html/store/store.html": {
+		"resources": [
+			"img/icon/star_full.png",
+			"css/store/store.css",
+			"js/lib/jquery-1.10.1.min.js",
+			"img/icon/nearMap.png",
+			"js/lib/xrjAPI.js",
+			"js/mui.js",
+			"js/store/store.js",
+			"img/icon/star_half.png",
+			"img/icon/store.jpg",
+			"css/mui.min.css",
+			"js/require.js"
+		],
+		"refer": []
+	},
+	"html/mine/mine.html": {
+		"resources": [
+			"img/icon/RMB.png",
+			"img/icon/refund.png",
+			"css/mine/mine.css",
+			"img/icon/collect.png",
+			"img/icon/prePayment.png",
+			"img/icon/comment.png",
+			"img/icon/noComment.png",
+			"img/icon/share.png",
+			"img/icon/person.svg",
+			"img/icon/message.png",
+			"img/icon/paymented.png",
+			"css/mui.css",
+			"js/mui.js",
+			"js/mine/mine.js"
+		],
+		"refer": [
+			"html/mine/mine-MyCollect.html",
+			"html/mine/mine-MyProfit.html",
+			"html/mine/mine-MyShareCode.html",
+			"html/mine/mine-MyMessages.html",
+			"html/mine/mine-MyLeaveComment.html",
+			"html/mine/mine-MyConsumptionBill.html"
+		]
+	},
+	"html/other/other.html": {
+		"resources": [
+			"css/other/other.css",
+			"js/mui.min.js",
+			"img/icon/calculate.png",
+			"img/icon/shopSettle.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/incomeTutorial.png",
+			"js/other/other.js"
+		],
+		"refer": [
+			"html/other/other-incomeCalculus.html"
+		]
+	},
+	"html/home/home.html": {
+		"resources": [
+			"js/lib/template.js",
+			"img/icon/shop.jpg",
+			"img/icon/lifeServer.png",
+			"img/icon/food.png",
+			"img/icon/wedding.png",
+			"css/mui.css",
+			"img/icon/KTV.png",
+			"img/icon/scan.png",
+			"img/icon/education.png",
+			"img/icon/all.png",
+			"css/home/home.css",
+			"img/icon/shareRecommend.png",
+			"img/icon/income.png",
+			"img/icon/relax.png",
+			"img/icon/digital.png",
+			"img/icon/healthCare.png",
+			"img/icon/incomeTutorial.png",
+			"img/icon/bell.png",
+			"html/home/home.js",
+			"js/require.js",
+			"js/controller/home.js",
+			"fonts/mui.ttf",
+			"/js/lib/mui.js",
+			"js/lib/xrjapi.js",
+			"img/icon/star_full.png",
+			"img/icon/store.jpg",
+			"img/icon/car.png",
+			"img/icon/star_half.png"
+		],
+		"refer": [
+			"html/store/store-paymentPage.html",
+			"html/mine/mine-MyProfit.html",
+			"html/mine/mine-MyShareCode.html",
+			"html/mine/mine-MyMessages.html"
+		]
+	},
+	"html/store/store-paymentPage.html": {
+		"resources": [
+			"css/store/store-paymentPage.css",
+			"img/icon/wechat.png",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyProfit.html": {
+		"resources": [
+			"css/mine//mine-MyProfit.css",
+			"js/mui.min.js",
+			"img/icon/person.png",
+			"img/icon/xcoin.png"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyCollect.html": {
+		"resources": [
+			"css/mine/mine-MyCollect.css",
+			"img/icon/star_full.png",
+			"img/icon/star_half.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"img/icon/store.jpg",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyShareCode.html": {
+		"resources": [
+			"css/mine/mine-MyShareCode.css",
+			"img/icon/mineCode.jpg"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyMessages.html": {
+		"resources": [
+			"img/icon/messageNoRead.png",
+			"css/mine/mine-MyMessages.css",
+			"js/mui.min.js"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyLeaveComment.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mine/mine-MyLeaveComment.css"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyConsumptionBill.html": {
+		"resources": [
+			"css/mine/mine-MyConsumptionBill.css",
+			"img/storePic.jpg"
+		],
+		"refer": []
+	},
+	"html/other/other-incomeCalculus.html": {
+		"resources": [
+			"img/icon/incomecalculusImg.jpg",
+			"css/other/other-incomeCalculus.css"
+		],
+		"refer": []
+	},
+	"html/login/login.html": {
+		"resources": [
+			"js/lib/bluebird.core.js",
+			"js/lib/mui.js",
+			"js/login/login.js",
+			"js/lib/authApi.js",
+			"fonts/mui.ttf",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/aes.js",
+			"js/lib/cryptojs/hmac.js",
+			"img/icon/password.png",
+			"img/bottom/mine.png",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"css/login/login.css",
+			"css/mui.min.css",
+			"js/lib/MD5Encrypt.js",
+			"js/lib/cryptojs/evpkdf.js",
+			"js/mui.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/lib/cryptojs/aes.js",
+			"js/require.js"
+		],
+		"refer": [
+			"html/forgetPassword/forget_newPassword.html",
+			"html/forgetPassword/forget_password.html",
+			"html/register/register-step1.html"
+		]
+	},
+	"html/forgetPassword/forget_newPassword.html": {
+		"resources": [
+			"css/forgetPassword/forget_newPassword.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/register/register-step2.css"
+		],
+		"refer": []
+	},
+	"html/forgetPassword/forget_password.html": {
+		"resources": [
+			"css/forgetPassword/forget_password.css",
+			"fonts/mui.ttf",
+			"js/forget_password/forget_password.js",
+			"img/icon/message.png"
+		],
+		"refer": []
+	},
+	"html/register/register-step1.html": {
+		"resources": [
+			"css/register/progressbarTableCommon.css",
+			"img/icon/bg_number_orange.png",
+			"img/icon/sweepCode.jpg",
+			"fonts/mui.ttf",
+			"css/register/register-step1.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"html/register/register-step1-InputPhoneNumber.html"
+		]
+	},
+	"html/register/register-step1-InputPhoneNumber.html": {
+		"resources": [
+			"css/register/register-step1-inputPhoneNumber.css",
+			"js/register/register-step1-InputPhoneNumber.js"
+		],
+		"refer": []
+	},
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"html/store/store-detail.html": {
+		"resources": [
+			"img/icon/star_full.png",
+			"img/icon/star_half.png",
+			"css/store/store-detail.css",
+			"js/mui.min.js",
+			"img/icon/mappoint_g.png",
+			"img/icon/phone.png",
+			"img/icon/collect.png",
+			"fonts/mui.ttf",
+			"img/storePic.jpg",
+			"img/icon/person.svg",
+			"img/icon/back.png",
+			"css/mui.css",
+			"js/store/store-detail.js"
+		],
+		"refer": [
+			"html/store/store-paymentPage.html",
+			"html/map/storeMap.html"
+		]
+	},
+	"html/map/storeMap.html": {
+		"resources": [
+			"css/map/storeMap.css"
+		]
+	}
+}

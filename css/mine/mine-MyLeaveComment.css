@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*global*/
+
+body {
+	font-family: "微软雅黑";
+	font-size: 15px;
+	background-color: white;
+}
+
+a {
+	color: white;
+}
+
+.mui-content {
+	background-color: white;
+}
+
+
+/*title*/
+
+.mui-bar .mui-title {
+	color: #696969;
+	font-size: 15px;
+}
+
+.mui-icon-back:before,
+.mui-icon-left-nav:before {
+	color: #6A6A6A;
+}
+
+.mui-bar-nav {
+	top: 0;
+	-webkit-box-shadow: 0 1px 6px #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	background-color: white;
+}
+
+.mui-title {
+	text-align: left;
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+	border-left-color: white;
+	border-right-color: white;
+}
+
+.mui-btn,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+	width: 86%;
+	font-size: 15px;
+	padding: 14px 12px;
+	color: white;
+	border: 1px solid #FF750F;
+	background-color: #FF750F;
+	left: 7%;
+}

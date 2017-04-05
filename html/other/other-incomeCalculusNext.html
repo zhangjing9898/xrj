@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/other/other-incomeCalculusNext.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color:#6A6A6A;"></a>
+			<h1 class="mui-title">收益演算</h1>
+		</header>
+
+		<div class="mui-content">
+			<div id="alertInfo">
+				<p>按商家最低返利5%和单个会员当月消费300元计算</p>
+				<h6>提示:为了方便演算，下面以拓展人数代替商家销售业绩。</h6>
+			</div>
+			<div id="list">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">
+							<p>仅开拓会员</p>
+						</a>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<div id="increaseMemberInfo">
+								<img src="../../img/bottom/mine.png" />
+								<p>发展一级会员<strong class="choose1">100</strong>人</p>
+								<p>拓展二级会员<strong>200</strong>人</p>
+								<p>拓展三级会员<strong>2000</strong>人</p>
+								<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+							</div>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">
+							<p>仅开拓商家</p>
+						</a>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<div id="increaseMemberInfo">
+								<img src="../../img/bottom/store.png" />
+								<p>发展商家<strong class="choose1">10</strong>户</p>
+								<p>拓展二级会员<strong>1000</strong>人</p>
+								<p>拓展三级会员<strong>10000</strong>人</p>
+								<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+							</div>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-collapse">
+						<a class="mui-navigate-right" href="#">
+							<p>商家和会员都要拓展</p>
+						</a>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<div id="increaseMemberInfo">
+								<img src="../../img/bottom/mine.png" />
+								<p>发展一级会员<strong class="choose1">100</strong>人</p>
+								<p>拓展二级会员<strong>200</strong>人</p>
+								<p>拓展三级会员<strong>2000</strong>人</p>
+								<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+							</div>
+							<div class="gap"></div>
+							<div id="increaseMemberInfo">
+								<img src="../../img/bottom/store.png" />
+								<p>发展商家<strong class="choose1">10</strong>户</p>
+								<p>拓展二级会员<strong>1000</strong>人</p>
+								<p>拓展三级会员<strong>10000</strong>人</p>
+								<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+							</div>
+							<div id="allIncomeNum">总收益 &yen;2000</div>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

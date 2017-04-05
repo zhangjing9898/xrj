@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../css/store/store.css" />
+		<script data-main='../store.js' type="text/javascript" src="../../js/require.js"></script>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--顶部导航栏-->
+			<div class="mui-content mui-row" id="title">
+				<span class="mui-input-row mui-pull-left" id="title-icon-location">成都</span>
+				<div class="mui-input-row mui-search" id="title-search">
+					<div class="mui-input-clear mui-input-row mui-search">
+						<input type="search" placeholder="蜀九香火锅">
+					</div>
+				</div>
+				<span id="title-icon-message">
+						<img src="../../img/icon/nearMap.png"/>
+					</span>
+			</div>
+			<!--button-->
+			<ul id="nav">
+				<li class="top">
+					<a id="contacts" class="top_link"><span class="down">全部</span></a>
+					<ul class="sub">
+						<li class="choose">
+							<a>全部</a>
+							<div class="triangle"></div>
+						</li>
+						<li>
+							<a>美食</a>
+							<ul class="subTwo">
+								<li>
+									<a>火锅</a>
+								</li>
+								<li>
+									<a>西餐</a>
+								</li>
+								<li>
+									<a>中餐</a>
+								</li>
+								<li>
+									<a>自助餐</a>
+								</li>
+								<li>
+									<a>日韩料理</a>
+								</li>
+								<li>
+									<a>蛋糕甜点</a>
+								</li>
+								<li>
+									<a>特色小吃</a>
+								</li>
+								<li>
+									<a>面食</a>
+								</li>
+								<li>
+									<a>素食</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>电影</a>
+						</li>
+						<li>
+							<a>酒店</a>
+						</li>
+						<li>
+							<a>休闲娱乐</a>
+						</li>
+						<li>
+							<a>丽人</a>
+						</li>
+						<li>
+							<a>旅游</a>
+						</li>
+						<li>
+							<a>KTV</a>
+						</li>
+						<li>
+							<a>生活服务</a>
+						</li>
+						<li>
+							<a>学习培训</a>
+						</li>
+					</ul>
+				</li>
+				<li class="top">
+					<a id="shop" class="top_link"><span class="down">附近</span></a>
+					<ul class="sub" style="left: -100%;">
+						<li class="choose">
+							<a>附近(智能距离)</a>
+						</li>
+						<li>
+							<a>1千米</a>
+						</li>
+						<li>
+							<a>2千米</a>
+						</li>
+						<li>
+							<a>3千米</a>
+						</li>
+						<li>
+							<a>4千米</a>
+						</li>
+						<li>
+							<a>5千米</a>
+						</li>
+						<li>
+							<a>10千米</a>
+						</li>
+						<li>
+							<a>全国</a>
+						</li>
+					</ul>
+				</li>
+				<li class="top">
+					<a href="#nogo53" id="shop" class="top_link"><span class="down">智能排序</span></a>
+					<ul class="sub" style="left: -200%;">
+						<li class="choose">
+							<a>智能排序</a>
+						</li>
+						<li>
+							<a>好评优先</a>
+						</li>
+						<li>
+							<a>返利优先</a>
+						</li>
+						<li>
+							<a>距离最近</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div id="guessContent">
+				<ul id="storeListUL" class="mui-table-view">
+					<li class="mui-table-view-cell mui-media" id="store01">
+						<a href="javascript:;">
+							<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
+							<div class="mui-media-body">
+								<div class="mine-MyCollect-ltem-Title">
+									<p>蜀九香川味火锅</p>
+								</div>
+								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
+									<span>
+										<img src="../../img/icon/star_full.png" >
+										<img src="../../img/icon/star_full.png"/>
+										<img src="../../img/icon/star_full.png"/>
+										<img src="../../img/icon/star_full.png"/>
+										<img src="../../img/icon/star_half.png"/>
+									</span>
+								</div>
+								<div class="mine-MyCollect-ltem-Type">
+									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
+									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
+										< 100 m </p>
+								</div>
+								<div class="gap"></div>
+								<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				//动态改变搜索框大小
+
+				var changeSearch = function() {
+					var navSearch = document.getElementById('title-search');
+					var windowWidth = document.body.clientWidth;
+					navSearch.style.width = windowWidth - 96 + 'px';
+				}
+				changeSearch();
+				window.onresize = function() {
+					changeSearch();
+				}
+			</script>
+			<!--<script type="text/javascript" src="../../js/require.js"></script>
+		<script type="text/javascript" src="../../js/lib/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../js/store/store.js"></script>-->
+	</body>
+
+</html>

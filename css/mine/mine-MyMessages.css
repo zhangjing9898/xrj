@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*global*/
+
+body {
+	font-family: "微软雅黑";
+	color: #757575;
+	background-color: white;
+}
+
+
+/*title*/
+
+.mui-bar {
+	background-color: white;
+}
+
+.mui-title {
+	text-align: left;
+	font-size: 15px;
+}
+
+.mui-content {
+	background-color: white;
+}
+
+.mui-bar-nav {
+	box-shadow: 0 1px 0 #ccc;
+}
+
+
+/*content*/
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0;
+}
+
+.mui-table-view-cell:after {
+	left: 0;
+}
+
+img {
+	border: 0;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.mui-table-view .mui-media,
+.mui-table-view .mui-media-body {
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.mui-table-view-cell {
+	padding: 9px 15px;
+}

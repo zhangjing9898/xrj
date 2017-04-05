@@ -1,0 +1,32 @@
+* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				font-family: "微软雅黑";
+				background-color: white;
+			}
+			
+			.mui-content {
+				background-color: white;
+			}
+			
+			#mainDiv {
+				width: 195px;
+				height: 94px;
+				position: absolute;
+				top: 30%;
+				left: 50%;
+				margin-left: -98px;
+			}
+			
+			p {
+				font-size: 14px;
+				margin-top: 0;
+				margin-bottom: 0;
+				color: #8f8f94;
+				position: absolute;
+				left: 25%;
+				bottom: 0;
+			}
