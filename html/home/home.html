@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="../../css/mui.css" />
 		<link rel="stylesheet" href="../../css/home/home.css" />
-		<script data-main='./home.js' type="text/javascript" src="../../js/require.js" ></script>
+		<script data-main='./home.js' type="text/javascript" src="../../js/require.js"></script>
 	</head>
 
 	<body>
@@ -150,36 +150,41 @@
 				<p>-&nbsp;&nbsp;猜你喜欢&nbsp;&nbsp;-</p>
 			</div>
 
-			<!--猜你喜欢内容-->
-			<div id="guessContent">
-				<ul id="storeListUL" class="mui-table-view">
-					<li class="mui-table-view-cell mui-media" id="store01">
-						<a href="javascript:;">
-							<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
-							<div class="mui-media-body">
-								<div class="mine-MyCollect-ltem-Title">
-									<p>蜀九香川味火锅</p>
-								</div>
-								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
-									<span>
+			<!--下拉刷新-->
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--猜你喜欢内容-->
+					<div id="guessContent">
+						<ul id="storeListUL" class="mui-table-view">
+							<li class="mui-table-view-cell mui-media" id="store01">
+								<a href="javascript:;">
+									<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
+									<div class="mui-media-body">
+										<div class="mine-MyCollect-ltem-Title">
+											<p>蜀九香川味火锅</p>
+										</div>
+										<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
+											<span>
 										<img src="../../img/icon/star_full.png" >
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_half.png"/>
 									</span>
-								</div>
-								<div class="mine-MyCollect-ltem-Type">
-									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
-									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
-										< 100 m </p>
-								</div>
-								<div class="gap"></div>
-								<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
-							</div>
-						</a>
-					</li>
-				</ul>
+										</div>
+										<div class="mine-MyCollect-ltem-Type">
+											<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
+											<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
+												< 100 m </p>
+										</div>
+										<div class="gap"></div>
+										<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!--<script src="../../js/mui.js"></script>
