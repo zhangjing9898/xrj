@@ -151,14 +151,15 @@ input[type=search] {
 }
 .totalNumber p img {
     position: absolute;
-    left: 10%;
-    top: 8px;
-    width: 22px;
+        left: 27px;
+    top: 12px;
+        width: 17px;
 }
 .totalNumber p a {
     position: absolute;
-    left: 14%;
+    left: 43px;
     top: -2px;
+    font-size: 15px;
 }
 /*猜你喜欢*/
 .guess{
