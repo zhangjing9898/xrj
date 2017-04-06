@@ -202,7 +202,6 @@ input[type=search] {
 #nav li ul.sub li a.fly {
 	width: 100%;
 	background-color:white;
-	color: #E89A3F;
 }
 
 #nav li:hover ul.sub li a:hover {
@@ -211,10 +210,6 @@ input[type=search] {
 	border-color: #fff;
 }
 
-#nav li:hover ul.sub li a.fly:hover {
-	background-color:white;
-	color: #E89A3F;
-}
 
 #nav li:hover li:hover ul,
 #nav li:hover li:hover li:hover ul,
@@ -247,21 +242,26 @@ input[type=search] {
 	list-style: none;
 }
 
-#nav li:hover li:hover li a.fly,
+/*#nav li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li:hover li a.fly {
 	background-color: #E89A3F;
 	color: #000;
 	border-color: #E89A3F;
-}
+}*/
 
-#nav li:hover li:hover li a.fly,
+#nav li:hover li:hover a.fly, #nav li:hover li:hover li:hover a.fly, #nav li:hover li:hover li:hover li:hover a.fly, #nav li:hover li:hover li:hover li:hover li:hover a.fly {
+ background:#ccc;
+ color:#000000;
+ border-color:#fff;
+}
+/*#nav li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li:hover li a.fly {
-	background: #bbd37e url(../images/arrow.gif) 80px 6px no-repeat;
+	background: #bbd37e 80px 6px no-repeat;
 	color: #000;
 	border-color: #bbd37e;
-}
+}*/
 
 #near {
 	left: -100%;

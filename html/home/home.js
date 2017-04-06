@@ -116,4 +116,4 @@ require(['lib/mui', 'lib/xrjapi', 'lib/tplgen'], function(mui, xrjApi, tplGen) {
 				}
 
 			});
-		}
+		};

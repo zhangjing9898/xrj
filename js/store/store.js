@@ -25,7 +25,8 @@ require(['lib/xrjAPI', 'mui', ], function(xrjApi, mui) {
 		window.onresize = function() {
 			changeSearch();
 		}
-
+		
+		
 		//分页获取商家列表
 		var storeListUL = document.getElementById("storeListUL"); //拿到ul对象
 
@@ -47,37 +48,37 @@ require(['lib/xrjAPI', 'mui', ], function(xrjApi, mui) {
 		}
 
 		//开始分页获取商家列表
-		xrjApi.getMerchantList(params).then(function(data) {
-			console.log(data.toString());
-			//			data =JSON.stringify(data);
-
-			console.log(JSON.stringify(data));
-			//			console.log("domains:"+JSON.stringify(data.domains[0].id));
-
-			//			for(var i = 0; i < data.domains.lenth; i++) {
-			//				var str = '商户ID:' + domains.id +
-			//					'  分类ID:' + data[i].categoryId +
-			//					'  商户简介:' + data[i].summary +
-			//					'  商户名称:' + data[i].merchantName +
-			//					'  商户缩略图:' + data[i].previewImage +
-			//					'  联系电话:' + data[i].telephone +
-			//					'  详细地址:' + data[i].location +
-			//					'  经度:' + data[i].longitude +
-			//					'  维度:' + data[i].latitude +
-			//					'  营业时间:' + data[i].businessHour +
-			//					'  商家二维码:' + data[i].qrCode +
-			//					'  返现比例:' + data[i].cashbackRatio * 100 + '%' +
-			//					'  平均分:' + data[i].averageScore +
-			//					'  是否收藏:' + data[i].hasFavorited;
-			//				console.log('即将显示数据');	
-			//				console.log(str);
-			//				var id = data.id;
-			//				var categoryId = data.categoryId;
-			//				
-			//			}
-		}).catch(function(err) {
-			console.log(err);
-		})
+//		xrjApi.getMerchantList(params).then(function(data) {
+//			console.log(data.toString());
+//			//			data =JSON.stringify(data);
+//
+//			console.log(JSON.stringify(data));
+//			//			console.log("domains:"+JSON.stringify(data.domains[0].id));
+//
+//			//			for(var i = 0; i < data.domains.lenth; i++) {
+//			//				var str = '商户ID:' + domains.id +
+//			//					'  分类ID:' + data[i].categoryId +
+//			//					'  商户简介:' + data[i].summary +
+//			//					'  商户名称:' + data[i].merchantName +
+//			//					'  商户缩略图:' + data[i].previewImage +
+//			//					'  联系电话:' + data[i].telephone +
+//			//					'  详细地址:' + data[i].location +
+//			//					'  经度:' + data[i].longitude +
+//			//					'  维度:' + data[i].latitude +
+//			//					'  营业时间:' + data[i].businessHour +
+//			//					'  商家二维码:' + data[i].qrCode +
+//			//					'  返现比例:' + data[i].cashbackRatio * 100 + '%' +
+//			//					'  平均分:' + data[i].averageScore +
+//			//					'  是否收藏:' + data[i].hasFavorited;
+//			//				console.log('即将显示数据');	
+//			//				console.log(str);
+//			//				var id = data.id;
+//			//				var categoryId = data.categoryId;
+//			//				
+//			//			}
+//		}).catch(function(err) {
+//			console.log(err);
+//		})
 
 		console.log('数据接收完成');
 

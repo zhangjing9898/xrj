@@ -251,7 +251,8 @@
 					"img/icon/star_half.png",
 					"img/icon/store.jpg",
 					"css/mui.min.css",
-					"js/require.js"
+					"js/require.js",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
