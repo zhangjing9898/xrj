@@ -79,7 +79,22 @@
 			"img/icon/paymented.png",
 			"css/mui.css",
 			"js/mui.js",
-			"js/mine/mine.js"
+			"js/mine/mine.js",
+			"js/lib/bluebird.core.js",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/cryptojs/hmac.js",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"js/lib/MD5Encrypt.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/lib/cryptojs/aes.js",
+			"js/lib/mui.js",
+			"js/lib/authApi.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/evpkdf.js",
+			"js/require.js"
 		],
 		"refer": [
 			"html/mine/mine-MyCollect.html",
@@ -134,20 +149,25 @@
 			"img/icon/star_full.png",
 			"img/icon/store.jpg",
 			"img/icon/car.png",
-			"img/icon/star_half.png"
+			"img/icon/star_half.png",
+			"js/mui.js",
+			"js/home/home.js"
 		],
 		"refer": [
 			"html/store/store-paymentPage.html",
 			"html/mine/mine-MyProfit.html",
 			"html/mine/mine-MyShareCode.html",
-			"html/mine/mine-MyMessages.html"
+			"html/mine/mine-MyMessages.html",
+			"html/search/search.html"
 		]
 	},
 	"html/store/store-paymentPage.html": {
 		"resources": [
 			"css/store/store-paymentPage.css",
 			"img/icon/wechat.png",
-			"css/mui.min.css"
+			"css/mui.min.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf"
 		],
 		"refer": []
 	},
@@ -156,7 +176,9 @@
 			"css/mine//mine-MyProfit.css",
 			"js/mui.min.js",
 			"img/icon/person.png",
-			"img/icon/xcoin.png"
+			"img/icon/xcoin.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		],
 		"refer": []
 	},
@@ -175,7 +197,10 @@
 	"html/mine/mine-MyShareCode.html": {
 		"resources": [
 			"css/mine/mine-MyShareCode.css",
-			"img/icon/mineCode.jpg"
+			"img/icon/mineCode.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		],
 		"refer": []
 	},
@@ -183,7 +208,10 @@
 		"resources": [
 			"img/icon/messageNoRead.png",
 			"css/mine/mine-MyMessages.css",
-			"js/mui.min.js"
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/message.png"
 		],
 		"refer": []
 	},
@@ -197,16 +225,23 @@
 	"html/mine/mine-MyConsumptionBill.html": {
 		"resources": [
 			"css/mine/mine-MyConsumptionBill.css",
-			"img/storePic.jpg"
+			"img/storePic.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		],
-		"refer": []
+		"refer": [
+			"html/mine/mine-MyCommentsPage.html"
+		]
 	},
 	"html/other/other-incomeCalculus.html": {
 		"resources": [
 			"img/icon/incomecalculusImg.jpg",
 			"css/other/other-incomeCalculus.css"
 		],
-		"refer": []
+		"refer": [
+			"html/other/other-incomeCalculusNext.html"
+		]
 	},
 	"html/login/login.html": {
 		"resources": [
@@ -285,7 +320,8 @@
 		"resources": [
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"html/store/store-detail.html": {
 		"resources": [
@@ -310,7 +346,30 @@
 	},
 	"html/map/storeMap.html": {
 		"resources": [
-			"css/map/storeMap.css"
-		]
+			"css/map/storeMap.css",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"html/other/other-incomeCalculusNext.html": {
+		"resources": [
+			"css/other/other-incomeCalculusNext.css"
+		],
+		"refer": []
+	},
+	"html/mine/mine-MyCommentsPage.html": {
+		"resources": [
+			"img/icon/fullStar.png",
+			"img/icon/emptyStar.png",
+			"css/mine//mine-MyCommentsPage.css"
+		],
+		"refer": []
+	},
+	"html/search/search.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/search/search.css"
+		],
+		"refer": []
 	}
 }

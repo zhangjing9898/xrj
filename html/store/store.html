@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../../css/store/store.css" />
-		<script data-main='../store.js' type="text/javascript" src="../../js/require.js"></script>
+		<!--<script data-main='../store.js' type="text/javascript" src="../../js/require.js"></script>-->
 	</head>
 
 	<body>
@@ -17,13 +17,15 @@
 				<span class="mui-input-row mui-pull-left" id="title-icon-location">成都</span>
 				<div class="mui-input-row mui-search" id="title-search">
 					<div class="mui-input-clear mui-input-row mui-search">
-						<input type="search" placeholder="蜀九香火锅">
+						<input id="inputOne" type="search" placeholder="输入商家或分类">
 					</div>
 				</div>
-				<span id="title-icon-message">
-						<img src="../../img/icon/nearMap.png"/>
-					</span>
+				<span id="title-icon-message" class="mui-pull-right">
+					<img id="title-icon-message-img" src="../../img/icon/nearMap.png"/>
+					
+				</span>
 			</div>
+		
 			<!--button-->
 			<ul id="nav">
 				<li class="top">
@@ -168,22 +170,24 @@
 				</ul>
 				</div>
 			</div>
-			<script type="text/javascript">
-				//动态改变搜索框大小
-
-				var changeSearch = function() {
-					var navSearch = document.getElementById('title-search');
-					var windowWidth = document.body.clientWidth;
-					navSearch.style.width = windowWidth - 96 + 'px';
-				}
+		<script type="text/javascript">
+			//动态改变搜索框大小
+			var changeSearch = function() {
+			var navSearch = document.getElementById('title-search');
+			var windowWidth = document.body.clientWidth;
+			navSearch.style.width = windowWidth - 96 + 'px';
+			}
+			changeSearch();
+			window.onresize = function() {
 				changeSearch();
-				window.onresize = function() {
-					changeSearch();
-				}
-			</script>
-			<!--<script type="text/javascript" src="../../js/require.js"></script>
+			};
+		
+			//二级菜单点击事件
+		
+		</script>
+		<script type="text/javascript" src="../../js/require.js"></script>
 		<script type="text/javascript" src="../../js/lib/jquery-1.10.1.min.js"></script>
-		<script type="text/javascript" src="../../js/store/store.js"></script>-->
+		<script type="text/javascript" src="../../js/store/store.js" ></script>
 	</body>
 
 </html>

@@ -63,7 +63,7 @@ p {
 }
 
 #title-search {
-	 position: absolute;
+	position: absolute;
     left: 53px;
     opacity: 1;
     background-color: white;
@@ -73,6 +73,9 @@ p {
     top: 10px;
 }
 
+.mui-icon-search:before {
+    content: '\e466';
+}
 #title-icon-message {
 	text-align: center;
     display: inline-block;

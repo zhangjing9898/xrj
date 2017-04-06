@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="../../css/mui.css" />
 		<link rel="stylesheet" href="../../css/home/home.css" />
-		
 		<script data-main='./home.js' type="text/javascript" src="../../js/require.js" ></script>
 	</head>
 
@@ -58,7 +57,7 @@
 			<div id="functionTen" class="mui-slider-item">
 				<ul id="functionTenUL" class="mui-table-view mui-grid-view mui-grid-9">
 					<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-						<a id="category1" >
+						<a id="category1">
 							<span>
 								<img src="../../img/icon/food.png" />
 							</span>
@@ -154,48 +153,50 @@
 			<!--猜你喜欢内容-->
 			<div id="guessContent">
 				<ul id="storeListUL" class="mui-table-view">
-							<li class="mui-table-view-cell mui-media" id="store01">
-								<a href="javascript:;">
-									<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
-									<div class="mui-media-body">
-										<div class="mine-MyCollect-ltem-Title">
-											<p>蜀九香川味火锅</p>
-										</div>
-										<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
-											<span>
+					<li class="mui-table-view-cell mui-media" id="store01">
+						<a href="javascript:;">
+							<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
+							<div class="mui-media-body">
+								<div class="mine-MyCollect-ltem-Title">
+									<p>蜀九香川味火锅</p>
+								</div>
+								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
+									<span>
 										<img src="../../img/icon/star_full.png" >
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_full.png"/>
 										<img src="../../img/icon/star_half.png"/>
 									</span>
-										</div>
-										<div class="mine-MyCollect-ltem-Type">
-											<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
-											<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
-												< 100 m </p>
-										</div>
-										<div class="gap"></div>
-										<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
-									</div>
-								</a>	
-							</li>
+								</div>
+								<div class="mine-MyCollect-ltem-Type">
+									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
+									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
+										< 100 m </p>
+								</div>
+								<div class="gap"></div>
+								<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
+							</div>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<script>
-		//动态改变搜索框大小
-		
-		var changeSearch=function(){
-			var navSearch=document.getElementById('nav-search');
-			var windowWidth=document.body.clientWidth;
-			navSearch.style.width=windowWidth-96+'px';
-		}
-		changeSearch();
-		window.onresize=function(){
-			changeSearch();
-		}
-		</script>
+		<!--<script src="../../js/mui.js"></script>
+		<script type="text/javascript" src="../../js/home/home.js" ></script>
+		<script type="text/javascript">
+			//动态改变搜索框大小
+
+							var changeSearch = function() {
+								var navSearch = document.getElementById('nav-search');
+								var windowWidth = document.body.clientWidth;
+								navSearch.style.width = windowWidth - 96 + 'px';
+							}
+							changeSearch();
+							window.onresize = function() {
+								changeSearch();
+							}
+		</script>-->
 	</body>
 
 </html>

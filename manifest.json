@@ -10,7 +10,7 @@
 	"icons": {
 		"72": "icon.png"
 	},
-	"launch_path": "html/store/store-detail.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"launch_path": "html/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
 	"developer": {
 		"name": "",/*开发者名称*/
 		"email": "",/*开发者邮箱地址*/
@@ -271,7 +271,22 @@
 					"img/icon/paymented.png",
 					"css/mui.css",
 					"js/mui.js",
-					"js/mine/mine.js"
+					"js/mine/mine.js",
+					"js/lib/bluebird.core.js",
+					"js/lib/cryptojs/sha1.js",
+					"js/lib/cryptojs/core.js",
+					"js/lib/cryptojs/hmac.js",
+					"js/lib/aesUtil.js",
+					"js/lib/cryptojs/enc-base64.js",
+					"js/lib/MD5Encrypt.js",
+					"js/lib/cryptojs/crypto-js.js",
+					"js/lib/cryptojs/aes.js",
+					"js/lib/mui.js",
+					"js/lib/authApi.js",
+					"js/lib/cryptojs/cipher-core.js",
+					"js/lib/cryptojs/md5.js",
+					"js/lib/cryptojs/evpkdf.js",
+					"js/require.js"
 				],
 				"refer": [
 					"html/mine/mine-MyCollect.html",
@@ -328,13 +343,16 @@
 					"img/icon/star_full.png",
 					"img/icon/store.jpg",
 					"img/icon/car.png",
-					"img/icon/star_half.png"
+					"img/icon/star_half.png",
+					"js/mui.js",
+					"js/home/home.js"
 				],
 				"refer": [
 					"html/store/store-paymentPage.html",
 					"html/mine/mine-MyProfit.html",
 					"html/mine/mine-MyShareCode.html",
-					"html/mine/mine-MyMessages.html"
+					"html/mine/mine-MyMessages.html",
+					"html/search/search.html"
 				],
 				"priority": 0
 			},
@@ -342,7 +360,9 @@
 				"resources": [
 					"css/store/store-paymentPage.css",
 					"img/icon/wechat.png",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -352,7 +372,9 @@
 					"css/mine//mine-MyProfit.css",
 					"js/mui.min.js",
 					"img/icon/person.png",
-					"img/icon/xcoin.png"
+					"img/icon/xcoin.png",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -373,7 +395,10 @@
 			"html/mine/mine-MyShareCode.html": {
 				"resources": [
 					"css/mine/mine-MyShareCode.css",
-					"img/icon/mineCode.jpg"
+					"img/icon/mineCode.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -382,7 +407,10 @@
 				"resources": [
 					"img/icon/messageNoRead.png",
 					"css/mine/mine-MyMessages.css",
-					"js/mui.min.js"
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"img/icon/message.png"
 				],
 				"refer": [],
 				"priority": 0
@@ -398,9 +426,14 @@
 			"html/mine/mine-MyConsumptionBill.html": {
 				"resources": [
 					"css/mine/mine-MyConsumptionBill.css",
-					"img/storePic.jpg"
+					"img/storePic.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
-				"refer": [],
+				"refer": [
+					"html/mine/mine-MyCommentsPage.html"
+				],
 				"priority": 0
 			},
 			"html/other/other-incomeCalculus.html": {
@@ -408,7 +441,9 @@
 					"img/icon/incomecalculusImg.jpg",
 					"css/other/other-incomeCalculus.css"
 				],
-				"refer": [],
+				"refer": [
+					"html/other/other-incomeCalculusNext.html"
+				],
 				"priority": 0
 			},
 			"html/login/login.html": {
@@ -521,7 +556,32 @@
 			},
 			"html/map/storeMap.html": {
 				"resources": [
-					"css/map/storeMap.css"
+					"css/map/storeMap.css",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/other/other-incomeCalculusNext.html": {
+				"resources": [
+					"css/other/other-incomeCalculusNext.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/mine/mine-MyCommentsPage.html": {
+				"resources": [
+					"img/icon/fullStar.png",
+					"img/icon/emptyStar.png",
+					"css/mine//mine-MyCommentsPage.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"html/search/search.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/search/search.css"
 				],
 				"refer": [],
 				"priority": 0
@@ -569,18 +629,14 @@
 				"html/mine/mine-MyContributionRange.html",
 				"html/mine/mine-memberRange.html",
 				"js/lib/cryptojs/mode-ofb.js",
-				"html/other/other-incomeCalculusNext.html",
 				"js/lib/cryptojs/hmac-ripemd160.js",
 				"js/lib/cryptojs/enc-utf8.js",
 				"js/lib/cryptojs/pad-ansix923.js",
 				"html/mine/mine-str-ChangePassword.html",
 				"css/mine/mine-AllBills.css",
 				"img/icon/help.png",
-				"img/icon/fullStar.png",
 				"img/icon/collectChoose.png",
 				"img/img/bottom/other.png",
-				"html/search/search.html",
-				"css/search/search.css",
 				"img/img/bottom/store.png",
 				"html/register/register-step2.html",
 				"css/mine/mine-str.css",
@@ -590,10 +646,8 @@
 				"html/forgotPassword/forget_newPassword.html",
 				"js/lib/cryptojs/hmac-md5.js",
 				"js/lib/cryptojs/mode-ctr.js",
-				"html/mine/mine-MyCommentsPage.html",
 				"html/store/store-refunds.html",
 				"js/lib/cryptojs/x64-core.js",
-				"img/icon/emptyStar.png",
 				"img/img/bottom/other-filled.png",
 				"js/lib/cryptojs/enc-utf16.js",
 				"js/lib/cryptojs/pad-nopadding.js",
@@ -606,7 +660,6 @@
 				"js/lib/cryptojs/index.js",
 				"js/lib/cryptojs/hmac-sha256.js",
 				"js/lib/cryptojs/rabbit-legacy.js",
-				"css/other/other-incomeCalculusNext.css",
 				"js/lib/cryptojs/pbkdf2.js",
 				"img/img/bottom/mine-filled.png",
 				"img/img/bottom/index.png",

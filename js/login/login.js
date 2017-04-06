@@ -49,7 +49,7 @@ require(['lib/xrjAPI', 'mui', 'lib/aes'], function(xrjApi, mui, aes) {
 			
 			mui.openWindow({
 				url : '../index.html',
-				id :  '../index.html'
+				id :  'index'
 			})
 
 		})
