@@ -1,93 +1,182 @@
-*{
-	padding: 0;
-	margin: 0;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-/*shop detail*/
-.mui-content>.mui-table-view:first-child {
-    margin-top: 0px;
+a {
+  outline: none;
+  text-decoration: none;
 }
-#trueScore {
-    color: #696969;
-    font-size: 16px;
-    position: absolute;
-    top: 36px;
-    left: 135px;
+p {
+  margin-bottom: 0;
 }
-#score{
- margin-top: 7px;
+a {
+  color: #696969;
 }
-#score img{
-	border: 0;
-    width: 19px;
-}
-.mui-btn .mui-icon {
-    font-size: -webkit-xxx-large;
-    margin-top: -5px;
-}
-.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
-    border: 1px solid white;
-}
-.mui-icon {
-    color: #E89A3F;
-}
-#locate .mui-icon{
-	color:#818181 ;
-}
-.mui-table-view-cell:after {
-    left: 0px;
-}
-.mui-card-header {
-    font-size: 16px;
-    border-radius: 2px 2px 0 0;
-    color: #696969;
-}
-#info strong {
-    font-weight: normal;
-    color: #FF750F;
-    font-size: 18px;
-}
-/**/
-#back,
-#collect {
-	height: 35px;
-	width: 35px;
-	background-color: white;
-	color: gray;
-	opacity: 0.5;
-	border-radius: 100px;
-	line-height: 35px;
-	padding-left: 5px;
-}
-
 .mui-card {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
-#phone img{
-	    width: 36px;
+.mui-card .storeUIDiv {
+  height: 217px;
+  background-image: url(../../img/storePic.jpg);
 }
-#collect img{
-    border: 0;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.mui-card #back,
+.mui-card #collect {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  color: gray;
+  opacity: 0.5;
+  border-radius: 100px;
+  line-height: 35px;
+  padding-left: 5px;
+  cursor: pointer;
 }
-#back img{
-	border: 0;
-    position: absolute;
-    top: 15px;
-    left: 18px;
+.mui-card #collect img {
+  border: 0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
-/*comment*/
-.storeReply{
-	background-color: #E4E3E6;
-    padding: 5px 5px;
-    margin-top: 10px;
+.mui-card #back img {
+  border: 0;
+  position: absolute;
+  top: 15px;
+  left: 18px;
 }
-b, strong {
-    font-weight: normal;
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content > .mui-table-view {
+  margin-top: 10px;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 0px;
+}
+.mui-content .mui-table-view #trueScore {
+  color: #696969;
+  font-size: 15px;
+}
+.mui-content .mui-table-view #score {
+  margin-top: 7px;
+}
+.mui-content .mui-table-view #score img {
+  border: 0;
+}
+.mui-content .mui-table-view .mui-btn {
+  border: 1px solid white;
+}
+.mui-content .mui-table-view #locate .mui-icon {
+  color: #818181;
+}
+.mui-content .mui-table-view .mui-table-view-cell {
+  padding: 9px 12px 9px 11px;
+}
+.mui-content .mui-table-view .mui-table-view-cell:after {
+  left: 0px;
+}
+.mui-content .mui-table-view .mui-table-view-cell #info strong {
+  font-weight: normal;
+  color: #8f8f94;
+  font-size: 16px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .storeAddress {
+  font-size: 15px;
+  color: gray;
+  position: absolute;
+  top: 12px;
+  left: 31px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .storeName {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+}
+.mui-content .mui-table-view .mui-table-view-cell .storeInfo {
+  height: 72px;
+  width: 72px;
+  border-left: 1px solid #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mui-content .mui-table-view .mui-table-view-cell .storeInfo #phone {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .storeInfo #phone img {
+  width: 25px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .payRebate {
+  font-size: 17px;
+  color: #FF750F;
+  line-height: 35px;
+  margin-left: 6px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .payRebate .discountNum {
+  font-weight: bolder;
+}
+.mui-content .mui-table-view .mui-table-view-cell #paymentInfo {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: #FF750F;
+}
+.mui-content .mui-card-header {
+  font-size: 14px;
+  border-radius: 2px 2px 0 0;
+  color: #8f8f94;
+  padding: 10px 15px 10px 12px;
+}
+.mui-content .comment {
+  margin-top: 10px;
+}
+.mui-content .comment .commentArea {
+  padding: 9px 12px 0 0;
+  color: #696969;
+}
+.mui-content .comment .commentArea .storeReply {
+  background-color: #E4E3E6;
+  padding: 5px 5px;
+  margin-top: 4px;
+}
+.mui-content .comment .commentArea .userPicture {
+  border-radius: 50%;
+}
+.mui-content .comment .commentArea strong {
+  font-weight: normal;
+}
+.mui-content .comment .commentArea a {
+  display: block;
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+.mui-content .comment .commentArea:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #E4E3E6;
+}
+.mui-content .comment .mui-card-content {
+  margin-left: 0;
+}
+.mui-content .storeIntroduce {
+  margin-top: 10px;
+}
+.mui-content .storeIntroduce .mui-card-content {
+  margin-left: 12px;
 }

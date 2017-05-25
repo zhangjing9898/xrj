@@ -1,0 +1,118 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+/*title*/
+.mui-bar {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+}
+.mui-bar a {
+  color: #696969;
+}
+.mui-bar h1 {
+  text-align: left;
+  color: #696969;
+  font-size: 14px;
+}
+/*content*/
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 25px;
+}
+.mui-content .mui-table-view-cell:after {
+  left: 0;
+  background-color: #cccccc;
+}
+.mui-content .mui-btn {
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
+  width: 82%;
+  height: 40px;
+  margin-left: 9%;
+}
+.mui-content .mui-table-view-cell .mui-checkbox input[type=checkbox] {
+  left: 0;
+}
+.mui-content .mui-table-view-cell .mui-checkbox input[type=checkbox]:before {
+  font-size: 19px;
+}
+.mui-content .mui-table-view-cell .mui-checkbox input[type=checkbox]:checked:before {
+  color: #09BB07;
+}
+.mui-content .mui-table-view-cell .mui-checkbox label {
+  padding-top: 6px;
+  padding-left: 25px;
+}
+.mui-content .mui-table-view-cell p {
+  font-size: 13px;
+  color: #696969;
+  font-family: "微软雅黑";
+  margin-bottom: 8px;
+}
+.mui-content .mui-table-view-cell .checkingTitle {
+  font-weight: bold;
+}
+.mui-content .mui-table-view-cell .checkingInfo {
+  color: #FF750F;
+}
+.mui-content .mui-table-view-cell:after {
+  background-color: transparent;
+}
+.mui-content .mui-table-view-cell .cantUse p {
+  color: #979797;
+}
+.mui-content .line {
+  height: 91px;
+  width: 2px;
+  display: block;
+  border: 1px solid #DADADA;
+  position: absolute;
+  left: 23px;
+  top: 31px;
+}
+.mui-content .line1 {
+  height: 69px;
+  width: 2px;
+  display: block;
+  border: 1px solid #DADADA;
+  position: absolute;
+  left: 23px;
+  top: 137px;
+}

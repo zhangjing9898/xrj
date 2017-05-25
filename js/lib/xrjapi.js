@@ -7,36 +7,15 @@ define(['./authApi', './MD5Encrypt','./aesUtil','./bluebird.core'], function(Aut
 	const APPID = 'b3ef92e1b5a24a5da2625e62ccb85929';
 	const APPKEY = '91c490ee1429cead';
 	const APIENTRY = 'https://www.91xrj.com/xrj-api/v1';
-	var authApi = new AuthApi(APPID, APPKEY, encryptor);
+
+
+
+
+    var authApi = new AuthApi(APPID, APPKEY, encryptor);
 	var aesUtil = new AESUtil(APPKEY);
+
 	
-	const MerchantSearchOption = {
-		Intelligent : 'create_time',
-		GoodComment: 'average_score',
-		CachBack: 'cashback_ratio',
-		Distance: 'distance'
-	};	
-	
-	
-	function getGeoLocation(){
-		return new Promise(function(resolve, reject){
-			plus.geolocation.getCurrentPosition(
-				function(position){
-					resolve(position);			
-				},
-				function(error){
-					reject(error.message);
-				},
-				{
-					timeout: 5000,
-					provider:'baidu',
-					geocode:false
-				}
-			);
-		});		
-	}
-	
-	
+
 	/**
 	 * 以下为接口
 	 */
@@ -105,19 +84,28 @@ define(['./authApi', './MD5Encrypt','./aesUtil','./bluebird.core'], function(Aut
 	/**
 	 * @description 获取分类
 	 */
-	xrjApi.getCategories = function(params){
+	xrjApi.getCategories = function(){
 		var url = APIENTRY + '/category';
 		return authApi.getAsync(url);
 	}
-	
+
+
+	/**
+	 * @description 获取商家列表
+	 */
+	xrjApi.getMerchantList = function (params) {
+		var url = APIENTRY + '/merchant/search';
+		return authApi.getAsync(url, params);
+	}
 	
 	/**
 	 * @description 猜你喜欢商家列表
 	 */
+/*
 	xrjApi.getFavorite = function(){
 		
 		return getGeoLocation().then(function(position){
-			console.log(position.coords);
+			//console.log(position.coords);
 			var params = {
 				orderByFieldName : MerchantSearchOption.Intelligent,
 				orderBy : 'DESC',
@@ -127,10 +115,31 @@ define(['./authApi', './MD5Encrypt','./aesUtil','./bluebird.core'], function(Aut
 				pageSize:　10
 				
 			};
-			var url = APIENTRY + '/merchant/search'
+			var url = APIENTRY + '/merchant/search';
 			return authApi.getAsync(url, params);
 		})
 	}
+*/
+
+	
+
+	/**
+	 * @description 下载服务器上的文件
+	 */
+	xrjApi.downloadFile = function (url) {
+		return new Promise(function (resolve, reject) {
+			var task = plus.downloader.createDownload(url,
+                {},
+                function (download, status) {
+                    if(status == 200 )
+                        resolve(download);
+                    else
+                        reject(download);
+                });
+            task.start();
+		});
+	}
+	
 	
 	return xrjApi;
 });

@@ -16,52 +16,137 @@
 			<h1 class="mui-title">注册</h1>
 		</header>
 		<div class="mui-content">
-			<!--<div id="progressbar1" class="mui-progressbar" style="margin-top: 8px;"><span></span></div>-->
-			<div class="gap"></div>
-			<table id="progressbarTable" border="0" cellspacing="" cellpadding="" width="100%" style="margin-top: 10px;">
-				<tr>
-					<td class="active"><strong>
-						<img class="circle" src="../../img/icon/bg_number_orange.png"/>
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<div class="register-step1-phone">
+							<div class="gap"></div>
+							<table id="progressbarTable">
+								<tr>
+									<td class="active"><strong>
+						<img class="circle" src="../../img/icon/bg_number_orange.png" />
 						<i>1</i>
 						<img class="line" src="../../img/icon/arrow.png" />
 						<br />
 					<p>推荐人识别&nbsp;&nbsp;&nbsp;</p>	
 					
 					</strong>
-					</td>
-					<td><strong>
-						<img class="circle" src="../../img/icon/bg_number_g.png"/>
+									</td>
+									<td><strong>
+						<img class="circle" src="../../img/icon/bg_number_g.png" />
 						<i>2</i>
 						<img class="line" src="../../img/icon/arrow.png" />
 						<br />
 					<p>手机验证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 					</strong>
-					</td>
-					<td><strong>
+									</td>
+									<td><strong>
+						<img class="circle" src="../../img/icon/bg_number_g.png" />
+						<i>3</i>
+						<br />
+						<p>个人资料&nbsp;&nbsp;&nbsp;</p>
+					</strong>
+									</td>
+								</tr>
+							</table>
+							<div class="phoneNumDiv">
+								<input id="In_PhoneNumber" type="text" class="mui-input-clear" placeholder="请输入手机号码" onkeyup="phoneNumberCheck();" />
+								<a><button id="IdentityVerificationBtn" type="button" class="mui-btn mui-btn-warning">下一步</button></a>
+							</div>
+						</div>
+					</div>
+					<div class="mui-slider-item">
+						<div class="register-step2">
+							<div class="gap"></div>
+							<table id="progressbarTable">
+								<tr>
+									<td><strong>
+						<img class="circle" src="../../img/icon/bg_number_g.png"/>
+						<i>1</i>
+						<img class="line" src="../../img/icon/arrow.png" />
+						<br />
+					<p>推荐人识别&nbsp;&nbsp;&nbsp;</p>	
+					
+					</strong>
+									</td>
+									<td class="active"><strong>
+						<img class="circle" src="../../img/icon/bg_number_orange.png"/>
+						<i>2</i>
+						<img class="line" src="../../img/icon/arrow.png" />
+						<br />
+					<p>手机验证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</strong>
+									</td>
+									<td><strong>
 						<img class="circle" src="../../img/icon/bg_number_g.png"/>
 						<i>3</i>
 						<br />
 						<p>个人资料&nbsp;&nbsp;&nbsp;</p>
 					</strong>
-					</td>
-				</tr>
-			</table>
-				<div class="" style="text-align: center;">
-				<input id="In_PhoneNumber" type="text" class="mui-input-clear" placeholder="请输入手机号码" onkeyup="phoneNumberCheck();" />
-				<a><button id="IdentityVerificationBtn" type="button" class="mui-btn mui-btn-warning" disabled="ture" >下一步</button></a> 
-			</div>			   
+									</td>
+								</tr>
+							</table>
+
+							<div class="phoneNumDiv">
+								<input id="In_PhoneNumber" type="text" class="mui-input-clear" placeholder="请输入手机号码" onkeyup="sendVerificationCodeCheck();" />
+								<input id="In_VerificationCode" type="text" class="mui-input-clear" placeholder="请输入验证码" disabled="true" onkeyup="verificationCodeCheck();" />
+								<button id="SendVerificationCode" type="button" class="mui-btn mui-btn-green">免费获取验证码</button>
+								<a>
+									<button id="NextBtn" type="button" class="mui-btn mui-btn-warning">下一步</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="mui-slider-item">
+						<div class="register-step3">
+							<div class="gap"></div>
+							<table id="progressbarTable">
+								<tr>
+									<td><strong>
+						<img class="circle" src="../../img/icon/bg_number_g.png" />
+						<i>1</i>
+						<img class="line" src="../../img/icon/arrow.png" />
+						<br />
+					<p>推荐人识别&nbsp;&nbsp;&nbsp;</p>	
+					
+					</strong>
+									</td>
+									<td><strong>
+						<img class="circle" src="../../img/icon/bg_number_g.png" />
+						<i>2</i>
+						<img class="line" src="../../img/icon/arrow.png" />
+						<br />
+					<p>手机验证&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					</strong>
+									</td>
+									<td class="active"><strong>
+						<img class="circle" src="../../img/icon/bg_number_orange.png" />
+						<i>3</i>
+						<br />
+						<p>个人资料&nbsp;&nbsp;&nbsp;</p>
+					</strong>
+									</td>
+								</tr>
+							</table>
+
+							<div class="passwordDiv">
+								<input type="text" name="" id="nickname" class="mui-input-clear" placeholder="请输入昵称" />
+								<input type="password" name="pwd" id="pwd" class="mui-input-clear" placeholder="请输入密码" />
+								<input type="password" name="repwd" id="repwd" class="mui-input-clear" placeholder="请重复密码" onkeyup="" />
+
+								<div class="mui-input-row mui-checkbox mui-left" id="besure">
+									<input id="besureInput" name="checkbox" type="checkbox">
+									<span id="besureLabel">我同意并接受<a>《薪仁居用户协议》</a></span>
+								</div>
+
+								<a> <button id="submitBtn" type="button">提交</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<script data-main="../../js/register/register-step1-InputPhoneNumber" src="../../js/require.js" type="text/javascript" charset="utf-8"></script>
-		<script>
-			function phoneNumberCheck(){
-				//使用正则表达式检验输入的手机号是否是数字且达到11位
-				if(!(/^1[0-9][0-9]\d{8}$/.test(In_PhoneNumber.value))){ 
-					//如果不符合规则,禁用下一步按钮
-			        IdentityVerificationBtn.disabled = true;
-    			}else{
-    				IdentityVerificationBtn.disabled = false;
-    			}
-			};
+		<script type="text/javascript" src="../../js/lib/mui.js"></script>
 		</script>
 	</body>
 

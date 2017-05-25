@@ -1,0 +1,58 @@
+@import "../../common";
+.gap {
+    .gapMix(1px, 100%, #ccc);
+}
+
+.mui-content {
+    background-color: @background-color;
+    .store-info {
+        padding: 10px 13px;
+        p {
+            margin-bottom: 3px;
+        }
+        .score-info {
+            position: relative;
+            a {
+                color: @base-color;
+                font-size: 13px;
+                position: absolute;
+                left: 78px;
+                top: -1px;
+            }
+        }
+    }
+    .form-info {
+        width: 100%;
+        .mui-table-view {
+            padding: 0;
+            .mui-table-view-cell {
+                padding: 18px 0 18px 14px;
+                strong {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #696969;
+                }
+                p {
+                    font-size: 13px;
+                    color: #969696;
+                }
+                .choose{
+                    color: @base-color;
+                }
+            }
+        }
+    }
+    .list{
+        margin-top: 13px;
+        .mui-table-view-cell{
+            p{
+                font-size: 13px;
+                color: @icon-color;
+            }
+            &:after{
+                left: 0;
+                background-color: #CCCCCC;
+            }
+        }
+    }
+}

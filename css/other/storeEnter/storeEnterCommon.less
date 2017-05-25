@@ -1,0 +1,38 @@
+@import '../../common';
+
+/*title*/
+
+.mui-bar {
+    background-color: white;
+    .box-shadow();
+    a {
+        color: @icon-color;
+    }
+    h1 {
+        text-align: left;
+        color:@icon-color;
+        font-size: 14px;
+    }
+}
+
+/*content*/
+.mui-content {
+    background-color: @background-color;
+    &>.mui-table-view:first-child {
+        margin-top: 25px;
+    }
+    .mui-table-view-cell {
+            &:after {
+                left: 0;
+                background-color: #cccccc;
+            }
+        }
+    .mui-btn {
+        color: white;
+        border: 1px solid @base-color;
+        background-color:@base-color;
+        width: 82%;
+        height: 40px;
+        margin-left: 9%;
+    }
+}

@@ -1,79 +1,87 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-
-/*global*/
-
 body {
-	font-family: "微软雅黑";
-	font-size: 15px;
-	background-color: white;
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-
 a {
-	color: white;
+  outline: none;
+  text-decoration: none;
 }
-
-.mui-content {
-	background-color: white;
-}
-
-
-/*title*/
-
-.mui-bar .mui-title {
-	color: #696969;
-	font-size: 15px;
-}
-
-.mui-icon-back:before,
-.mui-icon-left-nav:before {
-	color: #6A6A6A;
-}
-
 .mui-bar-nav {
-	top: 0;
-	-webkit-box-shadow: 0 1px 6px #ccc;
-	box-shadow: 0 1px 0 #ccc;
-	background-color: white;
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
-
-.mui-title {
-	text-align: left;
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
 }
-
-input[type=color],
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week],
-select,
-textarea {
-	border-left-color: white;
-	border-right-color: white;
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
 }
-
-.mui-btn,
-button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
-	width: 86%;
-	font-size: 15px;
-	padding: 14px 12px;
-	color: white;
-	border: 1px solid #FF750F;
-	background-color: #FF750F;
-	left: 7%;
+body {
+  background-color: white;
+  font-size: 15px;
+}
+a {
+  color: white;
+}
+/*title*/
+.mui-bar {
+  background-color: white;
+}
+/*content*/
+.mui-content {
+  background-color: white;
+}
+.mui-content input[type=color],
+.mui-content input[type=date],
+.mui-content input[type=datetime-local],
+.mui-content input[type=datetime],
+.mui-content input[type=email],
+.mui-content input[type=month],
+.mui-content input[type=number],
+.mui-content input[type=password],
+.mui-content input[type=search],
+.mui-content input[type=tel],
+.mui-content input[type=text],
+.mui-content input[type=time],
+.mui-content input[type=url],
+.mui-content input[type=week],
+.mui-content select,
+.mui-content textarea {
+  border-left-color: white;
+  border-right-color: white;
+}
+.mui-content .mui-btn,
+.mui-content button,
+.mui-content input[type=button],
+.mui-content input[type=reset],
+.mui-content input[type=submit] {
+  width: 86%;
+  font-size: 15px;
+  padding: 14px 12px;
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
+  left: 7%;
+}
+.mui-content textarea {
+  font-size: 14px;
+  color: #696969;
 }

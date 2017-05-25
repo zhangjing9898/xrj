@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/mine/store-manage/order-manage.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title mui-pull-left">订单管理</h1>
+			<p class="mui-pull-right search">搜索</p>
+			<div class="input_wrapper">
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="请输入订单编号查询">
+				</div>
+			</div>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						未支付
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						已支付
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						退款
+					</a>
+					<a class="mui-control-item mui-active" href="#item4mobile">
+						全部
+					</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<div class="store-head-img mui-pull-left">
+										<img src="../../../img/icon/head2.png" />
+										<p class="store-name">朵朵 angle</p>
+									</div>
+									<div class="store-info mui-pull-left">
+										<p>支付类型:买单收益</p>
+										<p>订单编号:65677755432</p>
+										<p>消费时间:2017-03-10 00:00</p>
+										<p>返利时间:2017-04-01 00:00</p>
+										<div class="double">
+											<p class="mui-pull-left">提现比例:10%</p>
+											<p class="mui-pull-right">平台扣点:1.1%</p>
+										</div>
+										<p>总成交额:&yen;567</p>
+										<p>消费提成:&yen;60</p>
+										<p>平台扣费:&yen;7</p>
+										<p>实收金额:&yen;500</p>
+									</div>
+								</a>
+								<div class="status-button">
+									<p class="mui-pull-left">未支付</p>
+									<div class="mui-pull-right button-info">
+										<button class="mui-btn agree">支付</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<div class="store-head-img mui-pull-left">
+										<img src="../../../img/icon/head2.png" />
+										<p class="store-name">朵朵 angle</p>
+									</div>
+									<div class="store-info mui-pull-left">
+										<p>支付类型:买单收益</p>
+										<p>订单编号:65677755432</p>
+										<p>消费时间:2017-03-10 00:00</p>
+										<p>返利时间:2017-04-01 00:00</p>
+										<div class="double">
+											<p class="mui-pull-left">提现比例:10%</p>
+											<p class="mui-pull-right">平台扣点:1.1%</p>
+										</div>
+										<p>总成交额:&yen;567</p>
+										<p>消费提成:&yen;60</p>
+										<p>平台扣费:&yen;7</p>
+										<p>实收金额:&yen;500</p>
+									</div>
+								</a>
+								<div class="status-button">
+									<p class="mui-pull-left">已经支付</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<div class="store-head-img mui-pull-left">
+										<img src="../../../img/icon/head2.png" />
+										<p class="store-name">朵朵 angle</p>
+										<button class="mui-btn">联系商家</button>
+									</div>
+									<div class="store-info mui-pull-left">
+										<p>支付类型:扫码支付</p>
+										<p>订单编号:65677755432</p>
+										<p>消费时间:2017-03-10 00:00</p>
+										<p>返利时间:2017-04-01 00:00</p>
+										<div class="double">
+											<p class="mui-pull-left">提现比例:10%</p>
+											<p class="mui-pull-right">平台扣点:1.1%</p>
+										</div>
+										<p>总成交额:&yen;567</p>
+										<p>消费提成:&yen;60</p>
+										<p>平台扣费:&yen;7</p>
+										<p>实收金额:&yen;500</p>
+									</div>
+								</a>
+								<div class="status-button">
+									<p class="mui-pull-left">申请退款</p>
+									<div class="mui-pull-right button-info">
+										<button class="mui-btn reject">拒绝</button>
+										<button class="mui-btn agree">同意</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<div class="store-head-img mui-pull-left">
+										<img src="../../../img/icon/head2.png" />
+										<p class="store-name">朵朵 angle</p>
+										<button class="mui-btn">联系商家</button>
+									</div>
+									<div class="store-info mui-pull-left">
+										<p>支付类型:扫码支付</p>
+										<p>订单编号:65677755432</p>
+										<p>消费时间:2017-03-10 00:00</p>
+										<p>返利时间:2017-04-01 00:00</p>
+										<div class="double">
+											<p class="mui-pull-left">提现比例:10%</p>
+											<p class="mui-pull-right">平台扣点:1.1%</p>
+										</div>
+										<p>总成交额:&yen;567</p>
+										<p>消费提成:&yen;60</p>
+										<p>平台扣费:&yen;7</p>
+										<p>实收金额:&yen;500</p>
+									</div>
+								</a>
+								<div class="status-button">
+									<p class="mui-pull-left">申请退款</p>
+									<div class="mui-pull-right button-info">
+										<button class="mui-btn reject">拒绝</button>
+										<button class="mui-btn agree">同意</button>
+									</div>
+								</div>
+							</li>
+							<div class="gap"></div>
+							<li class="mui-table-view-cell mui-media">
+								<a href="#">
+									<div class="store-head-img mui-pull-left">
+										<img src="../../../img/icon/head2.png" />
+										<p class="store-name">朵朵 angle</p>
+									</div>
+									<div class="store-info mui-pull-left">
+										<p>支付类型:买单收益</p>
+										<p>订单编号:65677755432</p>
+										<p>消费时间:2017-03-10 00:00</p>
+										<p>返利时间:2017-04-01 00:00</p>
+										<div class="double">
+											<p class="mui-pull-left">提现比例:10%</p>
+											<p class="mui-pull-right">平台扣点:1.1%</p>
+										</div>
+										<p>总成交额:&yen;567</p>
+										<p>消费提成:&yen;60</p>
+										<p>平台扣费:&yen;7</p>
+										<p>实收金额:&yen;500</p>
+									</div>
+								</a>
+								<div class="status-button">
+									<p class="mui-pull-left">已经支付</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

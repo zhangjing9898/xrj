@@ -12,7 +12,39 @@ require(['lib/xrjAPI', 'mui', 'lib/aes'], function(xrjApi, mui, aes) {
 	var account = document.getElementById("account");
 	var password = document.getElementById("password");
 
-	mui.init();
+	mui.init({
+      		subpages:[{
+      			url:'../register/register-step1.html',
+      			id:'register-step1.html',
+      			styles:{
+      				width:'100%'
+      			}
+      		},
+      		{
+      			url:'../register/register-step1-IdentityVerification.html',
+      			id:'register-step1-IdentityVerification.html',
+      			styles:{
+      				width:'100%',
+      				left:"100%"
+      			}
+      		},
+      		{
+      			url:'../register/register-step2.html',
+      			id:'register-step2.html',
+      			styles:{
+      				width:'100%',
+      				left:'200%'
+      			}
+      		},
+      		{
+      			url:'../register/register-step3.html',
+      			id:'register-step3.html',
+      			styles:{
+      				width:'100%',
+      				left:'300%'
+      			}
+      		}]
+      	});
 	mui.plusReady(function() {
 		var str1 = " 设备序号:" + getDeviceSerial() +
 			"\n 设备类型:" + getDeviceType() +
@@ -73,12 +105,12 @@ require(['lib/xrjAPI', 'mui', 'lib/aes'], function(xrjApi, mui, aes) {
 		});
 		
 		var forgetPasswordByMobile=document.getElementById('forgetPasswordByMobile');
-		forgetPasswordByMobile.addEventListener('tap',function(){
-			mui.openWindow({
-				url:'../forgetPassword/forget_password.html',
-				id:'forget_password'
-			})
-		})
+//		forgetPasswordByMobile.addEventListener('tap',function(){
+//			mui.openWindow({
+//				url:'../forgetPassword/forget_password.html',
+//				id:'forget_password'
+//			})
+//		})
 
 		function Check(account, password) {
 			var Checkarr = [false, ""];

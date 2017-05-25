@@ -1,0 +1,173 @@
+@import '../common';
+p {
+    margin-bottom: 0;
+}
+a{
+    color: @icon-color;
+}
+.mui-card {
+    margin: 0px;
+    padding: 0px;
+    .storeUIDiv {
+        height: 217px;
+        background-image: url(../../img/storePic.jpg);
+    }
+    #back,
+    #collect {
+        height: 35px;
+        width: 35px;
+        background-color: white;
+        color: gray;
+        opacity: 0.5;
+        border-radius: 100px;
+        line-height: 35px;
+        padding-left: 5px;
+        cursor: pointer;
+    }
+    #collect {
+        img {
+            border: 0;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    }
+    #back {
+        img {
+            border: 0;
+            position: absolute;
+            top: 15px;
+            left: 18px;
+        }
+    }
+}
+
+.mui-content {
+    background-color: @background-color;
+    >.mui-table-view {
+        margin-top: 10px;
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+    .mui-table-view {
+        #trueScore {
+            color: @icon-color;
+            font-size: 15px;
+        }
+        #score {
+            margin-top: 7px;
+            img {
+                border: 0;
+            }
+        }
+        .mui-btn {
+            border: 1px solid white;
+        }
+        #locate {
+            .mui-icon {
+                color: #818181;
+            }
+        }
+        .mui-table-view-cell {
+            padding: 9px 12px 9px 11px;
+            &:after {
+                left: 0px;
+            }
+            #info {
+                strong {
+                    font-weight: normal;
+                    color: #8f8f94;
+                    font-size: 16px;
+                }
+            }
+            .storeAddress {
+                font-size: 15px;
+                color: gray;
+                position: absolute;
+                top: 12px;
+                left: 31px;
+            }
+            .storeName {
+                color: #000000;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .storeInfo {
+                height: 72px;
+                width: 72px;
+                border-left: 1px solid #ccc;
+                position: absolute;
+                right: 0;
+                top: 0;
+                #phone {
+                    position: absolute;
+                    right: 10px;
+                    top: 13px;
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+            .payRebate {
+                font-size: 17px;
+                color: #FF750F;
+                line-height: 35px;
+                margin-left: 6px;
+                .discountNum {
+                    font-weight: bolder;
+                }
+            }
+            #paymentInfo {
+                padding: 8px 20px;
+                border-radius: 5px;
+                background-color: #FF750F;
+            }
+        }
+    }
+    .mui-card-header {
+        font-size: 14px;
+        border-radius: 2px 2px 0 0;
+        color: #8f8f94;
+        padding: 10px 15px 10px 12px;
+    }
+    .comment {
+        margin-top: 10px;
+        .commentArea {
+            padding: 9px 12px 0 0;
+            color: @icon-color;
+            .storeReply {
+                background-color: #E4E3E6;
+                padding: 5px 5px;
+                margin-top: 4px;
+            }
+            .userPicture {
+                border-radius: 50%;
+            }
+            strong {
+                font-weight: normal;
+            }
+            a {
+                display: block;
+                margin-left: 12px;
+                margin-bottom: 5px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: #E4E3E6;
+            }
+        }
+        .mui-card-content {
+            margin-left: 0;
+        }
+    }
+    .storeIntroduce {
+        margin-top: 10px;
+        .mui-card-content {
+            margin-left: 12px;
+        }
+    }
+}

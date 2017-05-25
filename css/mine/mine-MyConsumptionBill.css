@@ -1,140 +1,155 @@
-*{
-	padding: 0;
-	margin: 0;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
-	font-size: 15px;
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-a{
-	color: white;
-}
-.gap{
-	left: 0;
-	width: 100%;
-	height: 1px;
-	background-color: #ccc;
-}
-/*title*/
-.mui-bar .mui-title{
-	color:#696969 ;
-	    font-size: 15px;
-}
-.mui-icon-back:before, .mui-icon-left-nav:before {
-    color:#6A6A6A;
+a {
+  outline: none;
+  text-decoration: none;
 }
 .mui-bar-nav {
-    top: 0;
-    -webkit-box-shadow: 0 1px 6px #ccc;
-    box-shadow: 0 1px 0 #ccc;
-    background-color: white;
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.gap {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  bottom: 53px;
+  left: 0;
 }
 /*choose bar*/
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-slider .mui-slider-group .mui-slider-item img {
+  width: 80px;
+  height: 61px;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+  border-bottom: 0;
+  background-color: #FF750F;
+  color: white;
+}
+.mui-slider-indicator.mui-segmented-control {
+  position: relative;
+  bottom: auto;
+  border-bottom: 2px solid #FF750F;
+}
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted ~ .mui-slider-group .mui-slider-item {
+  border-top: 0;
+  border-bottom: 0;
+}
 .mui-segmented-control {
-    border: none;
+  border: none;
+  border-bottom: 1px solid #FF750F;
+  background-color: white;
 }
 .mui-segmented-control .mui-control-item {
-    border-color: #FF750F;
-    border-left: #FF750F;
+  border-color: #FF750F;
+  border-left: #FF750F;
+  color: #696969;
+  width: 50px;
+  font-size: 13px;
+  border-color: #007aff;
+  border-left: 1px solid transparent;
 }
 .mui-segmented-control .mui-control-item.mui-active {
-    color: #fff;
-    background-color: #FF750F;
-}
-.mui-segmented-control .mui-control-item {
-    color: #696968;
-    border-color: #007aff;
-    border-left: 1px solid #007aff;
-}
-.mui-segmented-control .mui-control-item {
-    color: #696968;
-    border-left: 1px solid transparent;
-}
-.mui-segmented-control {
-    border: none;
-    border-bottom: 1px solid #FF750F;
-}
-.mui-segmented-control {
-    background-color: white;
+  color: #fff;
+  background-color: #FF750F;
+  width: 75px;
 }
 /*storeInfo*/
-#storeInfo {
-    width: 58%;
-    float: left;
-    margin-left: 20px;
-    position: relative;
-    margin-bottom: 20px;
+.store {
+  margin-bottom: 10px;
+}
+.store #storeInfo {
+  width: 58%;
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  margin-bottom: 20px;
 }
 .store img {
-    border: 0;
-    width: 80px;
-    height: 61px;
-    float: left;
+  border: 0;
+  width: 80px;
+  height: 61px;
+  float: left;
 }
 .store .mui-table-view-cell p {
-    margin-bottom: 0;
-    font-size: 13px;
-       color: #000000;
-           letter-spacing: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0;
 }
-#incomeNum {
-    margin-bottom: -26px;
-    position: absolute;
-        bottom: 25px;
-    right: 0;
+.store #incomeNum {
+  margin-bottom: -26px;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
 }
-#paymentStatus {
-    position: absolute;
-    bottom: 7px;
-        left: 10px;
+.store #paymentStatus {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
 }
-.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
-    width: 82px;
-    color: white;
-    border: 1px solid #FF750F;
-    background-color: #ff750f;
+.store .mui-btn,
+.store button,
+.store input[type=button],
+.store input[type=reset],
+.store input[type=submit] {
+  width: 82px;
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
 }
-#applyRefund {
-    background-color: white;
-    color: #FF750F;
-    margin-right: 14px;
-    position: absolute;
-    right: 93px;
-    bottom: 1px;
+.store #applyRefund {
+  background-color: white;
+  color: #FF750F;
+  margin-right: 14px;
+  position: absolute;
+  right: 75px;
+  bottom: 1px;
 }
-#storeInfoDiv{
-	width: 100%;
-	height: 105px;
+.store #storeInfoDiv {
+  width: 100%;
+  height: 105px;
 }
-#paymentStatusDiv {
-    width: 100%;
-    height: 30px;
-    position: relative;
+.store #paymentStatusDiv {
+  width: 100%;
+  height: 30px;
+  position: relative;
 }
-#paymentComment{
-    position: absolute;
-    bottom: 1px;
-    right: 10px;
-    width: 82px;
-    color: white;
-    border: 1px solid #FF750F;
-    background-color: #ff750f;
+.store #paymentComment {
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+  width: 82px;
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
 }
-.store{
-	margin-bottom: 10px;
-}
-/*.mui-table-view-cell>a:not(.mui-btn) {
-    margin: -11px -15px;
-}*/
-/*响应式*/
-/*@media only screen and (min-width:692px ) {
-	#storeInfo {
-    margin-bottom: 56px;
-	}
-	#storeButtonAll{
-	position: absolute;
-    bottom: 10px;
-    right: 20px;
-	}
-}*/

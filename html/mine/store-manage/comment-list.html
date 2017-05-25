@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../css/mine/store-manage/comment-list.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">评论列表</h1>
+		</header>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						未回复评论
+					</a>
+					<a class="mui-control-item mui-active" href="#item2mobile">
+						全部评论
+					</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-loading">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+										<img class="mui-media-object mui-pull-left" src="../../../img/icon/head2.png">
+										<div class="mui-media-body">
+											<p class="score mui-pull-right">
+												<img src="../../../img/icon/starts5_full.png" />
+											</p>
+											<p class="user-name">朵朵ANGLE</p>
+											<p class="time">时间:2017-04-20 13:33</p>
+											<p class="order-number">单号:61999239454223</p>
+										</div>
+									</a>
+									<div class="comment">
+										<p>这里环境可以，菜品也齐全，味道还是那么好。
+										</p>
+										<p> 就是这个分店附近工地灰尘比较大。</p>
+										<div class="line"></div>
+										<div class="reply">
+											<input type="text" class="mui-pull-left" placeholder="输入回复内容"></input>
+											<button class="mui-btn mui-pull-right">回复</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content  mui-active">
+						<div class="mui-loading">
+							<ul class="mui-table-view">
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+										<img class="mui-media-object mui-pull-left" src="../../../img/icon/head2.png">
+										<div class="mui-media-body">
+											<p class="score mui-pull-right">
+												<img src="../../../img/icon/starts5_full.png" />
+											</p>
+											<p class="user-name">朵朵ANGLE</p>
+											<p class="time">时间:2017-04-20 13:33</p>
+											<p class="order-number">单号:61999239454223</p>
+										</div>
+									</a>
+									<div class="comment">
+										<p>这里环境可以，菜品也齐全，味道还是那么好。
+										</p>
+										<p> 就是这个分店附近工地灰尘比较大。</p>
+										<div class="line"></div>
+										<div class="reply">
+											<input type="text" class="mui-pull-left" placeholder="输入回复内容"></input>
+											<button class="mui-btn mui-pull-right">回复</button>
+										</div>
+									</div>
+								</li>
+								<div class="gap"></div>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+										<img class="mui-media-object mui-pull-left" src="../../../img/icon/head2.png">
+										<div class="mui-media-body">
+											<p class="score mui-pull-right">
+												<img src="../../../img/icon/starts5_full.png" />
+											</p>
+											<p class="user-name">朵朵ANGLE</p>
+											<p class="time">时间:2017-04-20 13:33</p>
+											<p class="order-number">单号:61999239454223</p>
+										</div>
+									</a>
+									<div class="comment">
+										<p>这里环境可以，菜品也齐全，味道还是那么好。就是这个分店附近工地灰尘比较大。</p>
+										<div class="store-reply">
+											<p>商家:感谢亲的支持与厚爱，我们会好好改进的。</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<script src="../../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

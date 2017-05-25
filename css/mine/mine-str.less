@@ -1,0 +1,70 @@
+@import "../common";
+body {
+    font-size: 15px;
+}
+
+a {
+    color: white;
+}
+
+.gap {
+    .gapMix(20px, 100%, transparent);
+}
+
+
+/*title*/
+
+
+
+
+/*content*/
+
+.mui-content {
+    background-color: @background-color;
+    #headImgLi {
+        height: 51px;
+        padding: 8px 15px;
+        img {
+            .border-radius(50%);
+            height: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+        .mine-str-HeadPortrait {
+            font-size: 15px;
+            padding: 11px 0;
+        }
+    }
+    .headImgArrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -12px;
+        margin-left: -9px;
+    }
+    .mui-table-view-cell {
+        padding: 13px 15px;
+        &:after {
+            left: 0;
+        }
+    }
+    .mui-table-view {
+        .label {
+            font-size: 14px;
+            float: left;
+            margin-right: 10px;
+            color: @icon-color;
+        }
+        .mui-media {
+            color: @icon-color;
+        }
+    }
+    .exitButton{
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid @base-color;
+    background-color: @base-color;
+}
+}

@@ -1,333 +1,123 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-
-/*global*/
-
 body {
-	font-family: "微软雅黑";
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-
-
-/*title*/
-
-.mui-h1,
-h1 {
-	font-size: 15px;
-	font-weight: normal;
-	line-height: 34px;
-	color: #696969;
-}
-
-.mui-bar-nav {
-	-webkit-box-shadow: 0 1px 0 #ccc;
-	box-shadow: 0 1px 0 #ccc;
-}
-
-.mui-bar {
-	padding: 0 8%;
-	background-color: white;
-}
-
-
-/*choosePanel*/
-
-.mui-bar-nav~.mui-content {
-	padding-top: 24px;
-}
-
-.mui-slider-indicator.mui-segmented-control {
-	background-color: white;
-	font-size: 14px;
-	border-bottom: 1px solid #ccc;
-}
-
-.mui-segmented-control.mui-segmented-control-inverted~.mui-slider-progress-bar {
-	background-color: transparent;
-	height: 0px;
-}
-
-.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
-	color: white;
-	background-color: #ff750f;
-}
-
-.mui-segmented-control .mui-control-item.mui-active {
-	background-color: white;
-}
-
-.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
-	color: white;
-}
-
-.mui-segmented-control .mui-control-item.mui-active {
-	background-color: #ff750f;
-}
-
-.mui-segmented-control.mui-segmented-control-inverted .mui-control-item {
-	color: #686968;
-	border: 0;
-}
-
-
-/*input box*/
-
-.mui-input-group label {
-	position: relative;
-}
-
-.mui-slider .mui-slider-group .mui-slider-item img {
-	width: 26px;
-	position: absolute;
-	top: 7px;
-	left: 11px;
-}
-
-.mui-input-group:first-child {
-	width: 80%;
-	margin: 0 auto;
-	margin-top: 20px;
-}
-
-.mui-input-group:before {
-	background-color: transparent;
-}
-
-.mui-input-group:after {
-	background-color: transparent;
-}
-
-.mui-input-group {
-	background-color: transparent;
-}
-
-.mui-input-group .mui-input-row:after {
-	background-color: transparent;
-}
-
-.mui-input-group .mui-input-row {
-	height: 40px;
-	margin-bottom: 15px;
-	background-color: white;
-}
-
-.mui-input-row label~input,
-.mui-input-row label~select,
-.mui-input-row label~textarea {
-	height: 100%;
-}
-
-.mui-input-group .mui-input-row {
-	border: 1px solid #ccc;
-	height: 43px;
-	border-radius: 6px;
-}
-
-.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
-	border-top: none;
-	border-bottom: none;
-	background-color: white;
-}
-
-.mui-input-group label {
-	width: 16%;
-}
-
-.mui-input-row label~input,
-.mui-input-row label~select,
-.mui-input-row label~textarea {
-	width: 84%;
-}
-
-#In_PhoneNumber,
-#In_VerificationCode,
-#SendVerificationCode,
-#In_NewPassword,
-button {
-	border-radius: 5px;
-	height: 50px;
-}
-
-#In_PhoneNumber,
-#In_NewPassword {
-	width: 80%;
-	margin-top: 40px;
-	font-size: 18px;
-}
-
-#In_VerificationCode {
-	width: 45%;
-	margin-top: 20px;
-	font-size: 18px;
-}
-
-#SendVerificationCode {
-	width: 41%;
-	margin-top: -58px;
-	font-size: 13px;
-	margin-right: -61%;
-	height: 43px;
-}
-
-#verificationCode {
-	width: 62%;
-}
-
-#verificationCode label~input {
-	width: 73%;
-}
-
-.password {
-	width: 58%;
-}
-
-.password label~input {
-	width: 73%;
-}
-
-.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
-    float: left;
-}
-.mui-btn-green,
-.mui-btn-positive,
-.mui-btn-success {
-	color: #FF750F;
-	border: 1px solid #FF750F;
-	background-color: white;
-}
-
-#item2mobile .password{
-	width: 58%;
-
-}
-/*button*/
-
-.mui-btn-block {
-	border-radius: 5px;
-	width: 80%;
-	margin-left: 10%;
-	background-color: ff750f;
-	color: white;
-	margin-top: 25px;
-	border: none;
-}
-
-.link-area {
-	margin-top: 1%;
-}
-
 a {
-	font-size: 13px;
-	color: #686968;
+  outline: none;
+  text-decoration: none;
 }
-
-.mui-btn {
-	padding: 9px;
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
-
-.mui-btn-block {
-	font-size: 15px;
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
 }
-
-#login2 {
-	border-radius: 5px;
-	width: 80%;
-	margin-left: 10%;
-	background-color: ff750f;
-	color: white;
-	margin-top: 10px;
-	border: none;
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
 }
-
-.ui-page-login,
 body {
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
+  background-color: white;
 }
-
+a {
+  color: #696969;
+}
+/*title*/
+.mui-bar-nav {
+  padding-left: 2%;
+}
+.mui-bar-nav h1 {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 34px;
+  color: #696969;
+}
+.mui-bar-nav .navRegisterButton {
+  margin-right: 4%;
+}
+/*content*/
 .mui-content {
-	height: 100%;
+  background-color: white;
 }
-
-.area {
-	margin: 20px auto 0px auto;
+.mui-content .mui-input-group {
+  background-color: transparent;
 }
-
-.mui-input-group {
-	margin-top: 10px;
+.mui-content .mui-input-group img {
+  border: 0;
+  margin-top: -3px;
+  margin-left: -3px;
 }
-
-.mui-input-group:first-child {
-	margin-top: 20px;
+.mui-content .mui-input-group label {
+  position: relative;
 }
-
-.mui-input-group label {
-	width: 28px;
-    margin-right: 15px;
-
+.mui-content .mui-input-group:first-child {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
-
-.mui-input-row label~input,
-.mui-input-row label~select,
-.mui-input-row label~textarea {
-	width: 78%;
+.mui-content .mui-input-group:before,
+.mui-content .mui-input-group:after {
+  background-color: transparent;
 }
-
-.mui-checkbox input[type=checkbox],
-.mui-radio input[type=radio] {
-	top: 6px;
+.mui-content .mui-input-group .mui-input-row {
+  height: 40px;
+  margin-bottom: 15px;
+  background-color: white;
 }
-
-.mui-content-padded {
-	margin-top: 25px;
+.mui-content .mui-input-group .mui-input-row:after {
+  background-color: transparent;
 }
-
-.mui-btn {
-	padding: 10px;
+.mui-content .mui-input-group .mui-input-row label {
+  width: 16%;
 }
-
-.link-area {
-	display: block;
-	margin-top: 25px;
-	text-align: center;
+.mui-content .mui-input-group .mui-input-row {
+  border: 1px solid #ccc;
+  height: 43px;
+  border-radius: 6px;
 }
-
-.spliter {
-	color: #bbb;
-	padding: 0px 8px;
+.mui-content .mui-input-group .mui-input-row label ~ input {
+  height: 100%;
+  width: 84%;
+  float: left;
+  font-size: 15px;
 }
-
-.oauth-area {
-	position: absolute;
-	bottom: 20px;
-	left: 0px;
-	text-align: center;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
+.mui-content .mui-input-group .link-area {
+  display: block;
+  margin-top: -10px;
+  text-align: center;
+  float: right;
+  margin-bottom: 18px;
+  font-size: 15px;
 }
-
-.oauth-area .oauth-btn {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	background-size: 30px 30px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	margin: 0px 20px;
-	/*-webkit-filter: grayscale(100%); */
-	border: solid 1px #ddd;
-	border-radius: 25px;
-}
-
-.oauth-area .oauth-btn:active {
-	border: solid 1px #aaa;
-}
-
-.oauth-area .oauth-btn.disabled {
-	background-color: #ddd;
+.mui-content .mui-btn-block {
+  height: 42px;
+  width: 86%;
+  margin-left: 7%;
+  background-color: #FF750F;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  font-size: 15px;
+  padding: 9px;
 }

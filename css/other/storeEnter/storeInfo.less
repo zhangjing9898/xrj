@@ -1,0 +1,62 @@
+@import 'storeEnterCommon';
+
+
+
+/*content*/
+
+.mui-content {
+    .mui-table-view {
+        .mui-table-view-cell {
+            &:after {
+                left: 0;
+                background-color: #cccccc;
+            }
+            .mui-pull-left {
+                color: #454545;
+                font-size: 14px;
+            }
+            .mui-pull-right {
+                color: #696969;
+                font-size: 13px;
+            }
+        }
+    }
+    #besure {
+        width: 245px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: @icon-color;
+        position: relative;
+        margin-bottom: 5px;
+        #besureInput {
+            float: left;
+            margin-left: 0px;
+            display: inline-block;
+        }
+        #besureLabel {
+            margin: 10px auto;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            color: #8f8f94;
+            margin-left: 21px;
+            float: left;
+            display: inline-block;
+            a {
+                color:#09BB07;
+            }
+        }
+    }
+    .mui-checkbox {
+        input[type=checkbox] {
+            left: 0;
+            top: 20px;
+            color: green;
+            &:checked:before {
+                color:#09BB07;
+            }
+            &:before {
+                font-size: 19px;
+            }
+        }
+    }
+}

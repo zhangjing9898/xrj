@@ -10,9 +10,8 @@
 	</head>
 
 	<body>
-
 		<div class="mui-card">
-			<div class="mui-card-header mui-card-media" style="height:217px;background-image:url(../../img/storePic.jpg)">
+			<div class="mui-card-header mui-card-media storeUIDiv">
 				<a href="../../index.html"><span id="back" class="mui-action-back mui-icon">
 					<img src="../../img/icon/back.png" />
 				</a>
@@ -22,38 +21,24 @@
 			</div>
 		</div>
 		<div class="mui-content">
-			<ul class="mui-table-view" id="phone-ul">
+			<ul class="mui-table-view">
 				<li class="mui-table-view-cell">
 					<a class="">
-						<!--<img class="mui-media-object mui-pull-right" src="http://placehold.it/40x30">-->
-						<span class="mui-pull-right" style="height:50px;width: 20%; ">
-							<div id="phone" onclick="call();" class=" mui-btn mui-btn-outlined" style="height: 100%; width: 100%;">
-							<span>
-								<img src="../../img/icon/phone.png" />
-							</span>
+						<span class="mui-pull-right storeInfo">
+							<div id="phone" onclick="call();" class=" mui-btn mui-btn-outlined">
+								<span>
+									<img src="../../img/icon/phone.png" />
+								</span>
 							</div>
 						</span>
-						<div style="color: #000000;font-size: 16px;font-weight: 700;"> 蜀大侠川味火锅(百花中心店)
-						</div>
+						<div class="storeName"> 蜀大侠川味火锅(百花中心店)</div>
 						<div id="score">
-							<span>
-										<img src="../../img/icon/star_full.png" >
-									</span>
-							<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-							<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-							<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-							<span>
-										<img src="../../img/icon/star_half.png"/>
-									</span>
-							<span id="trueScore">
-		                   			评分:4.7
-		                   		</span>
+								<span>
+									<img src="../../img/icon/starts5_full.png" >
+								</span>
+								<span id="trueScore">
+									评分:4.7
+								</span>
 						</div>
 					</a>
 				</li>
@@ -61,159 +46,103 @@
 					<a id="mineLocation">
 						<div id="locate">
 							<span class="mui-icon">
-								<img src="../../img/icon/mappoint_g.png" />
-							</span>
-							<span style="font-size: 15px;color: gray;position: absolute;top: 12px;left: 35px;">一环路南一段123号附2号 百花中心站旁</span>
+									<img src="../../img/icon/mappoint_g.png" />
+								</span>
+							<span class="storeAddress">一环路南一段123号附2号 百花中心站旁</span>
 						</div>
 					</a>
 				</li>
 			</ul>
 
-			<ul class="mui-table-view" style="margin-top: 10px;">
+			<ul class="mui-table-view">
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span style="font-size: 18px;color:#979797; line-height:35px ;">买单返利2%</span>
+						<span class="payRebate">买单收益<strong class="discountNum">2%</strong></span>
 						<span id="" class="mui-pull-right">
-			               		<button id="paymentInfo" type="button" class="mui-btn mui-btn-warning" style="padding: 8px 20px; border-radius: 5px;background-color:#FF750F; ">买单返利</button>
+			               		<button id="paymentInfo" type="button" class="mui-btn mui-btn-warning">买单返利</button>
 			            </span>
 					</a>
 				</li>
 				<li class="mui-table-view-cell" id="info">
 					<p>
-						<strong>8折</strong>
-						(每天10:00 - 11:30)</p>
+						<strong>8折</strong> ( 每天10:00 - 11:30 )</p>
 					<p>
-						<strong>6折</strong>
-						(六一儿童节 2017年6月1日)</p>
+						<strong>6折</strong> ( 六一儿童节 2017年6月1日 )</p>
 				</li>
 			</ul>
 
-			<div class="mui-card" style="margin-top: 10px;">
-				<!--页眉，放置标题-->
+			<div class="mui-card storeIntroduce">
 				<div class="mui-card-header">商家简介</p>
 				</div>
-				<!--内容区-->
 				<div class="mui-card-content">
-					<p>&nbsp;&nbsp;&nbsp;我们恪守传统手法精髓，将最地道的川味延续下来，菜品确保6小时原则，带给味蕾绝佳的回味。蜀大侠，来成都必须要吃的火锅。</p>
+					<p>我们恪守传统手法精髓，将最地道的川味延续下来，菜品确保6小时原则，带给味蕾绝佳的回味。蜀大侠，来成都必须要吃的火锅。</p>
 
 				</div>
-				<!--页脚，放置补充信息或支持的操作-->
-				<!--<div class="mui-card-footer">页脚</div>-->
 			</div>
 
-			<div class="mui-card" style="margin-top: 10px;">
-				<!--页眉，放置标题-->
-				<div class="mui-card-header">评论(198)</div>
-				<!--内容区-->
+			<div class="mui-card comment">
+				<div class="mui-card-header">评论(178)</div>
 				<div class="mui-card-content">
 					<ul class="mui-table-view">
-						<li class="mui-table-view-cell mui-media">
+						<li class="mui-media commentArea">
 							<a href="javascript:;">
-								<img style="border-radius: 100px;" class="mui-media-object mui-pull-left" src="../../img/icon/person.svg">
+								<img class="mui-media-object mui-pull-left userPicture" src="../../img/icon/person.svg">
 								<div class="mui-media-body">
 									<div>
-										<span id="nickname">
+										<span class="nickname">
 					                		朵朵Anglela 
 					                	</span>
-										<span id="score" class="mui-pull-right">
-					                
-									<span>
-										<img src="../../img/icon/star_full.png" >
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_half.png"/>
-									</span>
-
+										<span class="mui-pull-right score">
+											<img src="../../img/icon/starts5_full.png" >
 										</span>
 										<div id="date">
 											2017-3-16
 										</div>
 									</div>
-									<p class="mui-ellipsis">味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
+									<p class="commentContent">味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
 								</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media">
+						<li class="commentList mui-media commentArea">
 							<a href="javascript:;">
-								<img style="border-radius: 100px;" class="mui-media-object mui-pull-left" src="../../img/icon/person.svg">
+								<img class="mui-media-object mui-pull-left userPicture" src="../../img/icon/person.svg">
 								<div class="mui-media-body">
 									<div>
-										<span id="nickname">
-					                		MINIDEDECC 
+										<span class="nickname">
+					                		213dadsacdas
 					                	</span>
-										<span id="score" class="mui-pull-right">
-					                
-									<span>
-										<img src="../../img/icon/star_full.png" >
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_half.png"/>
-									</span>
-
+										<span class="mui-pull-right score">
+											<img src="../../img/icon/starts5_full.png" >
 										</span>
 										<div id="date">
 											2017-3-16
 										</div>
 									</div>
-									<p class="mui-ellipsis">味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
+									<p class="commentContent">味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
 								</div>
 							</a>
 						</li>
-						<li class="mui-table-view-cell mui-media">
+						<li class="commentList mui-media commentArea">
 							<a href="javascript:;">
-								<img style="border-radius: 100px;" class="mui-media-object mui-pull-left" src="../../img/icon/person.svg">
+								<img class="mui-media-object mui-pull-left userPicture" src="../../img/icon/person.svg">
 								<div class="mui-media-body">
 									<div>
-										<span id="nickname">
+										<span class="nickname">
 					                		被风吹过的夏天
 					                	</span>
-										<span id="score" class="mui-pull-right">
-					                
-									<span>
-										<img src="../../img/icon/star_full.png" >
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_full.png"/>
-									</span>
-										<span>
-										<img src="../../img/icon/star_half.png"/>
-									</span>
-
+										<span class="mui-pull-right score">
+											<img src="../../img/icon/starts5_full.png" >
 										</span>
 										<div id="date">
 											2017-3-16
 										</div>
 									</div>
-									<p class="mui-ellipsis">味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
+									<p>味道非常棒!已经是第三次来了,这是我在成都吃到的最好吃的火锅!</p>
 									<div class="storeReply">
 										<p>商家回复:
-										<strong class="replyContent">
+											<strong class="replyContent">
 											感谢亲的支持，欢迎下次光临
-										</strong>
+											</strong>
 										</p>
 									</div>
 								</div>
@@ -221,30 +150,10 @@
 						</li>
 					</ul>
 				</div>
-				<!--页脚，放置补充信息或支持的操作-->
-				<!--<div class="mui-card-footer">页脚</div>-->
-			</div>
-
-			<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
-				<!-- 可选择菜单 -->
-				<ul class="mui-table-view">
-					<li class="mui-table-view-cell">
-						<a href="#">打电话给 139 1234 5678</a>
-					</li>
-					<li class="mui-table-view-cell">
-						<a href="#">打电话给 028-4614670</a>
-					</li>
-				</ul>
-				<!-- 取消菜单 -->
-				<ul class="mui-table-view">
-					<li class="mui-table-view-cell">
-						<a href="#sheet1"><b>取消</b></a>
-					</li>
-				</ul>
 			</div>
 		</div>
 		<script src="../../js/mui.min.js"></script>
-		<script type="text/javascript" src="../../js/store/store-detail.js" ></script>
+		<script type="text/javascript" src="../../js/store/store-detail.js"></script>
 	</body>
 
 </html>

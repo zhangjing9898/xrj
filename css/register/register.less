@@ -1,0 +1,205 @@
+@import 'progressbarTableCommon';
+.gap {
+    .gapMix(20px, 100%, transparent);
+}
+
+.border-radius-height(@radius, @height) {
+    .border-radius(@radius);
+    height: @height;
+}
+
+
+/*title*/
+
+
+
+/*content*/
+
+.mui-content {
+    background-color: white;
+    .mui-slider {
+        .mui-slider-group {
+            .circle {
+                width: 23px;
+            }
+            .register-step1 {
+                .mui-content-padded {
+                    margin-top: 10px;
+                    text-align: center;
+                    .mui-card-header {
+                        height: 200px;
+                        &:after {
+                            top: 0;
+                            bottom: 0;
+                            background-color: white;
+                        }
+                    }
+                    .mui-btn-outlined {
+                        height: 50px;
+                        width: 82%;
+                        margin-top: 20px;
+                        background-color: #E89A3F;
+                        color: white;
+                    }
+                    .mui-card {
+                        width: 75%;
+                        box-shadow: 0 1px 2px white;
+                        margin: 30px auto;
+                        margin-bottom: 0;
+                        background: url(../../img/icon/sweepCode.jpg) no-repeat;
+                        background-size: 100%;
+                    }
+                    .mui-btn,
+                    button {
+                        border: 1px solid #E89A3F;
+                    }
+                }
+            }
+            .register-step1-id {
+                #table1 {
+                    margin-top: 50px;
+                    background-color: RGB(255, 225, 191);
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 27px;
+                    th,
+                    td {
+                        border-bottom: 1px #ccc solid;
+                        font-size: 20px;
+                    }
+                    .lastTd {
+                        border-bottom: none;
+                    }
+                    #th0,
+                    td {
+                        text-align: left;
+                        height: 50px;
+                        padding-left: 10px;
+                    }
+                    label {
+                        width: 22%;
+                        display: inline-block;
+                        font-size: 17px;
+                    }
+                    .mui-icon {
+                        color: #E89A3F;
+                        font-size: xx-large;
+                        margin-right: 10px;
+                    }
+                }
+                #btn1 {
+                    margin-top: 40px;
+                    width: 100%;
+                    text-align: center;
+                    button {
+                        width: 92%;
+                        height: 52px;
+                        color: #fff;
+                        border: 1px solid #f0ad4e;
+                        background-color: #E89A3F;
+                        strong {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .register-step2 {
+                button {
+                    .border-radius-height(5px, 50px);
+                }
+                #In_VerificationCode {
+                    width: 45%;
+                    margin-top: 20px;
+                    font-size: 18px;
+                    .border-radius-height(5px, 50px);
+                }
+                #In_PhoneNumber,
+                #In_NewPassword {
+                    width: 80%;
+                    margin-top: 40px;
+                    font-size: 18px;
+                    .border-radius-height(5px, 50px);
+                }
+                #SendVerificationCode {
+                    width: 35%;
+                    margin-top: 20px;
+                    font-size: 12px;
+                    .border-radius-height(5px, 50px);
+                }
+                #NextBtn {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+                .phoneNumDiv {
+                    text-align: center;
+                }
+            }
+            .register-step3 {
+                input[type=password],
+                input[type=text] {
+                    line-height: 21px;
+                    width: 81%;
+                    height: 49px;
+                    margin-bottom: 16px;
+                    padding: 10px 15px;
+                    -webkit-user-select: text;
+                    border: 1px solid rgba(0, 0, 0, .2);
+                    border-radius: 8px;
+                    outline: 0;
+                    background-color: #fff;
+                    -webkit-appearance: none;
+                }
+                .mui-btn,
+                button,
+                input[type=button],
+                input[type=submit] {
+                    width: 81%;
+                    height: 49px;
+                    border: 1px solid #E89A3F;
+                    border-radius: 8px;
+                    background-color: #E89A3F;
+                    color: white;
+                }
+                .passwordDiv {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                #besure {
+                    width: 284px;
+                    margin: 0 auto;
+                    color: @icon-color;
+                    position: relative;
+                    margin-bottom: 5px;
+                    #besureInput {
+                        float: left;
+                        margin-left: 0px;
+                        display: inline-block;
+                    }
+                    #besureLabel {
+                        margin: 10px auto;
+                        font-size: 17px;
+                        margin-top: 18px;
+                        margin-bottom: 10px;
+                        color: #8f8f94;
+                        margin-left: 29px;
+                        float: left;
+                        display: inline-block;
+                        a {
+                            color: green;
+                        }
+                    }
+                }
+                .mui-checkbox {
+                    input[type=checkbox] {
+                        left: 0;
+                        top: 14px;
+                        color: green;
+                        &:checked:before {
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

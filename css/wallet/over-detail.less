@@ -1,0 +1,59 @@
+@import '../common';
+body{
+    background-color: white;
+}
+
+.mui-bar {
+    .mui-title {
+        text-align: center;
+    }
+}
+
+.mui-content {
+    .mui-slider {
+        background-color: white;
+        .mui-segmented-control {
+            .mui-control-item {
+                height: 56px;
+                line-height: 56px;
+                background-color: white;
+                font-size: 14px;
+                &.mui-active {
+                    color: white;
+                    background-color: @base-color;
+                }
+            }
+            &~.mui-slider-group {
+                .mui-slider-item {
+                    border-top: 1px solid @base-color;
+                    border-bottom: 1px solid #cccccc;
+                }
+            }
+        }
+        .mui-slider-group {
+            .mui-table-view-cell {
+                padding: 0 15px;
+                height: 58px;
+                .mui-pull-left {
+                    height: 38px;
+                    line-height: 19px;
+                    padding: 8px 0;
+                    p {
+                        color: #696969;
+                        margin-bottom: 5px;
+                    }
+                }
+                .mui-pull-right {
+                    font-size: 18px;
+                    color: #696969;
+                    height: 57px;
+                    line-height: 57px;
+                }
+                &:after{
+                    left: 0;
+                    background-color: #9E9E9E;
+                }
+            }
+        }
+    }
+}

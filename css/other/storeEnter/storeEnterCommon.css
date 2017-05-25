@@ -1,0 +1,54 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+/*title*/
+.mui-bar {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+}
+.mui-bar a {
+  color: #696969;
+}
+.mui-bar h1 {
+  text-align: left;
+  color: #696969;
+  font-size: 14px;
+}
+/*content*/
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 25px;
+}
+.mui-content .mui-table-view-cell:after {
+  left: 0;
+  background-color: #cccccc;
+}
+.mui-content .mui-btn {
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
+  width: 82%;
+  height: 40px;
+  margin-left: 9%;
+}

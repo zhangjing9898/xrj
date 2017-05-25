@@ -1,119 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="../../css/mui.css" />
 		<link rel="stylesheet" href="../../css/home/home.css" />
-		<script data-main='./favoriteList.js' type="text/javascript" src="../../js/require.js" ></script>
+		<script data-main='./favoriteList.js' type="text/javascript" src="../../js/require.js"></script>
 	</head>
-	<body>
-				<div class="mui-scroll-wrapper">
-				<div class="mui-scroll">
 
-					<div id="functionTen" class="mui-slider-item">
-						<ul id="functionTenUL" class="mui-table-view mui-grid-view mui-grid-9">
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category1" >
-									<span>
-										<img src="../../img/icon/food.png" />
-									</span>
-									<div class="mui-media-body">美食</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category2" href="#">
-									<span>
-									<img src="../../img/icon/education.png" />
-									</span>
-									<div class="mui-media-body" style="font-size: 12px;">教育培训</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category3" href="#">
-									<span>
-										<img src="../../img/icon/healthCare.png" />
-									</span>
-									<div class="mui-media-body">健康</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category4" href="#">
-									<span>
-										<img src="../../img/icon/relax.png" />
-									</span>
-									<div class="mui-media-body" style="font-size: 12px" ;>品铭休闲</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category5" href="#">
-									<span>
-										<img src="../../img/icon/KTV.png" />
-									</span>
-									<div class="mui-media-body">KTV</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category6" href="#">
-									<span>
-										<img src="../../img/icon/wedding.png" />
-									</span>
-									<div class="mui-media-body" style="font-size: 12px">丽人婚庆</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category7" href="#">
-									<span>
-										<img src="../../img/icon/shop.jpg" />
-									</span>
-									<div class="mui-media-body">购物</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category8" href="#">
-									<span>
-										<img src="../../img/icon/lifeServer.png"/>
-									</span>
-									<div class="mui-media-body" style="font-size: 12px">生活服务</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category9" href="#">
-									<span>
-										<img src="../../img/icon/digital.png"/>
-									</span>
-									<div class="mui-media-body" style="font-size: 12px">通讯数码</div>
-								</a>
-							</li>
-							<li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
-								<a id="category10" href="#">
-									<span>
-										<img src="../../img/icon/all.png"/>
-									</span>
-									<div class="mui-media-body">全部</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="totalNumber" align="center">
-						<p>
-							<img src="../../img/icon/incomeTutorial.png" />
-		
-							<a> &nbsp;&nbsp;平台交易数:<span id="orderCount">0</span>单&nbsp;&nbsp;</a>
-						</p>
-					</div>
-					<!--猜你喜欢-->
-					<div class="guess">
-						<p>-&nbsp;&nbsp;猜你喜欢&nbsp;&nbsp;-</p>
-					</div>
-		
-					<!--猜你喜欢内容-->
-					<div id="guessContent">
-					
-					</div>
-								
+	<body>
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+
+				<div id="functionTen" class="mui-slider-item">
+
 				</div>
+				<div class="totalNumber" align="center">
+						<div class="mui-pull-left">
+							<img src="../../img/icon/xcoin.png" />
+							平台交易数:
+						</div>
+						<div id="orderCount" class="mui-pull-right">999</div>
+				</div>
+				<!--猜你喜欢-->
+				<div class="guess">
+					<p>-&nbsp;&nbsp;猜你喜欢&nbsp;&nbsp;-</p>
+				</div>
+
+				<!--猜你喜欢内容-->
+				<div id="guessContent">
+
+				</div>
+
 			</div>
+		</div>
 	</body>
+
 </html>

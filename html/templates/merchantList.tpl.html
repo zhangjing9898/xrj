@@ -1,0 +1,29 @@
+<ul  class="mui-table-view">
+    <%
+        var length = list.length;
+        for(var i = 0; i < length; i++){
+            var current = list[i];
+    %>
+    <li class="mui-table-view-cell mui-media merchant-item" id="<%=current.id%>">
+        <a href="javascript:;">
+            <img class=" mui-pull-left merchant-thumbnail" src="<%=current.previewImage%>">
+            <div class="mui-media-body">
+                <div class="merchant-name">
+                    <%=current.merchantName%>
+                </div>
+                <div class="merchant-score">
+                    <span>
+                        <img src="../../img/icon/stars5_full.png" style="width: <%= current.percentScore %>"/>
+                    </span>
+                </div>
+                <div class="merchant-brief">
+                    <p class=" mui-pull-left"><%=current.categoryName%></p>
+                    <p class=" mui-pull-right"> <%=current.distanceRange%> </p>
+                </div>
+                <div class="gap"></div>
+                <div class="mui-pull-left merchant-cashback">返利:&nbsp&nbsp<%=current.percentCashRatio%></div>
+            </div>
+        </a>
+    </li>
+    <%}%>
+</ul>

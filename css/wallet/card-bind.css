@@ -1,0 +1,83 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.mui-bar .mui-title {
+  text-align: center;
+}
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content .mui-table-view:first-child {
+  margin-top: 6px;
+}
+.mui-content .mui-table-view .mui-table-view-cell {
+  padding: 0 15px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-input-row label {
+  font-family: 微软雅黑;
+  line-height: 34px;
+  padding: 10px 0;
+  color: #323232;
+  font-size: 14px;
+  width: 120px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-input-row input {
+  font-family: 微软雅黑;
+  float: left;
+  width: auto;
+  line-height: 40px;
+  font-size: 14px;
+  height: 54px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-input-row .mui-input-clear ~ .mui-icon-clear {
+  top: 16px;
+}
+.mui-content .mui-table-view .mui-table-view-cell:after {
+  left: 0;
+  background-color: #CCCCCC;
+}
+.mui-content .mui-table-view .mui-table-view-cell:before {
+  background-color: #CCCCCC;
+}
+.mui-content .mui-btn {
+  width: 96%;
+  left: 2%;
+  background-color: #FF750F;
+  color: white;
+  border: 1px solid #FF750F;
+  height: 50px;
+  top: 14px;
+}

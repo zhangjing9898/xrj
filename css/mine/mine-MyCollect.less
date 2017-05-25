@@ -1,0 +1,91 @@
+@import '../common';
+.gap {
+    .gapMix(21px);
+}
+
+.gap1 {
+    .gapMix(5px);
+}
+
+/*猜你喜欢*/
+
+.mui-content {
+    &>.mui-table-view:first-child {
+        margin-top: 0px;
+    }
+}
+
+#storeList {
+    .mui-checkbox input[type=checkbox]:checked:before,
+    .mui-radio input[type=radio]:checked:before {
+        color: #09BB07;
+        font-size: 25px;
+    }
+    .mui-checkbox.mui-left input[type=checkbox],
+    .mui-radio.mui-left input[type=radio] {
+        left: 4px;
+        top: 31px;
+    }
+    .mui-icon {
+        color: #E89A3F;
+    }
+    .mui-table-view {
+        margin-bottom: 20px;
+    }
+    .mui-table-view-cell {
+        padding: 9px 15px 8px 15px;
+        position: relative;
+        &:after {
+            left: 0;
+        }
+        .mine-MyCollect-ltem-Title {
+            p {
+                margin-bottom: 0;
+                font-size: 16px;
+                color: #000000;
+                font-weight: 500;
+            }
+        }
+        &>a:not(.mui-btn) {
+            margin: -11px -29px;
+        }
+        .listImg {
+            height: 93px;
+            width: 126px;
+            margin-right: 14px;
+            margin-left: 6px;
+        }
+        .mine-MyCollect-ltem-Profit {
+            color: #EC850D;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+        .mine-MyCollect-ltem-Grade {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            img {
+                border: 0;
+            }
+        }
+        .mine-MyCollect-ltem-Locate {
+            font-size: 13px;
+            margin-top:0;
+            margin-bottom: 0px;
+            color:#959595;
+            margin-top: 0px;
+        }
+        button {
+            position: absolute;
+            bottom: 7px;
+            right: 5px;
+            font-size: 13px;
+            width: 55px;
+            padding: 0;
+            height: 33px;
+            background-color: white;
+            color: @base-color;
+            border: 1px solid @base-color;
+        }
+    }
+}

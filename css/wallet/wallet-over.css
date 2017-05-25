@@ -1,0 +1,63 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+body {
+  background-color: white;
+}
+.mui-bar .mui-title {
+  text-align: center;
+}
+.mui-content {
+  background-color: white;
+}
+.mui-content .money {
+  font-size: 48px;
+  position: absolute;
+  color: #696969;
+  top: 35%;
+  left: 50%;
+  margin-left: -63px;
+}
+.mui-btn {
+  position: absolute;
+  width: 96%;
+  height: 51px;
+  left: 2%;
+  bottom: 10px;
+  background-color: #FF750F;
+  color: white;
+  border: 1px solid #FF750F;
+}

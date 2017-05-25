@@ -1,37 +1,59 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-
-/*global*/
-
 body {
-	font-family: "微软雅黑";
-	color: #757575;
-	background-color: white;
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-
-
-/*title*/
-
+a {
+  outline: none;
+  text-decoration: none;
+}
 .mui-bar-nav {
-	box-shadow: 0 1px 0 #ccc;
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
-
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+body {
+  background-color: white;
+  color: #696969;
+}
+/*title*/
+/*content*/
 .mui-content {
-	background-color: white;
+  background-color: white;
 }
-
-.mui-bar {
-	background-color: white;
+.mui-content p {
+  text-align: center;
 }
-
-.mui-title {
-	text-align: left;
-	font-size: 15px;
+.mui-content .mui-card {
+  height: 267px;
+  width: 265px;
+  margin: 40px auto;
+  margin-bottom: 20px;
 }
-
-p {
-	text-align: center;
+.mui-content .mui-card-media {
+  height: 267px;
+  width: 265px;
+  background: url(../../img/icon/mineCode.jpg);
 }

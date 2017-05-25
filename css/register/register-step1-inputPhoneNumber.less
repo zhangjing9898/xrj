@@ -1,0 +1,158 @@
+@import 'progressbarTableCommon';
+.gap {
+    .gapMix(20px, 100%, transparent);
+}
+
+.border-radius-height(@radius, @height) {
+    .border-radius(@radius);
+    height: @height;
+}
+
+
+/*title*/
+
+.mui-bar {
+    top: 0;
+    .box-shadow();
+    background-color: white;
+    .mui-title {
+        color: @icon-color;
+    }
+    .mui-icon-back:before,
+    .mui-icon-left-nav:before {
+        color: @icon-color;
+    }
+}
+
+
+/*content*/
+
+.mui-content {
+    background-color: white;
+    .mui-slider {
+        .mui-slider-group {
+            .circle {
+                width: 23px;
+            }
+            .register-step1-phone {
+                .phoneNumDiv {
+                    text-align: center;
+                    #In_PhoneNumber {
+                        width: 81%;
+                        margin-top: 33px;
+                        height: 49px;
+                        border-radius: 8px;
+                    }
+                    .mui-btn,
+                    button,
+                    input[type=button] {
+                        margin-top: 12px;
+                        padding: 13px 12px;
+                        border-radius: 8px;
+                        color: #fff;
+                        border: 1px solid #f0ad4e;
+                        background-color: #f0ad4e;
+                        width: 81%;
+                    }
+                }
+            }
+            .register-step2 {
+                button {
+                    .border-radius-height(5px, 50px);
+                }
+                #In_VerificationCode {
+                    width: 45%;
+                    margin-top: 20px;
+                    font-size: 18px;
+                    .border-radius-height(5px, 50px);
+                }
+                #In_PhoneNumber,
+                #In_NewPassword {
+                    width: 80%;
+                    margin-top: 40px;
+                    font-size: 18px;
+                    .border-radius-height(5px, 50px);
+                }
+                #SendVerificationCode {
+                    width: 35%;
+                    margin-top: 20px;
+                    font-size: 12px;
+                    .border-radius-height(5px, 50px);
+                }
+                #NextBtn {
+                    width: 80%;
+                    margin-top: 20px;
+                }
+                .phoneNumDiv {
+                    text-align: center;
+                }
+            }
+            .register-step3 {
+                input[type=password],
+                input[type=text] {
+                    line-height: 21px;
+                    width: 81%;
+                    height: 49px;
+                    margin-bottom: 16px;
+                    padding: 10px 15px;
+                    -webkit-user-select: text;
+                    border: 1px solid rgba(0, 0, 0, .2);
+                    border-radius: 8px;
+                    outline: 0;
+                    background-color: #fff;
+                    -webkit-appearance: none;
+                }
+                .mui-btn,
+                button,
+                input[type=button],
+                input[type=submit] {
+                    width: 81%;
+                    height: 49px;
+                    border: 1px solid #E89A3F;
+                    border-radius: 8px;
+                    background-color: #E89A3F;
+                    color: white;
+                }
+                .passwordDiv {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                #besure {
+                    width: 284px;
+                    margin: 0 auto;
+                    color: @icon-color;
+                    position: relative;
+                    margin-bottom: 5px;
+                    #besureInput {
+                        float: left;
+                        margin-left: 0px;
+                        display: inline-block;
+                    }
+                    #besureLabel {
+                        margin: 10px auto;
+                        font-size: 17px;
+                        margin-top: 18px;
+                        margin-bottom: 10px;
+                        color: #8f8f94;
+                        margin-left: 29px;
+                        float: left;
+                        display: inline-block;
+                        a {
+                            color: green;
+                        }
+                    }
+                }
+                .mui-checkbox {
+                    input[type=checkbox] {
+                        left: 0;
+                        top: 14px;
+                        color: green;
+                        &:checked:before {
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

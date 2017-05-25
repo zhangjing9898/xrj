@@ -10,61 +10,62 @@
 	</head>
 
 	<body>
-
-		<header class="mui-bar mui-bar-nav" id="nav">
-			<a href="../../index.html"><span id="back" class="mui-action-back mui-icon mui-icon-back"></span></a>
-			<div class="mui-input-row mui-search" id="nav-search">
-				<div class="mui-input-clear mui-input-row mui-search">
-					<input id="search" type="search" placeholder="蜀九香火锅">
+		<div class="mui-content mui-row" id="nav">
+				<a id="nav-icon-location"  class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left mui-input-row"></a>
+			<span id="nav-icon-message" class="mui-pull-right">
+				搜索
+			</span>
+			<div class="input_wrapper">
+				<div class="mui-input-row mui-search" id="nav-search">
+					<div class="mui-input-clear mui-input-row mui-search">
+						<input id="inputOne" type="search" placeholder="蜀九香火锅">
+					</div>
 				</div>
 			</div>
-			<button class="mui-btn" id="nav-search-btn">
-					搜索
-				</button>
-		</header>
+		</div>
 
 		<div class="mui-content">
-			<p style="margin-top: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;历史搜索</p>
+			<p>历史搜索</p>
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>火锅
+						<span id="" class="mui-icon mui-icon-search"></span>火锅
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>川椒牛肉面
+						<span id="" class="mui-icon mui-icon-search"></span>川椒牛肉面
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>火上芭蕾海鲜自助烤肉
+						<span id="" class="mui-icon mui-icon-search"></span>火上芭蕾海鲜自助烤肉
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>Magic Dance麦吉爵士舞馆
+						<span id="" class="mui-icon mui-icon-search"></span>Magic Dance麦吉爵士舞馆
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>海盗船海鲜大咖
+						<span id="" class="mui-icon mui-icon-search"></span>海盗船海鲜大咖
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>弥远书吧
+						<span id="" class="mui-icon mui-icon-search"></span>弥远书吧
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
 					<a class="">
-						<span id="" class="mui-icon mui-icon-search">&nbsp;</span>贡品粥
+						<span id="" class="mui-icon mui-icon-search"></span>贡品粥
 					</a>
 				</li>
 			</ul>
 			<ul class="mui-table-view">
 				<li class="mui-table-view-cell">
-					<a id="delHistoryLogs" class="" style="text-align: center;">
+					<a id="delHistoryLogs">
 						清除历史记录
 					</a>
 				</li>
@@ -80,7 +81,7 @@
 				//搜索框自动获得焦点
 				var search = document.getElementById("search");
 				search.focus();
-				
+
 				//点击清除历史记录
 				var delHistoryLogs = document.getElementById("delHistoryLogs");
 				delHistoryLogs.addEventListener('tap', function() {

@@ -1,0 +1,172 @@
+        @import '../common';
+        body {
+            color: #757575;
+        }
+        
+        .gap {
+            .gapMix(10px, 100%, transparent);
+        }
+        /*content*/
+        
+        .mui-content {
+            background-color: @background-color;
+            .step-one {
+                #incomeInfo {
+                    margin-top: 9px;
+                    height: 32%;
+                    background-color: white;
+                    img {
+                        width: 90%;
+                        margin-left: 5%;
+                        border: 0; 
+                    }
+                    p {
+                        margin-left: 4.7%;
+                        font-size: 14px;
+                        margin-bottom: 2px;
+                        color: @icon-color;
+                    }
+                }
+                #incomeAim {
+                    height: 138px;
+                    background-color: white;
+                    margin-top: 12px;
+                    position: relative;
+                    input[type=text] {
+                        width: 80%;
+                        position: absolute;
+                        top: 54px;
+                        margin-bottom: 0;
+                        margin-left: 10%;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 16px;
+                        margin-left: 10%;
+                        color: @icon-color;
+                        position: absolute;
+                        top: 23px;
+                    }
+                }
+                .mui-btn {
+                    width: 84%;
+                    height: 51px;
+                    margin-left: 8%;
+                    margin-top: 13px;
+                    font-size: 16px;
+                    color: white;
+                    border: none;
+                    background-color: @base-color;
+                }
+                footer {
+                    display: block;
+                    font-size: 13px;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+            .step-two {
+                #alertInfo {
+                    width: 100%;
+                    height: 10%;
+                    background-color: #FFE3CE;
+                    margin-top: 8px;
+                    p {
+                        padding-top: 6px;
+                        margin-bottom: 5px;
+                        color: @icon-color;
+                        margin-left: 4%;
+                    }
+                    h6 {
+                        font-size: 13px;
+                        color: @icon-color;
+                        margin-left: 4%;
+                    }
+                }
+                #list {
+                    margin-top: 8px;
+                    font-size: 14px;
+                    .increaseMemberInfo {
+                        width: 170px;
+                        left: 10%;
+                        padding-top: 15px;
+                        padding-bottom: 40px;
+                        position: relative;
+                        p {
+                            margin-left: 32px;
+                        }
+                        img {
+                            left: 0;
+                            position: absolute;
+                            top: 10%;
+                             width: 25px;
+                        }
+                        h3 {
+                            font-size: 14px;
+                            font-weight: normal;
+                            position: absolute;
+                            left: 34%;
+                            margin-top: 8px;
+                        }
+                        .choose {
+                            color: @base-color;
+                        }
+                        .choose1 {
+                            color: @base-color;
+                            font-weight: bold;
+                        }
+                        strong {
+                            font-weight: normal;
+                        }
+                    }
+                    .mui-table-view-cell {
+                        &.mui-active {
+                            background-color: white;
+                            .mui-navigate-right {
+                                border-bottom: 1px solid @base-color;
+                                p {
+                                    color: @base-color;
+                                }
+                            }
+                            &>.mui-navigate-right:after {
+                                color: @base-color;
+                            }
+                            .img {
+                                width: 11px;
+                                height: 6px;
+                                background: url(../../img/icon/down.png) no-repeat;
+                                margin-top: 6px;
+                                margin-left: -4px;
+                            }
+                            &>a:not(.mui-btn) {
+                                border-bottom: 1px solid @base-color;
+                                border-top: 1px solid #CCCCCC;
+                            }
+                        }
+                        &:after {
+                            left: 0;
+                        }
+                        &>.mui-navigate-right:after {
+                            font-weight: bold;
+                            color: @icon-color;
+                        }
+                        #allIncomeNum {
+                            font-size: 15px;
+                            text-align: center;
+                            padding-bottom: 10px;
+                            padding-top: 10px;
+                            border-top: 1px solid #ccc;
+                            color: @base-color;
+                        }
+                        .img {
+                            width: 6px;
+                            height: 11px;
+                            background: url(../../img/icon/right.png) no-repeat;
+                            float: left;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }

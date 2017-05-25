@@ -1,0 +1,112 @@
+@import '../common';
+@nicknameImg-width: 70px;
+@pfont-size: 14px;
+.defaultSetting() {
+    margin: 0;
+    padding: 0;
+}
+
+
+.mui-content {
+    background-color: @background-color;
+    p {
+        margin: 8px;
+        font-size: 18px;
+        color: white;
+    }
+    .mui-table-view {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    .mine-nickname-ul {
+        height: 90px;
+        background-color: @base-color;
+        a {
+            height: 100%;
+            .defaultSetting();
+        }
+        img {
+            height: @nicknameImg-width;
+            width: @nicknameImg-width;
+            .border-radius(50%);
+            margin-right: 10px;
+        }
+        .mine-nickname-body {
+            div {
+                margin: 8px;
+                font-size: 18px;
+                color: white;
+            }
+            p {
+                font-size: @pfont-size;
+            }
+        }
+    }
+    .TotalBilConsumption-ul {
+        margin-top: 8px;
+        .mui-table-view-cell {
+            p {
+                margin-bottom: 0;
+                color: @icon-color;
+                line-height: 50%;
+                font-size: 16px;
+            }
+            &:before {
+                background-color: white;
+            }
+            .TotalBilConsumption {
+                height: 45px;
+                #allBilConsumption {
+                    margin-right: 22px;
+                    font-size: 12px;
+                    line-height: 91%;
+                }
+            }
+        }
+    }
+    #TotalBilConsumption-ulTwo {
+        border-top: none;
+        border-left: 1px solid #E2E2E2;
+        background-color: white;
+        .mui-table-view-cell {
+            padding: 16px 15px;
+            border-right: 1px solid #E5E5E5;
+            border-bottom: none;
+            &>a:not(.mui-btn) {
+                margin: 0;
+                padding: 5px 0;
+            }
+            .mui-media-body {
+                font-size: 13px;
+                color: @icon-color;
+            }
+        }
+    }
+    .mine-list {
+        position: relative;
+        a {
+            font-size: 18px;
+            height: 50px;
+            line-height: 35px;
+        }
+        .mui-table-view-cell {
+            padding: 8px 15px 11px 15px;
+            &>a:not(.mui-btn) {
+                font-size: 16px;
+            }
+            &a:not(.mui-btn) {
+                font-size: 16px;
+            }
+            &:after {
+                left: 0;
+            }
+        }
+        img {
+            border: 0;
+            margin-bottom: -5px;
+            margin-top: -1%;
+            margin-right: 0.5%;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.gap {
+  width: 100%;
+  height: 15px;
+  background: #DADADA;
+}
+/*content*/
+.mui-content .mui-slider {
+  background-color: #DADADA;
+}
+.mui-content .mui-slider .mui-segmented-control {
+  background-color: white;
+}
+.mui-content .mui-slider .mui-segmented-control .mui-control-item {
+  font-size: 13px;
+}
+.mui-content .mui-slider .mui-segmented-control .mui-control-item.mui-active {
+  background-color: #FF750F;
+  color: white;
+}
+.mui-content .mui-slider .mui-segmented-control ~ .mui-slider-group .mui-slider-item {
+  border-top: 2px solid #FF750F;
+}
+.mui-content .mui-slider-group .mui-table-view-cell {
+  padding-bottom: 0;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .mui-media-object {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  max-width: 60px;
+  height: 60px;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .mui-media-body p {
+  font-size: 14px;
+  color: #696969;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment {
+  margin-top: 15px;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment p {
+  font-size: 14px;
+  color: #696969;
+  margin-bottom: 3px;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment .line {
+  height: 1px;
+  background-color: #CCCCCC;
+  margin: 3px -15px 5px -15px;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment .reply {
+  width: 100%;
+  height: 39px;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment .reply input[type=text] {
+  width: 65%;
+  border: none;
+  font-size: 13px;
+  color: #818181;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment .reply button {
+  font-size: 13px;
+  color: white;
+  border: 1px solid #FF750F;
+  width: 82px;
+  height: 34px;
+  background-color: #FF750F;
+}
+.mui-content .mui-slider-group .mui-table-view-cell .comment .store-reply {
+  background-color: #DCDCDC;
+  padding: 4px 15px;
+  border-radius: 10px;
+  margin: 7px 0;
+}

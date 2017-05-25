@@ -1,0 +1,82 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+body {
+  background-color: white;
+}
+.mui-bar .mui-title {
+  text-align: center;
+}
+.mui-content .mui-slider {
+  background-color: white;
+}
+.mui-content .mui-slider .mui-segmented-control .mui-control-item {
+  height: 56px;
+  line-height: 56px;
+  background-color: white;
+  font-size: 14px;
+}
+.mui-content .mui-slider .mui-segmented-control .mui-control-item.mui-active {
+  color: white;
+  background-color: #FF750F;
+}
+.mui-content .mui-slider .mui-segmented-control ~ .mui-slider-group .mui-slider-item {
+  border-top: 1px solid #FF750F;
+  border-bottom: 1px solid #cccccc;
+}
+.mui-content .mui-slider .mui-slider-group .mui-table-view-cell {
+  padding: 0 15px;
+  height: 58px;
+}
+.mui-content .mui-slider .mui-slider-group .mui-table-view-cell .mui-pull-left {
+  height: 38px;
+  line-height: 19px;
+  padding: 8px 0;
+}
+.mui-content .mui-slider .mui-slider-group .mui-table-view-cell .mui-pull-left p {
+  color: #696969;
+  margin-bottom: 5px;
+}
+.mui-content .mui-slider .mui-slider-group .mui-table-view-cell .mui-pull-right {
+  font-size: 18px;
+  color: #696969;
+  height: 57px;
+  line-height: 57px;
+}
+.mui-content .mui-slider .mui-slider-group .mui-table-view-cell:after {
+  left: 0;
+  background-color: #9E9E9E;
+}

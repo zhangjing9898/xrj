@@ -1,0 +1,134 @@
+@import '../common';
+.gap {
+    .gapMix(1px, 100%, #ccc);
+    position: absolute;
+    bottom: 53px;
+    left: 0;
+}
+
+
+
+
+
+/*choose bar*/
+
+.mui-content {
+    background-color: @background-color;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+    width: 80px;
+    height: 61px;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    border-bottom: 0;
+    background-color:@base-color;
+    color: white;
+}
+
+.mui-slider-indicator.mui-segmented-control {
+    position: relative;
+    bottom: auto;
+    border-bottom: 2px solid @base-color;
+}
+
+.mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.mui-segmented-control {
+    border: none;
+    border-bottom: 1px solid @base-color;
+    background-color: white;
+    .mui-control-item {
+        border-color: @base-color;
+        border-left: @base-color;
+        color: @icon-color;
+        width: 50px;
+        font-size: 13px;
+        border-color: #007aff;
+        border-left: 1px solid transparent;
+        &.mui-active {
+            color: #fff;
+            background-color: @base-color;
+            width: 75px;
+        }
+    }
+}
+
+
+/*storeInfo*/
+
+.store {
+    margin-bottom: 10px;
+    #storeInfo {
+        width: 58%;
+        float: left;
+        margin-left: 20px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    img {
+        border: 0;
+        width: 80px;
+        height: 61px;
+        float: left;
+    }
+    .mui-table-view-cell {
+        p {
+            margin-bottom: 0;
+            font-size: 13px;
+            color: #000000;
+            letter-spacing: 0;
+        }
+    }
+    #incomeNum {
+        margin-bottom: -26px;
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+    }
+    #paymentStatus {
+        position: absolute;
+        bottom: 7px;
+        left: 0;
+    }
+    .mui-btn,
+    button,
+    input[type=button],
+    input[type=reset],
+    input[type=submit] {
+        width: 82px;
+        color: white;
+        border: 1px solid @base-color;
+        background-color: @base-color;
+    }
+    #applyRefund {
+        background-color: white;
+        color: @base-color;
+        margin-right: 14px;
+        position: absolute;
+        right: 75px;
+        bottom: 1px;
+    }
+    #storeInfoDiv {
+        width: 100%;
+        height: 105px;
+    }
+    #paymentStatusDiv {
+        width: 100%;
+        height: 30px;
+        position: relative;
+    }
+    #paymentComment {
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        width: 82px;
+        color: white;
+        border: 1px solid @base-color;
+        background-color: @base-color;
+    }
+}

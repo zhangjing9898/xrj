@@ -37,9 +37,11 @@
 			"img/bottom/home-filled.png",
 			"css/index.css",
 			"js/lib/template.js",
-			"js/lib/tplgen.js",
+			"js/lib/myUtil.js",
 			"js/lib/mui.js",
-			"js/lib/xrjapi.js"
+			"js/lib/xrjapi.js",
+			"js/lib/template-native.js",
+			"js/model/categories.js"
 		],
 		"refer": [
 			"html/other/other.html",
@@ -54,16 +56,22 @@
 			"css/store/store.css",
 			"js/lib/jquery-1.10.1.min.js",
 			"img/icon/nearMap.png",
-			"js/lib/xrjAPI.js",
-			"js/mui.js",
-			"js/store/store.js",
 			"img/icon/star_half.png",
 			"img/icon/store.jpg",
+			"img/icon/triangle.png",
 			"css/mui.min.css",
 			"js/require.js",
-			"fonts/mui.ttf"
+			"css/store/store.old.css",
+			"html/store/storeList.html",
+			"html/store/store.js",
+			"fonts/mui.ttf",
+			"js/store/store.js",
+			"js/mui.js"
 		],
-		"refer": []
+		"refer": [
+			"html/store/storeList.html",
+			"html/store/store-categories.html"
+		]
 	},
 	"html/mine/mine.html": {
 		"resources": [
@@ -81,29 +89,14 @@
 			"css/mui.css",
 			"js/mui.js",
 			"js/mine/mine.js",
-			"js/lib/bluebird.core.js",
-			"js/lib/cryptojs/sha1.js",
-			"js/lib/cryptojs/core.js",
-			"js/lib/cryptojs/hmac.js",
-			"js/lib/aesUtil.js",
-			"js/lib/cryptojs/enc-base64.js",
-			"js/lib/MD5Encrypt.js",
-			"js/lib/cryptojs/crypto-js.js",
-			"js/lib/cryptojs/aes.js",
-			"js/lib/mui.js",
-			"js/lib/authApi.js",
-			"js/lib/cryptojs/cipher-core.js",
-			"js/lib/cryptojs/md5.js",
-			"js/lib/cryptojs/evpkdf.js",
+			"fonts/mui.ttf",
 			"js/require.js"
 		],
 		"refer": [
-			"html/mine/mine-MyCollect.html",
 			"html/mine/mine-MyProfit.html",
-			"html/mine/mine-MyShareCode.html",
-			"html/mine/mine-MyMessages.html",
 			"html/mine/mine-MyLeaveComment.html",
-			"html/mine/mine-MyConsumptionBill.html"
+			"html/mine/mine-MyShareCode.html",
+			"html/mine/mine-MyCollect.html"
 		]
 	},
 	"html/other/other.html": {
@@ -117,9 +110,7 @@
 			"img/icon/incomeTutorial.png",
 			"js/other/other.js"
 		],
-		"refer": [
-			"html/other/other-incomeCalculus.html"
-		]
+		"refer": []
 	},
 	"html/home/home.html": {
 		"resources": [
@@ -147,101 +138,208 @@
 			"fonts/mui.ttf",
 			"/js/lib/mui.js",
 			"js/lib/xrjapi.js",
-			"img/icon/star_full.png",
-			"img/icon/store.jpg",
-			"img/icon/car.png",
-			"img/icon/star_half.png",
-			"js/mui.js",
-			"js/home/home.js"
+			"html/home/favoriteList.html"
 		],
 		"refer": [
-			"html/store/store-paymentPage.html",
-			"html/mine/mine-MyProfit.html",
-			"html/mine/mine-MyShareCode.html",
-			"html/mine/mine-MyMessages.html",
-			"html/search/search.html"
+			"html/home/favoriteList.html"
 		]
 	},
-	"html/store/store-paymentPage.html": {
+	"html/home/favoriteList.html": {
 		"resources": [
-			"css/store/store-paymentPage.css",
-			"img/icon/wechat.png",
+			"img/icon/education.png",
+			"img/icon/all.png",
+			"img/icon/shop.jpg",
+			"img/icon/lifeServer.png",
+			"img/icon/relax.png",
+			"img/icon/digital.png",
+			"img/icon/food.png",
+			"img/icon/wedding.png",
+			"img/icon/healthCare.png",
+			"img/icon/incomeTutorial.png",
+			"html/home/favoriteList.js",
+			"img/icon/KTV.png",
+			"css/home/home.css",
+			"css/mui.css",
+			"js/require.js",
+			"js/ext/categories.js",
+			"js/model/merchant.js",
+			"img/icon/starts5_blank.png",
+			"img/icon/stars5_blank.png",
+			"img/icon/stars5_full.png",
+			"img/icon/xcoin.png"
+		],
+		"refer": []
+	},
+	"html/store/storeList.html": {
+		"resources": [
+			"html/store/storeList.js",
+			"css/store/store.css",
 			"css/mui.min.css",
-			"js/mui.min.js",
-			"fonts/mui.ttf"
+			"js/require.js",
+			"img/icon/stars5_blank.png",
+			"img/icon/stars5_full.png"
+		],
+		"refer": []
+	},
+	"html/store/store-categories.html": {
+		"resources": [
+			"html/store/store-categories.js",
+			"img/icon/triangle.png",
+			"css/store/store.css",
+			"css/mui.min.css",
+			"js/require.js",
+			"js/lib/bluebird.core.js",
+			"js/lib/mui.js",
+			"js/lib/authApi.js",
+			"js/lib/myUtil.js",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/xrjapi.js",
+			"js/lib/cryptojs/hmac.js",
+			"js/lib/template-native.js",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"js/lib/MD5Encrypt.js",
+			"js/lib/cryptojs/evpkdf.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/model/categories.js",
+			"js/lib/cryptojs/aes.js"
 		],
 		"refer": []
 	},
 	"html/mine/mine-MyProfit.html": {
 		"resources": [
 			"css/mine//mine-MyProfit.css",
-			"js/mui.min.js",
 			"img/icon/person.png",
-			"img/icon/xcoin.png",
-			"fonts/mui.ttf",
-			"css/mui.min.css"
-		],
-		"refer": []
+			"img/icon/xcoin.png"
+		]
 	},
-	"html/mine/mine-MyCollect.html": {
+	"html/mine/mine-MyLeaveComment.html": {
 		"resources": [
-			"css/mine/mine-MyCollect.css",
-			"img/icon/star_full.png",
-			"img/icon/star_half.png",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"img/icon/store.jpg",
-			"css/mui.min.css"
-		],
-		"refer": []
+			"css/mine/mine-MyLeaveComment.css"
+		]
 	},
 	"html/mine/mine-MyShareCode.html": {
 		"resources": [
 			"css/mine/mine-MyShareCode.css",
-			"img/icon/mineCode.jpg",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css"
-		],
-		"refer": []
-	},
-	"html/mine/mine-MyMessages.html": {
-		"resources": [
-			"img/icon/messageNoRead.png",
-			"css/mine/mine-MyMessages.css",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"img/icon/message.png"
-		],
-		"refer": []
-	},
-	"html/mine/mine-MyLeaveComment.html": {
-		"resources": [
-			"js/mui.min.js",
-			"css/mine/mine-MyLeaveComment.css"
-		],
-		"refer": []
-	},
-	"html/mine/mine-MyConsumptionBill.html": {
-		"resources": [
-			"css/mine/mine-MyConsumptionBill.css",
-			"img/storePic.jpg",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css"
-		],
-		"refer": [
-			"html/mine/mine-MyCommentsPage.html"
+			"img/icon/mineCode.jpg"
 		]
 	},
-	"html/other/other-incomeCalculus.html": {
+	"html/mine/mine-MyCollect.html": {
 		"resources": [
-			"img/icon/incomecalculusImg.jpg",
-			"css/other/other-incomeCalculus.css"
+			"img/icon/star_full.png",
+			"img/icon/star_half.png",
+			"css/mine/mine-MyCollect.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"img/icon/store.jpg",
+			"css/mui.min.css"
+		]
+	},
+	"html/register/register-step3.html": {
+		"resources": [
+			"js/register/register-step3.js",
+			"css/register/register-step3.css",
+			"js/lib/aes.js",
+			"js/lib/bluebird.core.js",
+			"js/lib/mui.js",
+			"js/lib/authApi.js",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/cryptojs/hmac.js",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"js/lib/MD5Encrypt.js",
+			"js/lib/cryptojs/evpkdf.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/lib/cryptojs/aes.js",
+			"css/register/progressbarTableCommon.css",
+			"img/icon/bg_number_orange.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png"
+		]
+	},
+	"html/register/register-step2.html": {
+		"resources": [
+			"js/lib/bluebird.core.js",
+			"js/lib/mui.js",
+			"js/lib/authApi.js",
+			"js/lib/cryptojs/sha1.js",
+			"js/lib/cryptojs/core.js",
+			"js/lib/cryptojs/hmac.js",
+			"css/register/register-step2.css",
+			"js/register/register-step2.js",
+			"js/lib/aesUtil.js",
+			"js/lib/cryptojs/cipher-core.js",
+			"js/lib/cryptojs/md5.js",
+			"js/lib/cryptojs/enc-base64.js",
+			"js/lib/MD5Encrypt.js",
+			"js/lib/cryptojs/evpkdf.js",
+			"js/mui.js",
+			"js/lib/cryptojs/crypto-js.js",
+			"js/lib/cryptojs/aes.js",
+			"css/register/progressbarTableCommon.css",
+			"img/icon/bg_number_orange.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png"
+		]
+	},
+	"html/register/register-step1.html": {
+		"resources": [
+			"css/register/progressbarTableCommon.css",
+			"js/mui.min.js",
+			"img/icon/bg_number_orange.png",
+			"img/icon/sweepCode.jpg",
+			"fonts/mui.ttf",
+			"css/register/register-step1.css",
+			"css/mui.min.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png",
+			"html/register/register-step1-IdentityVerification.html",
+			"js/lib/mui.js"
 		],
 		"refer": [
-			"html/other/other-incomeCalculusNext.html"
+			"html/register/register-step3.html",
+			"html/register/register-step2.html",
+			"html/register/register-step1-InputPhoneNumber.html",
+			"html/register/register-step1-IdentityVerification.html"
+		]
+	},
+	"html/register/register-step1-InputPhoneNumber.html": {
+		"resources": [
+			"css/register/register-step1-inputPhoneNumber.css",
+			"js/register/register-step1-InputPhoneNumber.js",
+			"css/register/progressbarTableCommon.css",
+			"js/lib/mui.js",
+			"img/icon/bg_number_orange.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png"
+		]
+	},
+	"html/register/register-step1-IdentityVerification.html": {
+		"resources": [
+			"js/register/register-step1-IdentityVerification.js",
+			"css/register/register-step1-identityVerification.css",
+			"js/require.js",
+			"js/mui.js",
+			"css/register/progressbarTableCommon.css",
+			"js/lib/mui.js",
+			"img/icon/bg_number_orange.png",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"img/icon/bg_number_g.png",
+			"img/icon/arrow.png",
+			"js/mui.min.js"
 		]
 	},
 	"html/login/login.html": {
@@ -268,109 +366,16 @@
 			"js/mui.js",
 			"js/lib/cryptojs/crypto-js.js",
 			"js/lib/cryptojs/aes.js",
-			"js/require.js"
-		],
-		"refer": [
-			"html/forgetPassword/forget_newPassword.html",
-			"html/forgetPassword/forget_password.html",
+			"js/require.js",
+			"html/register/register-step3.html",
+			"html/register/register-step2.html",
 			"html/register/register-step1.html"
-		]
-	},
-	"html/forgetPassword/forget_newPassword.html": {
-		"resources": [
-			"css/forgetPassword/forget_newPassword.css",
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/register/register-step2.css"
-		],
-		"refer": []
-	},
-	"html/forgetPassword/forget_password.html": {
-		"resources": [
-			"css/forgetPassword/forget_password.css",
-			"fonts/mui.ttf",
-			"js/forget_password/forget_password.js",
-			"img/icon/message.png"
-		],
-		"refer": []
-	},
-	"html/register/register-step1.html": {
-		"resources": [
-			"css/register/progressbarTableCommon.css",
-			"img/icon/bg_number_orange.png",
-			"img/icon/sweepCode.jpg",
-			"fonts/mui.ttf",
-			"css/register/register-step1.css",
-			"img/icon/bg_number_g.png",
-			"img/icon/arrow.png",
-			"js/mui.min.js",
-			"css/mui.min.css"
 		],
 		"refer": [
-			"html/register/register-step1-InputPhoneNumber.html"
+			"html/register/register-step1.html",
+			"html/register/register-step3.html",
+			"html/register/register-step2.html",
+			"html/register/register-step1-IdentityVerification.html"
 		]
-	},
-	"html/register/register-step1-InputPhoneNumber.html": {
-		"resources": [
-			"css/register/register-step1-inputPhoneNumber.css",
-			"js/register/register-step1-InputPhoneNumber.js"
-		],
-		"refer": []
-	},
-	"index.html": {
-		"resources": [
-			"js/mui.min.js",
-			"css/mui.min.css"
-		],
-		"refer": []
-	},
-	"html/store/store-detail.html": {
-		"resources": [
-			"img/icon/star_full.png",
-			"img/icon/star_half.png",
-			"css/store/store-detail.css",
-			"js/mui.min.js",
-			"img/icon/mappoint_g.png",
-			"img/icon/phone.png",
-			"img/icon/collect.png",
-			"fonts/mui.ttf",
-			"img/storePic.jpg",
-			"img/icon/person.svg",
-			"img/icon/back.png",
-			"css/mui.css",
-			"js/store/store-detail.js"
-		],
-		"refer": [
-			"html/store/store-paymentPage.html",
-			"html/map/storeMap.html"
-		]
-	},
-	"html/map/storeMap.html": {
-		"resources": [
-			"css/map/storeMap.css",
-			"css/mui.min.css"
-		],
-		"refer": []
-	},
-	"html/other/other-incomeCalculusNext.html": {
-		"resources": [
-			"css/other/other-incomeCalculusNext.css"
-		],
-		"refer": []
-	},
-	"html/mine/mine-MyCommentsPage.html": {
-		"resources": [
-			"img/icon/fullStar.png",
-			"img/icon/emptyStar.png",
-			"css/mine//mine-MyCommentsPage.css"
-		],
-		"refer": []
-	},
-	"html/search/search.html": {
-		"resources": [
-			"js/mui.min.js",
-			"css/search/search.css"
-		],
-		"refer": []
 	}
 }

@@ -1,110 +1,120 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-.gap{
-	width: 100%;
-	height: 21px;
-	background: transparent;
+a {
+  outline: none;
+  text-decoration: none;
 }
-.gap1{
-	width: 100%;
-	height: 5px;
-	background: transparent;
-}
-/*title*/
 .mui-bar-nav {
-    top: 0;
-    -webkit-box-shadow: 0 1px 0 #ccc;
-    box-shadow: 0 1px 0 #ccc;
-
-    background-color: white;
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
-.mui-bar .mui-title {
-        left: 40px
-	color: #777;
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
 }
-.mui-icon-back:before, .mui-icon-left-nav:before {
-    content: '\e471';
-    color: #777;
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
 }
-.mui-title {
-    text-align: left;
+.gap {
+  width: 100%;
+  height: 21px;
+  background: transparent;
 }
-#nav .mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
-    border: none;
-    padding: 0 12px;
-    font-size: 18px;
-    margin-top: 9px;
+.gap1 {
+  width: 100%;
+  height: 5px;
+  background: transparent;
 }
 /*猜你喜欢*/
-.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {
-    font-size: 25px;
+.mui-content > .mui-table-view:first-child {
+  margin-top: 0px;
 }
-.guess{
-	width: 100%;
-	height: 28px;
+#storeList .mui-checkbox input[type=checkbox]:checked:before,
+#storeList .mui-radio input[type=radio]:checked:before {
+  color: #09BB07;
+  font-size: 25px;
 }
-#guessContent img {
-    border: 0;width: 16px;
+#storeList .mui-checkbox.mui-left input[type=checkbox],
+#storeList .mui-radio.mui-left input[type=radio] {
+  left: 4px;
+  top: 31px;
 }
-#guessContent .mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio] {
-    left: 4px;
-    top: 31px;
+#storeList .mui-icon {
+  color: #E89A3F;
 }
-.guess p{
-	line-height: 28px;
-	text-align: center;
-	font-size: 13px;
-	color: #898989;
+#storeList .mui-table-view {
+  margin-bottom: 20px;
 }
-#guessContent .mui-icon{
-	color: #E89A3F;
+#storeList .mui-table-view-cell {
+  padding: 9px 15px 8px 15px;
+  position: relative;
 }
-#guessContent .mui-table-view-cell .mine-MyCollect-ltem-Title p {
-    margin-bottom: 0;
-       font-size: 16px;
-    color: #000000;
-    /* font-family: 幼圆; */
-    font-weight: 500;
+#storeList .mui-table-view-cell:after {
+  left: 0;
 }
-#guessContent .mui-table-view-cell>a:not(.mui-btn) {
-    margin: -11px -29px;
+#storeList .mui-table-view-cell .mine-MyCollect-ltem-Title p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
 }
-.mine-MyCollect-ltem-Profit{
-   color: #EC850D;
-   font-weight: 600;
-       font-size: 15px;
+#storeList .mui-table-view-cell > a:not(.mui-btn) {
+  margin: -11px -29px;
 }
-.mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before {
-    color: #09BB07;
+#storeList .mui-table-view-cell .listImg {
+  height: 93px;
+  width: 126px;
+  margin-right: 14px;
+  margin-left: 6px;
 }
-.mui-content>.mui-table-view:first-child {
-    margin-top: 0px;
+#storeList .mui-table-view-cell .mine-MyCollect-ltem-Profit {
+  color: #EC850D;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 3px;
 }
-#deleteButton{
-	width: 94%;
-    height: 43px;
-    margin-left: 3%;
-    background-color: #FF750F;
-    color: white;
-    font-size: 15px;
+#storeList .mui-table-view-cell .mine-MyCollect-ltem-Grade {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
-#listImg{
-	    margin-left: 36px;
+#storeList .mui-table-view-cell .mine-MyCollect-ltem-Grade img {
+  border: 0;
 }
-p {
-    font-size: 12px;
+#storeList .mui-table-view-cell .mine-MyCollect-ltem-Locate {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: #959595;
+  margin-top: 0px;
 }
-#mine-MyCollect-ltem-Grade{
-	margin-top: 7px;
-	margin-bottom: 7px;
-}
-#storeDetail01 .mui-pull-right {
-    float: right;
-    margin-right: 10px;
+#storeList .mui-table-view-cell button {
+  position: absolute;
+  bottom: 7px;
+  right: 5px;
+  font-size: 13px;
+  width: 55px;
+  padding: 0;
+  height: 33px;
+  background-color: white;
+  color: #FF750F;
+  border: 1px solid #FF750F;
 }

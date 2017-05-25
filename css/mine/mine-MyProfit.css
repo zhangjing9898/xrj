@@ -1,67 +1,101 @@
-*{
-	padding: 0;
-	margin: 0;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
-	font-size: 15px;
-	color: #696969;
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-a{
-	color: white;
-}
-
-.gap{
-	width: 100%;
-	height: 1px;
-	background-color: #B6B6B6;
-}
-/*title*/
-.mui-bar .mui-title{
-	color:#696969 ;
-}
-.mui-icon-back:before, .mui-icon-left-nav:before {
-    color:#6A6A6A;
+a {
+  outline: none;
+  text-decoration: none;
 }
 .mui-bar-nav {
-    top: 0;
-    -webkit-box-shadow: 0 1px 6px #ccc;
-    box-shadow: 0 1px 1px #ccc;
-    background-color: white;
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+body {
+  font-size: 15px;
+  color: #696969;
+}
+a {
+  background-color: white;
+}
+.gap {
+  width: 100%;
+  height: 1px;
+  background: #B6B6B6;
+}
+/*title*/
 /*table*/
-#mine-MyProfit-Table01,
-#mine-MyProfit-Table02 {
-    margin-top: 10px;
-    background-color: white;
-    position: relative;
+.mui-content {
+  background-color: #DADADA;
 }
-#mine-MyProfit-Table-tr0{
-	text-align: left;
+.mui-content table {
+  margin-top: 10px;
+  background-color: white;
+  position: relative;
+  border: 0;
+  width: 100%;
 }
-#mine-MyProfit-Table-tr0,
-#mine-MyProfit-Table-tr1,
-#mine-MyProfit-Table-tr2,
-#mine-MyProfit-Table-tr3,
-#mine-MyProfit-Table-tr4{
-	height: 45px;
-	border-bottom: 1px solid #B6B6B6;
+.mui-content table #mine-MyProfit-Table-tr0 {
+  text-align: left;
 }
-img{
-	width: 20px;
+.mui-content table #mine-MyProfit-Table-tr0,
+.mui-content table #mine-MyProfit-Table-tr1,
+.mui-content table #mine-MyProfit-Table-tr2,
+.mui-content table #mine-MyProfit-Table-tr3,
+.mui-content table #mine-MyProfit-Table-tr4 {
+  height: 45px;
+  border-bottom: 1px solid #B6B6B6;
 }
-p {
-    font-size: 17px;
-    font-weight: normal;
-    margin-top: 0;
-    margin-bottom: 0px;
-    color: gray;
-    position: absolute;
-    top: 1px;
-    left: 40px;
+.mui-content table img {
+  width: 20px;
 }
-td, th {
-    padding: 0;
-    margin-top: 5px;
+.mui-content table p {
+  font-size: 17px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: gray;
+  position: absolute;
+  top: 1px;
+  left: 40px;
+}
+.mui-content table td,
+.mui-content table th {
+  padding: 0;
+  margin-top: 5px;
+}
+.mui-content table .mui-icon-arrowright {
+  float: right;
+  color: #696969;
+}
+.mui-content table .firstTrfirstTh {
+  float: left;
+}
+.mui-content table .firstTr {
+  border-bottom: 1px solid #B6B6B6;
+  height: 45px;
+  line-height: 45px;
 }

@@ -1,0 +1,97 @@
+@import '../common';
+@nav-height: 54px;
+body {
+    color: @icon-color;
+}
+
+a {
+    font-size: 13px;
+}
+
+
+/*nav*/
+
+#nav {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    height: @nav-height;
+    .input_wrapper {
+        overflow: hidden;
+        margin-bottom: 8px;
+        height: @nav-height;
+        input {
+            width: 100%;
+            height: 30px;
+        }
+        #nav-search {
+            opacity: 1;
+            background-color: @background-color;
+            height: 28px;
+            .border-radius(20px);
+            top: 13px;
+            .mui-search {
+                height: 100%;
+                .mui-placeholder {
+                    margin-top: -3px;
+                    margin-left: 10px;
+                    text-align: left;
+                    font-size: 14px;
+                    color: @icon-color;
+                }
+            }
+            .mui-search.mui-active:before {
+                margin-top: -10px;
+            }
+        }
+        input[type=search] {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+    #nav-icon-location {
+        text-align: center;
+        margin: 0 5px;
+        line-height: @nav-height;
+        left: 0;
+        color: @icon-color;
+        font-weight: normal;
+    }
+    #nav-icon-message {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 14px;
+        text-align: center;
+        color: @icon-color;
+        width: 40px;
+        margin-top: 16px;
+    }
+}
+
+
+/*content*/
+
+.mui-content {
+    background-color: @background-color;
+    p {
+        margin-left: 15px;
+        margin-top: 20px;
+        font-size: 13px;
+        margin-bottom: 4px;
+        color: @icon-color;
+    }
+    #delHistoryLogs {
+        text-align: center;
+    }
+    a {
+        .mui-icon {
+            margin-right: 6px;
+            font-size: 20px;
+        }
+    }
+    .mui-table-view-cell {
+        padding: 10px 15px;
+        &:after {
+            left: 0;
+        }
+    }
+}

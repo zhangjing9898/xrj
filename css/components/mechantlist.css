@@ -1,0 +1,84 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.merchant-item a {
+  outline: none;
+  text-decoration: none;
+}
+.merchant-item .merchant-thumbnail {
+  border: 0;
+  height: 93px;
+  width: 126px;
+  margin-right: 14px;
+}
+.merchant-item .merchant-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+}
+.merchant-item .merchant-score {
+  margin-top: 9px;
+  margin-bottom: 6px;
+}
+.merchant-item .merchant-score span {
+  display: inline-block;
+  width: 80px;
+  height: 15px;
+  background-image: url(../../img/icon/stars5_blank.png);
+}
+.merchant-item .merchant-score img {
+  height: 15px;
+  width: 100%;
+}
+.merchant-item .merchant-brief p {
+  font-size: 12px;
+  color: #959595;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.merchant-item .gap {
+  width: 100%;
+  height: 24px;
+  background: transparent;
+}
+.merchant-item .merchant-cashback {
+  color: #FF6600;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: MicrosoftYaHei-Bold;
+}

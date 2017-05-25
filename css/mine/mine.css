@@ -1,102 +1,121 @@
-*{
-	margin: 0px;
-	padding: 0px;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-/*个人资料*/
-.mui-content>.mui-table-view:first-child {
-     margin-top:0; 
+a {
+  outline: none;
+  text-decoration: none;
 }
-.mine-nickname-ul{
-	height: 90px;
-    background-color:#FF750F;
+.mui-content {
+  background-color: #DADADA;
 }
-
-.mine-nickname-ul a{
-	height: 90px;
-	margin: 0px;
-	padding: 0px;
+.mui-content p {
+  margin: 8px;
+  font-size: 18px;
+  color: white;
 }
-
-.mine-nickname-ul img{
-	height: 70px;
-	width: 70px;
-	margin-right: 10px;
-	border-radius: 100px;
+.mui-content .mui-table-view:first-child {
+  margin-top: 0;
 }
-
-.mine-nickname-body div,p{
-	margin: 8px;
-	font-size: 18px;
-    color: white;
+.mui-content .mine-nickname-ul {
+  height: 90px;
+  background-color: #FF750F;
 }
-.mine-nickname-body p{
-	font-size: 14px;
+.mui-content .mine-nickname-ul a {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-/*消费账单*/
-.TotalBilConsumption-ul .mui-table-view-cell p {
-    margin-bottom: 0;
-    color:#696969;
-    line-height: 50%;
-    font-size: 16px;
+.mui-content .mine-nickname-ul img {
+  height: 70px;
+  width: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 10px;
 }
-.TotalBilConsumption-ul{
-	margin-top: 8px;
+.mui-content .mine-nickname-ul .mine-nickname-body div {
+  margin: 8px;
+  font-size: 18px;
+  color: white;
 }
-
-.TotalBilConsumption{
-	height: 45px;
+.mui-content .mine-nickname-ul .mine-nickname-body p {
+  font-size: 14px;
 }
-#allBilConsumption{
-	    margin-right: 22px;
-	    font-size: 12px;
-    line-height: 91%;
+.mui-content .TotalBilConsumption-ul {
+  margin-top: 8px;
 }
-.TotalBilConsumption-ul.mui-table-view:before {
-    background-color: white;
+.mui-content .TotalBilConsumption-ul .mui-table-view-cell p {
+  margin-bottom: 0;
+  color: #696969;
+  line-height: 50%;
+  font-size: 16px;
 }
-#TotalBilConsumption-ulTwo{
-    border-top: none;
-    border-left: 1px solid #E2E2E2;
-    background-color: white;
+.mui-content .TotalBilConsumption-ul .mui-table-view-cell:before {
+  background-color: white;
 }
-#TotalBilConsumption-ulTwo .mui-table-view-cell {
-    padding: 16px 15px;
-    border-right: 1px solid #e5e5e5;
-    border-bottom:none; 
+.mui-content .TotalBilConsumption-ul .mui-table-view-cell .TotalBilConsumption {
+  height: 45px;
 }
-#TotalBilConsumption-ulTwo .mui-table-view-cell>a:not(.mui-btn) {
-    margin: 0;
-    padding: 5px 0;
+.mui-content .TotalBilConsumption-ul .mui-table-view-cell .TotalBilConsumption #allBilConsumption {
+  margin-right: 22px;
+  font-size: 12px;
+  line-height: 91%;
 }
-#TotalBilConsumption-ulTwo  .mui-table-view-cell .mui-media-body {
-    font-size: 13px;
-    color: #696969;
+.mui-content #TotalBilConsumption-ulTwo {
+  border-top: none;
+  border-left: 1px solid #E2E2E2;
+  background-color: white;
 }
-/*列表*/
-.mine-list a{
-	font-size: 18px;
-	height: 50px;
-	line-height: 35px;
+.mui-content #TotalBilConsumption-ulTwo .mui-table-view-cell {
+  padding: 16px 15px;
+  border-right: 1px solid #E5E5E5;
+  border-bottom: none;
 }
-.mui-table-view-cell>a:not(.mui-btn) {
-    font-size: 16px;
+.mui-content #TotalBilConsumption-ulTwo .mui-table-view-cell > a:not(.mui-btn) {
+  margin: 0;
+  padding: 5px 0;
 }
-#mine-ul{
-	position: relative;
+.mui-content #TotalBilConsumption-ulTwo .mui-table-view-cell .mui-media-body {
+  font-size: 13px;
+  color: #696969;
 }
-#mine-ul .mui-table-view-cell>a:not(.mui-btn) {
-    font-size: 16px;
-    /*position: absolute;*/
-    /*left:10%;*/
+.mui-content .mine-list {
+  position: relative;
 }
-#mine-ul img{
-	border: 0;
-    margin-bottom: -1%;
-    margin-top: -1%;
-    margin-right: 0.5%;
+.mui-content .mine-list a {
+  font-size: 18px;
+  height: 50px;
+  line-height: 35px;
 }
-    
+.mui-content .mine-list .mui-table-view-cell {
+  padding: 8px 15px 11px 15px;
+}
+.mui-content .mine-list .mui-table-view-cell > a:not(.mui-btn) {
+  font-size: 16px;
+}
+.mui-content .mine-list .mui-table-view-cella:not(.mui-btn) {
+  font-size: 16px;
+}
+.mui-content .mine-list .mui-table-view-cell:after {
+  left: 0;
+}
+.mui-content .mine-list img {
+  border: 0;
+  margin-bottom: -5px;
+  margin-top: -1%;
+  margin-right: 0.5%;
+}

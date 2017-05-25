@@ -1,0 +1,103 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+/*title*/
+.mui-bar {
+  background-color: white;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+}
+.mui-bar a {
+  color: #696969;
+}
+.mui-bar h1 {
+  text-align: left;
+  color: #696969;
+  font-size: 14px;
+}
+/*content*/
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content > .mui-table-view:first-child {
+  margin-top: 25px;
+}
+.mui-content .mui-table-view-cell:after {
+  left: 0;
+  background-color: #cccccc;
+}
+.mui-content .mui-btn {
+  color: white;
+  border: 1px solid #FF750F;
+  background-color: #FF750F;
+  width: 82%;
+  height: 40px;
+  margin-left: 9%;
+}
+/*content*/
+.mui-content .mui-table-view .mui-table-view-cell:after {
+  left: 0;
+  background-color: #cccccc;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-pull-left {
+  color: #454545;
+  font-size: 14px;
+}
+.mui-content .mui-table-view .mui-table-view-cell .mui-pull-right {
+  color: #696969;
+  font-size: 13px;
+}
+.mui-content #besure {
+  width: 245px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #696969;
+  position: relative;
+  margin-bottom: 5px;
+}
+.mui-content #besure #besureInput {
+  float: left;
+  margin-left: 0px;
+  display: inline-block;
+}
+.mui-content #besure #besureLabel {
+  margin: 10px auto;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  color: #8f8f94;
+  margin-left: 21px;
+  float: left;
+  display: inline-block;
+}
+.mui-content #besure #besureLabel a {
+  color: #09BB07;
+}
+.mui-content .mui-checkbox input[type=checkbox] {
+  left: 0;
+  top: 20px;
+  color: green;
+}
+.mui-content .mui-checkbox input[type=checkbox]:checked:before {
+  color: #09BB07;
+}
+.mui-content .mui-checkbox input[type=checkbox]:before {
+  font-size: 19px;
+}

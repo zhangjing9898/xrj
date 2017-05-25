@@ -1,149 +1,168 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+body {
+  background-color: white;
+}
 /*progress bar*/
-
-.mui-progressbar span {
-    background-color: #E89A3F;
-}
-b, strong {
-    font-weight: normal;
-    display: inline-block;
-    text-align: left;
-}
-#progressbarTable td, th {
-    padding: 0;
-    color: #696969;
-}
 #progressbarTable {
-	border-bottom:1px solid #CCCCCC ;
+  margin-top: 10px;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
 }
-#progressbarTable .active p{
-	color:#E89A3F;
+#progressbarTable strong {
+  font-weight: normal;
+  display: inline-block;
+  text-align: left;
 }
-#progressbar1 td{
-	position: relative;
+#progressbarTable td,
+#progressbarTable th {
+  padding: 0;
+  color: #696969;
+}
+#progressbarTable .active p {
+  color: #E89A3F;
 }
 #progressbarTable .circle {
-    position: absolute;
-    margin-left: 50px;
+  position: absolute;
+  margin-left: 50px;
 }
 #progressbarTable .line {
-    position: absolute;
-    margin-left: 82px;
-    margin-top: 8px;
-    width: 24%;
+  position: absolute;
+  margin-left: 82px;
+  margin-top: 8px;
+  width: 24%;
 }
 #progressbarTable i {
-    position: absolute;
-    font-style: normal;
-    color: white;
-    margin-left: 57px;
+  position: absolute;
+  font-style: normal;
+  color: white;
+  margin-left: 57px;
 }
-#progressbarTable p{
-    font-size: 16px;
-    margin-bottom: 19px;
-    margin-left: 24px;
-    margin-top: 13px;
+#progressbarTable p {
+  font-size: 15px;
+  margin-bottom: 19px;
+  margin-left: 24px;
+  margin-top: 13px;
 }
 /*响应式*/
 @media only screen and (min-width: 294px) and (max-width: 349px) {
-	#progressbarTable .line {
+  #progressbarTable .line {
     margin-left: 67px;
-	}
-	#progressbarTable i {
-    margin-left: 47px;
-	}
-	#progressbarTable .circle {
+  }
+  #progressbarTable i {
+    margin-left: 46px;
+  }
+  #progressbarTable .circle {
     margin-left: 39px;
-	}
-	#progressbarTable p {
-    font-size: 15px;
+  }
+  #progressbarTable p {
+    font-size: 14px;
     margin-left: 17px;
     margin-top: 13px;
-	}
+  }
 }
 @media only screen and (min-width: 420px) and (max-width: 484px) {
-	#progressbarTable .circle {
+  #progressbarTable .circle {
     margin-left: 58px;
-	}
-	#progressbarTable i {
+  }
+  #progressbarTable i {
     margin-left: 64px;
-	}
-	#progressbarTable .line {
+  }
+  #progressbarTable .line {
     margin-left: 92px;
-	}
-	#progressbarTable p {
+  }
+  #progressbarTable p {
     font-size: 16px;
     margin-left: 32px;
     margin-top: 13px;
-	}
+  }
 }
 @media only screen and (min-width: 484px) and (max-width: 580px) {
-	#progressbarTable .circle {
+  #progressbarTable .circle {
     margin-left: 68px;
-	}
-	#progressbarTable i {
+  }
+  #progressbarTable i {
     margin-left: 75px;
-	}
-	#progressbarTable .line {
+  }
+  #progressbarTable .line {
     margin-left: 107px;
-	}
-	#progressbarTable p {
+  }
+  #progressbarTable p {
     font-size: 16px;
     margin-left: 43px;
-	}
+  }
 }
 @media only screen and (min-width: 580px) and (max-width: 636px) {
-	
-#progressbarTable .circle {
+  #progressbarTable .circle {
     margin-left: 75px;
-}
-#progressbarTable i {
+  }
+  #progressbarTable i {
     margin-left: 81px;
-}
-#progressbarTable .line {
+  }
+  #progressbarTable .line {
     margin-left: 114px;
     margin-top: 5px;
     width: 26%;
-}
-#progressbarTable p {
+  }
+  #progressbarTable p {
     font-size: 16px;
     margin-left: 49px;
     margin-top: 13px;
-}
+  }
 }
 @media only screen and (min-width: 636px) and (max-width: 701px) {
-	#progressbarTable .circle {
+  #progressbarTable .circle {
     margin-left: 99px;
-	}
-	#progressbarTable i {
+  }
+  #progressbarTable i {
     margin-left: 105px;
-}
-#progressbarTable .line {
+  }
+  #progressbarTable .line {
     margin-left: 138px;
     margin-top: 5px;
     width: 26%;
-}
-#progressbarTable p {
+  }
+  #progressbarTable p {
     font-size: 16px;
     margin-bottom: 19px;
     margin-left: 68px;
     margin-top: 13px;
-}
+  }
 }
 @media only screen and (min-width: 702px) {
-	#progressbarTable p {
+  #progressbarTable p {
     font-size: 16px;
     margin-left: 81px;
     margin-top: 13px;
-	}
-	#progressbarTable .circle {
+  }
+  #progressbarTable .circle {
     margin-left: 108px;
-	}
-	#progressbarTable i {
+  }
+  #progressbarTable i {
     margin-left: 115px;
-	}
-	#progressbarTable .line {
+  }
+  #progressbarTable .line {
     margin-left: 149px;
     margin-top: 5px;
     width: 26%;
-	}
+  }
 }

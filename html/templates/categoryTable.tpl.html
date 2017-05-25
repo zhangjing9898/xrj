@@ -1,0 +1,15 @@
+<ul id="functionTenUL" class="mui-table-view mui-grid-view mui-grid-9">
+    <%
+        for(var i = 0; i < list.length; i++){
+            var current = list[i];
+    %>
+    <li class="mui-table-view-cell mui-media  mui-col-xs-3 mui-col-sm-2">
+        <a id="<%=current.id%>">
+            <span>
+                <img src="../../img/icon/food.png"/>
+            </span>
+            <div class="mui-media-body"><%=current.categoryName%></div>
+        </a>
+    </li>
+    <%}%>
+</ul>

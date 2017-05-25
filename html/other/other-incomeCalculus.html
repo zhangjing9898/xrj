@@ -11,38 +11,105 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color:#6A6A6A;"></a>
-		    <h1 class="mui-title">收益演算</h1>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">收益演算</h1>
 		</header>
 		<div class="mui-content">
-		    <div id="incomeInfo">
-		    	<div class="gap"></div>
-		    	<p>在商家的每一笔消费对其推荐人有一定额度的返利。</p>
-		    	<p>商家的返利都按比例分配给推荐人以及其前两级的会员。</p>
-		    	<img src="../../img/icon/incomecalculusImg.jpg" />
-		    	<p>首先给自己设定一个能达到的小目标，比如:</p>
-		    	<div class="gap"></div>
-		    </div>
-		    
-		    <div id="incomeAim">
-		    	<p>我想每月收益</p>
-		    	<input type="text" placeholder="￥2000"/>
-		    </div>
-		    
-		    <button id="nextStep" class="mui-btn">下一步</button>
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item mui-slider-item-duplicate step-one">
+						<div id="incomeInfo">
+							<div class="gap"></div>
+							<p>在商家的每一笔消费对其推荐人有一定额度的返利。</p>
+							<p>商家的返利都按比例分配给推荐人以及其前两级的会员。</p>
+							<img src="../../img/icon/incomecalculusImg.jpg" />
+							<p>首先给自己设定一个能达到的小目标，比如:</p>
+							<div class="gap"></div>
+						</div>
+						<div id="incomeAim">
+							<p>我想每月收益</p>
+							<input type="text" placeholder="￥2000" />
+						</div>
+						<button id="nextStep" class="mui-btn">下一步</button>
+						<footer>此演示程序最终解释权归本平台所有。</footer>
+					</div>
+					<div class="mui-slider-item step-two">
+						<div id="alertInfo">
+							<p>按商家最低返利5%和单个会员当月消费300元计算</p>
+							<h6>提示:为了方便演算，下面以拓展人数代替商家销售业绩。</h6>
+						</div>
+						<div id="list">
+							<ul class="mui-table-view mui-table-view-chevron">
+								<li class="mui-table-view-cell mui-collapse">
+									<a href="#">
+										<div class="img"></div>仅开拓会员
+									</a>
+									<ul class="mui-table-view mui-table-view-chevron">
+										<div class="increaseMemberInfo">
+											<img src="../../img/bottom/mine.png" />
+											<p>发展一级会员<strong class="choose1">100</strong>人</p>
+											<p>拓展二级会员<strong>200</strong>人</p>
+											<p>拓展三级会员<strong>2000</strong>人</p>
+											<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+										</div>
+									</ul>
+								</li>
+								<li class="mui-table-view-cell mui-collapse">
+									<a href="#">
+										<div class="img"></div>仅开拓商家
+									</a>
+									<ul class="mui-table-view mui-table-view-chevron">
+										<div class="increaseMemberInfo">
+											<img src="../../img/bottom/store.png" />
+											<p>发展商家<strong class="choose1">10</strong>户</p>
+											<p>拓展二级会员<strong>1000</strong>人</p>
+											<p>拓展三级会员<strong>10000</strong>人</p>
+											<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+										</div>
+									</ul>
+								</li>
+								<li class="mui-table-view-cell mui-collapse">
+									<a href="#">
+										<div class="img"></div>商家和会员都要拓展
+									</a>
+									<ul class="mui-table-view mui-table-view-chevron">
+										<div class="increaseMemberInfo">
+											<img src="../../img/bottom/mine.png" />
+											<p>发展一级会员<strong class="choose1">100</strong>人</p>
+											<p>拓展二级会员<strong>200</strong>人</p>
+											<p>拓展三级会员<strong>2000</strong>人</p>
+											<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+										</div>
+										<div class="gap"></div>
+										<div class="increaseMemberInfo">
+											<img src="../../img/bottom/store.png" />
+											<p>发展商家<strong class="choose1">10</strong>户</p>
+											<p>拓展二级会员<strong>1000</strong>人</p>
+											<p>拓展三级会员<strong>10000</strong>人</p>
+											<h3 class="choose">收益:&yen;<strong>2000</strong></h3>
+										</div>
+										<div id="allIncomeNum">总收益 &yen;2000</div>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-		<footer>此演示程序最终解释权归本平台所有。</footer>
+
 		<script src="../../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
-			
+
 			//点击下一步
 			mui(".mui-content").on('tap', '#nextStep', function() {
-			mui.openWindow({
-				url: '../other/other-incomeCalculusNext.html',
-				id: 'other-incomeCalculusNext'
-			})
-		});
+				mui.openWindow({
+					url: '../other/other-incomeCalculusNext.html',
+					id: 'other-incomeCalculusNext'
+				})
+			});
 		</script>
 	</body>
 

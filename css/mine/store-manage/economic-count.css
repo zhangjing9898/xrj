@@ -1,0 +1,104 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content .choose-date {
+  margin-top: 10px;
+  position: relative;
+  font-size: 13px;
+  height: 45px;
+  background-color: white;
+  line-height: 45px;
+  text-align: center;
+}
+.mui-content .choose-date strong {
+  color: #FF750F;
+  font-weight: normal;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+.mui-content .choose-date img {
+  position: absolute;
+  top: 20px;
+}
+.mui-content .money-count-info {
+  margin-top: 8px;
+}
+.mui-content .money-count-info .mui-table-view {
+  padding: 0;
+}
+.mui-content .money-count-info .mui-table-view .mui-table-view-cell {
+  padding: 0;
+}
+.mui-content .money-count-info .mui-table-view .mui-table-view-cell strong {
+  font-weight: normal;
+  font-size: 13px;
+}
+.mui-content .money-count-info .mui-table-view .mui-table-view-cell p {
+  font-size: 13px;
+}
+.mui-content .money-count-info .mui-table-view .mui-table-view-cell .choose {
+  color: #FF750F;
+}
+.mui-content .money-count-info .mui-table-view .total-trade-money {
+  width: 22%;
+}
+.mui-content .economic-table {
+  margin-top: 9px;
+  background-color: white;
+}
+.mui-content .economic-table table {
+  width: 100%;
+}
+.mui-content .economic-table table tr {
+  border-bottom: 1px solid #CCCCCC;
+}
+.mui-content .economic-table table th {
+  height: 38px;
+  width: 25%;
+  font-size: 13px;
+  color: #696969;
+  font-weight: normal;
+}
+.mui-content .economic-table table td {
+  text-align: center;
+  width: 25%;
+  height: 30px;
+  font-size: 12px;
+  color: #969696;
+}

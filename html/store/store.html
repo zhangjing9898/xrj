@@ -7,33 +7,37 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../../css/store/store.css" />
-		<!--<script data-main='../store.js' type="text/javascript" src="../../js/require.js"></script>-->
 	</head>
 
 	<body>
 		<div class="mui-content">
 			<!--顶部导航栏-->
 			<div class="mui-content mui-row" id="title">
-				<span class="mui-input-row mui-pull-left" id="title-icon-location">成都</span>
-				<div class="mui-input-row mui-search" id="title-search">
-					<div class="mui-input-clear mui-input-row mui-search">
-						<input id="inputOne" type="search" placeholder="输入商家或分类">
+				<span class="mui-input-row mui-pull-left" id="nav-icon-location">成都</span>
+				<span id="nav-icon-message" class="mui-pull-right">
+					<img id="nav-icon-message-img" src="../../img/icon/nearMap.png"/>
+				</span>
+				<div class="input_wrapper">
+					<div class="mui-input-row mui-search" id="nav-search">
+						<div class="mui-input-clear mui-input-row mui-search">
+							<input id="inputOne" type="search" placeholder="输入商家或分类">
+						</div>
 					</div>
 				</div>
-				<span id="title-icon-message" class="mui-pull-right">
-					<img id="title-icon-message-img" src="../../img/icon/nearMap.png"/>
-					
-				</span>
 			</div>
-		
+
 			<!--button-->
 			<ul id="nav">
 				<li class="top">
-					<a id="contacts" class="top_link"><span class="down">全部</span></a>
+					<a class="top_link">
+						<span class="down">全部
+							<img class="triangle" src="../../img/icon/triangle.png" />
+						</span>
+					</a>
 					<ul class="sub">
-						<li class="choose">
+						<li>
 							<a>全部</a>
-							<div class="triangle"></div>
+
 						</li>
 						<li>
 							<a class="fly">美食</a>
@@ -94,9 +98,10 @@
 					</ul>
 				</li>
 				<li class="top">
-					<a id="shop" class="top_link"><span class="down">附近</span></a>
-					<ul class="sub" style="left: -100%;">
-						<li class="choose">
+					<a class="top_link"><span class="down">附近
+					<img class="triangle" src="../../img/icon/triangle.png" /></span></a>
+					<ul class="sub nearList">
+						<li>
 							<a>附近(智能距离)</a>
 						</li>
 						<li>
@@ -123,9 +128,10 @@
 					</ul>
 				</li>
 				<li class="top">
-					<a href="#nogo53" id="shop" class="top_link"><span class="down">智能排序</span></a>
-					<ul class="sub" style="left: -200%;">
-						<li class="choose">
+					<a id="shop" class="top_link"><span class="down">智能排序
+					<img class="triangle" src="../../img/icon/triangle.png" /></span></a>
+					<ul class="sub rangeList">
+						<li>
 							<a>智能排序</a>
 						</li>
 						<li>
@@ -141,51 +147,77 @@
 				</li>
 			</ul>
 
-			<div id="guessContent">
-				<ul id="storeListUL" class="mui-table-view">
-					<li class="mui-table-view-cell mui-media" id="store01">
+			<!--<div class="storeList">
+				<ul id="" class="mui-table-view">
+					<li class="mui-table-view-cell mui-media merchant-item">
 						<a href="javascript:;">
-							<img class=" mui-pull-left" src="../../img/icon/store.jpg" style="height:93px;width: 126px; margin-right: 14px;">
+							<img class=" mui-pull-left storeImg" src="../../img/icon/store.jpg">
 							<div class="mui-media-body">
 								<div class="mine-MyCollect-ltem-Title">
 									<p>蜀九香川味火锅</p>
 								</div>
 								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
 									<span>
-										<img src="../../img/icon/star_full.png" >
-										<img src="../../img/icon/star_full.png"/>
-										<img src="../../img/icon/star_full.png"/>
-										<img src="../../img/icon/star_full.png"/>
-										<img src="../../img/icon/star_half.png"/>
+										<img src="../../img/icon/starts5_full.png" />
 									</span>
 								</div>
+								<div class="mui-pull-left merchant-cashback">买单收益 2%</div>
 								<div class="mine-MyCollect-ltem-Type">
 									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
 									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
 										< 100 m </p>
 								</div>
-								<div class="gap"></div>
-								<div id="" class="mui-pull-left mine-MyCollect-ltem-Profit">返利:2%</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class=" mui-pull-left storeImg" src="../../img/icon/store.jpg">
+							<div class="mui-media-body">
+								<div class="mine-MyCollect-ltem-Title">
+									<p>蜀九香川味火锅</p>
+								</div>
+								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
+									<span>
+										<img src="../../img/icon/starts5_full.png" />
+									</span>
+								</div>
+								<div class="mui-pull-left mine-MyCollect-ltem-Profit">买单收益 2%</div>
+								<div class="mine-MyCollect-ltem-Type">
+									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
+									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
+										< 100 m </p>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<a href="javascript:;">
+							<img class=" mui-pull-left storeImg" src="../../img/icon/store.jpg">
+							<div class="mui-media-body">
+								<div class="mine-MyCollect-ltem-Title">
+									<p>蜀九香川味火锅</p>
+								</div>
+								<div id="mine-MyCollect-ltem-Grade" class="mine-MyCollect-ltem-Grade">
+									<span>
+										<img src="../../img/icon/starts5_full.png" />
+									</span>
+								</div>
+								<div class="mui-pull-left mine-MyCollect-ltem-Profit">买单收益 2%</div>
+								<div class="mine-MyCollect-ltem-Type">
+									<p class="mine-MyCollect-ltem-Locate mui-pull-left">川味火锅</p>
+									<p class="mine-MyCollect-ltem-Locate mui-pull-right">春熙路
+										< 100 m </p>
+								</div>
+							</div>
+						</a>
 					</li>
 				</ul>
-				</div>
-			</div>
-		<script type="text/javascript">
-			//动态改变搜索框大小
-			var changeSearch = function() {
-			var navSearch = document.getElementById('title-search');
-			var windowWidth = document.body.clientWidth;
-			navSearch.style.width = windowWidth - 96 + 'px';
-			}
-			changeSearch();
-			window.onresize = function() {
-				changeSearch();
-			};
-		
-		</script>
+			</div>-->
+		</div>
 		<script type="text/javascript" src="../../js/require.js"></script>
 		<script type="text/javascript" src="../../js/lib/jquery-1.10.1.min.js"></script>
-		<script type="text/javascript" src="../../js/store/store.js" ></script>
+		<script type="text/javascript" src="../../js/store/store.js"></script>
 	</body>
 
 </html>

@@ -1,0 +1,92 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.gap {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content .store-info {
+  padding: 10px 13px;
+}
+.mui-content .store-info p {
+  margin-bottom: 3px;
+}
+.mui-content .store-info .score-info {
+  position: relative;
+}
+.mui-content .store-info .score-info a {
+  color: #FF750F;
+  font-size: 13px;
+  position: absolute;
+  left: 78px;
+  top: -1px;
+}
+.mui-content .form-info {
+  width: 100%;
+}
+.mui-content .form-info .mui-table-view {
+  padding: 0;
+}
+.mui-content .form-info .mui-table-view .mui-table-view-cell {
+  padding: 18px 0 18px 14px;
+}
+.mui-content .form-info .mui-table-view .mui-table-view-cell strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #696969;
+}
+.mui-content .form-info .mui-table-view .mui-table-view-cell p {
+  font-size: 13px;
+  color: #969696;
+}
+.mui-content .form-info .mui-table-view .mui-table-view-cell .choose {
+  color: #FF750F;
+}
+.mui-content .list {
+  margin-top: 13px;
+}
+.mui-content .list .mui-table-view-cell p {
+  font-size: 13px;
+  color: #696969;
+}
+.mui-content .list .mui-table-view-cell:after {
+  left: 0;
+  background-color: #CCCCCC;
+}

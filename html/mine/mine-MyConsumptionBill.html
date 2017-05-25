@@ -16,141 +16,286 @@
 			<h1 class="mui-title">我的消费账单</h1>
 		</header>
 		<div class="mui-content">
-			<div id="segmentedControl" class="mui-segmented-control">
-				<a class="mui-control-item mui-active" href="#item1mobile">
-					全部
-				</a>
-				<a class="mui-control-item" href="#item2mobile">
-					待评价
-				</a>
-				<a class="mui-control-item" href="#item3mobile">
-					未支付
-				</a>
-				<a class="mui-control-item" href="#item2mobile">
-					已支付
-				</a>
-				<a class="mui-control-item" href="#item3mobile">
-					退款
-				</a>
+			<div id="slider" class="mui-slider">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1mobile">
+						待评价
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						未支付
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						已支付
+					</a>
+					<a class="mui-control-item" href="#item4mobile">
+						退款
+					</a>
+					<a class="mui-control-item mui-active" href="#item5mobile">
+						全部
+					</a>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-loading">
+							<ul class="mui-table-view store">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<div id="storeInfoDiv">
+											<img class="" src="../../img/storePic.jpg">
+											<div id="storeInfo">
+												<p id="storeName" class="mui-ellipsis">
+													蜀大侠川味火锅
+												</p>
+												<p>订单号:65677755432</p>
+												<p>时间:2017-03-10 00:00</p>
+												<p>消费:￥567</p>
+												<p id="incomeNum" class="mui-pull-right">收益:26</p>
+											</div>
+										</div>
+
+										<div class="gap"></div>
+										<div id="paymentStatusDiv">
+											<p id="paymentStatus">已支付</p>
+											<button class="mui-btn" id="applyRefund">申请退款</button>
+											<button class="mui-btn mui-pull-right" id="paymentComment">评论</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-loading">
+							<ul class="mui-table-view store">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<div id="storeInfoDiv">
+											<img class="" src="../../img/storePic.jpg">
+											<div id="storeInfo">
+												<p id="storeName" class="mui-ellipsis">
+													蜀大侠川味火锅
+												</p>
+												<p>订单号:65677755432</p>
+												<p>时间:2017-03-10 00:00</p>
+												<p>消费:￥567</p>
+												<p id="incomeNum" class="mui-pull-right">收益:26</p>
+											</div>
+										</div>
+
+										<div class="gap"></div>
+										<div id="paymentStatusDiv">
+											<p id="paymentStatus">未支付</p>
+											<button class="mui-btn mui-pull-right" id="paymentComment">支付</button>
+										</div>
+
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-loading">
+							<ul class="mui-table-view store">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<div id="storeInfoDiv">
+											<img class="" src="../../img/storePic.jpg">
+											<div id="storeInfo">
+												<p id="storeName" class="mui-ellipsis">
+													蜀大侠川味火锅
+												</p>
+												<p>订单号:65677755432</p>
+												<p>时间:2017-03-10 00:00</p>
+												<p>消费:￥567</p>
+												<p id="incomeNum" class="mui-pull-right">收益:26</p>
+											</div>
+										</div>
+
+										<div class="gap"></div>
+										<div id="paymentStatusDiv">
+											<p id="paymentStatus">已支付</p>
+											<button class="mui-btn" id="applyRefund">申请退款</button>
+											<button class="mui-btn mui-pull-right" id="paymentComment">评论</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-loading">
+							<ul class="mui-table-view store">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<div id="storeInfoDiv">
+											<img class="" src="../../img/storePic.jpg">
+											<div id="storeInfo">
+												<p id="storeName" class="mui-ellipsis">
+													蜀大侠川味火锅
+												</p>
+												<p>订单号:65677755432</p>
+												<p>时间:2017-03-10 00:00</p>
+												<p>消费:￥567</p>
+												<p id="incomeNum" class="mui-pull-right">收益:26</p>
+											</div>
+										</div>
+
+										<div class="gap"></div>
+										<div id="paymentStatusDiv">
+											<p id="paymentStatus">退款-等待卖家处理</p>
+											<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
+										</div>
+
+									</a>
+								</li>
+							</ul>
+
+							<ul class="mui-table-view store">
+								<li class="mui-table-view-cell mui-media">
+									<a href="javascript:;">
+										<div id="storeInfoDiv">
+											<img class="" src="../../img/storePic.jpg">
+											<div id="storeInfo">
+												<p id="storeName" class="mui-ellipsis">
+													蜀大侠川味火锅
+												</p>
+												<p>订单号:65677755432</p>
+												<p>时间:2017-03-10 00:00</p>
+												<p>消费:￥567</p>
+												<p id="incomeNum" class="mui-pull-right">收益:26</p>
+											</div>
+										</div>
+										<div class="gap"></div>
+										<div id="paymentStatusDiv">
+											<p id="paymentStatus">退款失败</p>
+											<button class="mui-btn" id="applyRefund">查看原因</button>
+											<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
+										</div>
+
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content mui-active">
+						<ul class="mui-table-view store">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<div id="storeInfoDiv">
+										<img class="" src="../../img/storePic.jpg">
+										<div id="storeInfo">
+											<p id="storeName" class="mui-ellipsis">
+												蜀大侠川味火锅
+											</p>
+											<p>订单号:65677755432</p>
+											<p>时间:2017-03-10 00:00</p>
+											<p>消费:￥567</p>
+											<p id="incomeNum" class="mui-pull-right">收益:26</p>
+										</div>
+									</div>
+
+									<div class="gap"></div>
+									<div id="paymentStatusDiv">
+										<p id="paymentStatus">已支付</p>
+										<button class="mui-btn" id="applyRefund">申请退款</button>
+										<button class="mui-btn mui-pull-right" id="paymentComment">评论</button>
+									</div>
+								</a>
+							</li>
+						</ul>
+
+						<ul class="mui-table-view store">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<div id="storeInfoDiv">
+										<img class="" src="../../img/storePic.jpg">
+										<div id="storeInfo">
+											<p id="storeName" class="mui-ellipsis">
+												蜀大侠川味火锅
+											</p>
+											<p>订单号:65677755432</p>
+											<p>时间:2017-03-10 00:00</p>
+											<p>消费:￥567</p>
+											<p id="incomeNum" class="mui-pull-right">收益:26</p>
+										</div>
+									</div>
+
+									<div class="gap"></div>
+									<div id="paymentStatusDiv">
+										<p id="paymentStatus">未支付</p>
+										<button class="mui-btn mui-pull-right" id="paymentComment">支付</button>
+									</div>
+
+								</a>
+							</li>
+						</ul>
+
+						<ul class="mui-table-view store">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<div id="storeInfoDiv">
+										<img class="" src="../../img/storePic.jpg">
+										<div id="storeInfo">
+											<p id="storeName" class="mui-ellipsis">
+												蜀大侠川味火锅
+											</p>
+											<p>订单号:65677755432</p>
+											<p>时间:2017-03-10 00:00</p>
+											<p>消费:￥567</p>
+											<p id="incomeNum" class="mui-pull-right">收益:26</p>
+										</div>
+									</div>
+
+									<div class="gap"></div>
+									<div id="paymentStatusDiv">
+										<p id="paymentStatus">退款-等待卖家处理</p>
+										<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
+									</div>
+
+								</a>
+							</li>
+						</ul>
+
+						<ul class="mui-table-view store">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<div id="storeInfoDiv">
+										<img class="" src="../../img/storePic.jpg">
+										<div id="storeInfo">
+											<p id="storeName" class="mui-ellipsis">
+												蜀大侠川味火锅
+											</p>
+											<p>订单号:65677755432</p>
+											<p>时间:2017-03-10 00:00</p>
+											<p>消费:￥567</p>
+											<p id="incomeNum" class="mui-pull-right">收益:26</p>
+										</div>
+									</div>
+									<div class="gap"></div>
+									<div id="paymentStatusDiv">
+										<p id="paymentStatus">退款失败</p>
+										<button class="mui-btn" id="applyRefund">查看原因</button>
+										<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
+									</div>
+
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<ul id="store01" class="mui-table-view store">
-				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
-						<div id="storeInfoDiv">
-								<img class="" src="../../img/storePic.jpg">
-								<div id="storeInfo">
-									<p id="storeName" class="mui-ellipsis">
-						                		蜀大侠川味火锅
-						                </p>
-										<p>订单号:65677755432</p>
-										<p>时间:2017-03-10 00:00</p>
-										<p>消费:￥567</p>
-										<p id="incomeNum" class="mui-pull-right">收益:26</p>
-								</div>
-						</div>
-							   
-								<div class="gap" style="position: absolute; bottom: 53px;"></div>
-								<div id="paymentStatusDiv">
-									<p id="paymentStatus">已支付</p>
-									<button class="mui-btn" id="applyRefund">申请退款</button>
-									<button class="mui-btn mui-pull-right" id="paymentComment">评论</button>
-								</div>	
-					</a>
-				</li>
-			</ul>
-			
-			<ul id="store02" class="mui-table-view store">
-				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
-						<div id="storeInfoDiv">
-								<img class="" src="../../img/storePic.jpg">
-								<div id="storeInfo">
-									<p id="storeName" class="mui-ellipsis">
-						                		蜀大侠川味火锅
-						                </p>
-										<p>订单号:65677755432</p>
-										<p>时间:2017-03-10 00:00</p>
-										<p>消费:￥567</p>
-										<p id="incomeNum" class="mui-pull-right">收益:26</p>
-								</div>
-						</div>
-							   
-								<div class="gap" style="position: absolute; bottom: 53px;"></div>
-								<div id="paymentStatusDiv">
-									<p id="paymentStatus">未支付</p>
-									<!--<button class="mui-btn" id="applyRefund">申请退款</button>-->
-									<button class="mui-btn mui-pull-right" id="paymentComment">支付</button>
-								</div>
-								
-					</a>
-				</li>
-			</ul>
-			
-			<ul id="store03" class="mui-table-view store">
-				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
-						<div id="storeInfoDiv">
-								<img class="" src="../../img/storePic.jpg">
-								<div id="storeInfo">
-									<p id="storeName" class="mui-ellipsis">
-						                		蜀大侠川味火锅
-						                </p>
-										<p>订单号:65677755432</p>
-										<p>时间:2017-03-10 00:00</p>
-										<p>消费:￥567</p>
-										<p id="incomeNum" class="mui-pull-right">收益:26</p>
-								</div>
-						</div>
-							   
-								<div class="gap" style="position: absolute; bottom: 53px;"></div>
-								<div id="paymentStatusDiv">
-									<p id="paymentStatus">退款-等待卖家处理</p>
-									<!--<button class="mui-btn" id="applyRefund">申请退款</button>-->
-									<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
-								</div>
-								
-					</a>
-				</li>
-			</ul>
-			
-			<ul id="store04" class="mui-table-view store">
-				<li class="mui-table-view-cell mui-media">
-					<a href="javascript:;">
-						<div id="storeInfoDiv">
-								<img class="" src="../../img/storePic.jpg">
-								<div id="storeInfo">
-									<p id="storeName" class="mui-ellipsis">
-						                		蜀大侠川味火锅
-						                </p>
-										<p>订单号:65677755432</p>
-										<p>时间:2017-03-10 00:00</p>
-										<p>消费:￥567</p>
-										<p id="incomeNum" class="mui-pull-right">收益:26</p>
-								</div>
-						</div>
-							   
-								<div class="gap" style="position: absolute; bottom: 53px;"></div>
-								<div id="paymentStatusDiv">
-									<p id="paymentStatus">退款-等待卖家处理</p>
-									<!--<button class="mui-btn" id="applyRefund">申请退款</button>-->
-									<button class="mui-btn mui-pull-right" id="paymentComment">联系商家</button>
-								</div>
-								
-					</a>
-				</li>
-			</ul>
 		</div>
 		<script src="../../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init();
-			
-			mui.plusReady(function(){
-				var store01=document.getElementById('store01');
-				
-				store01.addEventListener('tap',function(){
+
+			mui.plusReady(function() {
+				var store01 = document.getElementById('store01');
+
+				store01.addEventListener('tap', function() {
 					mui.openWindow({
-						url:'../mine/mine-MyCommentsPage.html',
-						id:'store01'
+						url: '../mine/mine-MyCommentsPage.html',
+						id: 'store01'
 					})
 				});
 			})

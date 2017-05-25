@@ -1,0 +1,63 @@
+@import '../common';
+
+@pageBase-color: white;
+@pageBase-fontSize: 15px;
+
+body {
+    background-color: @pageBase-color;
+    font-size: @pageBase-fontSize;
+}
+
+a {
+    color: @pageBase-color;
+}
+
+
+/*title*/
+
+.mui-bar {
+    background-color: @pageBase-color;
+}
+
+
+/*content*/
+
+.mui-content {
+    background-color: @pageBase-color;
+    input[type=color],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=datetime],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    select,
+    textarea {
+        border-left-color: @pageBase-color;
+        border-right-color: @pageBase-color;
+    }
+    .mui-btn,
+    button,
+    input[type=button],
+    input[type=reset],
+    input[type=submit] {
+        width: 86%;
+        font-size: @pageBase-fontSize;
+        padding: 14px 12px;
+        color: white;
+        border: 1px solid @base-color;
+        background-color: @base-color;
+        left: 7%;
+    }
+    textarea {
+        font-size: 14px;
+        color: @icon-color;
+    }
+}

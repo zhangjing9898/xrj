@@ -1,0 +1,64 @@
+/*
+ * common variables
+ */
+
+@default-font-family : '微软雅黑';
+@base-color : #FF750F;
+@background-color: #DADADA;
+@icon-color: #696969;
+
+/*
+*   common mixins
+*/
+
+.gapMix(@height, @width: 100%, @background: transparent) {
+    width: @width;
+    height: @height;
+    background: @background;
+}
+
+.box-shadow() {
+    -webkit-box-shadow: 0 1px 0 #ccc;
+    box-shadow: 0 1px 0 #ccc;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+
+/*
+ * global stylesheet
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: @default-font-family;
+    background-color: @background-color;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+.mui-bar-nav {
+    top: 0px;
+    .box-shadow();
+    background-color: white;
+    .mui-title {
+        color:@icon-color;
+        font-size: 15px;
+        text-align: left;
+    }
+    .mui-icon-back:before,
+    .mui-icon-left-nav:before {
+        color:@icon-color;
+    }
+}

@@ -1,0 +1,130 @@
+
+@import '../../common';
+.gap {
+    .gapMix(15px, 100%,@background-color);
+}
+
+.mui-bar {
+    width: 100%;
+    .input_wrapper {
+        overflow: hidden;
+        margin-left: 114px;
+        .mui-search {
+            margin-top: 4px;
+            input[type=search] {
+                border-radius: 22px;
+                height: 25px;
+                background-color: #CCCCCC;
+            }
+            .mui-placeholder {
+                font-size: 13px;
+                top: -2px;
+                left: 5px;
+                text-align: left;
+                color: @icon-color;
+            }
+        }
+    }
+    .search {
+        margin-top: 11px;
+        margin-left: 7px;
+        font-size: 13px;
+        color: @icon-color;
+    }
+}
+
+
+/*content*/
+
+.mui-content {
+    .mui-slider {
+        background-color:@background-color;
+        .mui-segmented-control {
+                background-color: white;
+            .mui-control-item {
+                font-size: 13px;
+                &.mui-active {
+                    background-color: @base-color;
+                    color: white;
+                }
+            }
+            &~.mui-slider-group {
+                .mui-slider-item {
+                    border-top: 2px solid @base-color;
+                }
+            }
+        }
+        .mui-slider-group {
+            .mui-table-view-cell {
+                padding: 11px 0px;
+                padding-bottom: 0;
+                &:after {
+                    height: 0;
+                }
+            }
+            .mui-slider-item{
+                .store-head-img {
+                    padding-left: 9%;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        .border-radius(50%);
+                        margin-left: 10px;
+                    }
+                    p {
+                        width: 86px;
+                        font-size: 13px;
+                        color: @icon-color;
+                        text-align: center;
+                    }
+                    button {
+                        margin-top: 4px;
+                        padding: 6px 14px;
+                        color: #929292;
+                    }
+                }
+                .store-info {
+                    width: 54%;
+                    margin-left: 5%;
+                    p {
+                        color: @icon-color;
+                        font-size: 13px;
+                        margin-bottom: 3px;
+                    }
+                    .double {
+                        width: 100%;
+                        height: 24px;
+                    }
+                }
+                .status-button {
+                    height: 44px;
+                    border-top: 1px solid #DADADA;
+                    margin-top: 10px;
+                    p {
+                        margin-top: 10px;
+                        margin-left: 8%;
+                        font-size: 13px;
+                        color: #000000;
+                    }
+                    .button-info {
+                        margin-top: 5px;
+                        margin-right: 5%;
+                        button {
+                            width: 82px;
+                            height: 33px;
+                        }
+                        .reject {
+                            border-color: @base-color;
+                            color: @base-color;
+                        }
+                        .agree {
+                            background-color: @base-color;
+                            color: white;
+                            border-color: @base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '../common';
+.mui-bar {
+    .mui-title {
+        text-align: center;
+    }
+}
+
+.mui-content {
+    background-color: @background-color;
+    .mui-table-view {
+        &:first-child {
+            margin-top: 6px;
+        }
+        .mui-table-view-cell {
+            padding: 0 15px;
+            .mui-input-row {
+                label {
+                    font-family: 微软雅黑;
+                    line-height: 34px;
+                    padding: 10px 0;
+                    color: #323232;
+                    font-size: 14px;
+                    width: 120px;
+                }
+                input {
+                    font-family: 微软雅黑;
+                    float: left;
+                    width: auto;
+                    line-height: 40px;
+                    font-size: 14px;
+                    height: 54px;
+                }
+                .mui-input-clear~.mui-icon-clear {
+                    top: 16px;
+                }
+            }
+            &:after {
+                left: 0;
+                background-color: #CCCCCC;
+            }
+            &:before {
+                background-color: #CCCCCC;
+            }
+        }
+    }
+    .mui-btn {
+        width: 96%;
+        left: 2%;
+        background-color: @base-color;
+        color: white;
+        border: 1px solid @base-color;
+        height: 50px;
+        top: 14px;
+    }
+}

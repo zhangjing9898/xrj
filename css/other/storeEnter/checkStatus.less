@@ -1,0 +1,58 @@
+@import 'storeEnterCommon';
+.mui-content {
+    .mui-table-view-cell {
+        .mui-checkbox {
+            input[type=checkbox] {
+                left: 0;
+                &:before {
+                    font-size: 19px;
+                }
+                &:checked:before {
+                    color: #09BB07;
+                }
+            }
+            label {
+                padding-top: 6px;
+                padding-left: 25px;
+            }
+        }
+        p {
+            font-size: 13px;
+            color: #696969;
+            font-family: "微软雅黑";
+            margin-bottom: 8px;
+        }
+        .checkingTitle {
+            font-weight: bold;
+        }
+        .checkingInfo {
+            color: @base-color;
+        }
+        &:after {
+            background-color: transparent;
+        }
+        .cantUse {
+            p {
+                color: #979797;
+            }
+        }
+    }
+    .line {
+        height: 91px;
+        width: 2px;
+        display: block;
+        border: 1px solid #DADADA;
+        position: absolute;
+        left: 23px;
+        top: 31px;
+    }
+    .line1 {
+        height: 69px;
+        width: 2px;
+        display: block;
+        border: 1px solid #DADADA;
+        position: absolute;
+        left: 23px;
+        top: 137px;
+    }
+}

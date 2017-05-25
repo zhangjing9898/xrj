@@ -1,0 +1,47 @@
+@import '../common';
+body {
+    color: @icon-color;
+}
+
+
+/*title*/
+
+.mui-bar-nav {
+    box-shadow: none;
+    background-color: @base-color;
+    h1 {
+        line-height: 192%;
+        font-size: 17px;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+    }
+}
+
+
+/*threeBlock*/
+
+.mui-content {
+    background-color: @background-color;
+    #threeBlock {
+        .mui-grid-view {
+            background-color: white;
+            .mui-table-view-cell {
+                width: 33.3%;
+                border-bottom: none;
+                .mui-media-body {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .ulArea {
+        font-size: 15px;
+    }
+    .mui-table-view-cell {
+        &:after {
+            left: 0;
+            background-color: #e2e2e2;
+        }
+    }
+}

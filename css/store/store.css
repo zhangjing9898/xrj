@@ -1,247 +1,238 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
-
-
-/*global*/
-
 body {
-	font-family: "微软雅黑";
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-
-.gap {
-	width: 100%;
-	height: 24px;
-	background: transparent;
-}
-
-.gap1 {
-	width: 100%;
-	height: 5px;
-	background: transparent;
-}
-
 a {
-	outline: none;
-	text-decoration: none;
-	color: black;
+  outline: none;
+  text-decoration: none;
 }
-
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+.gap {
+  width: 100%;
+  height: 24px;
+  background: transparent;
+}
+.gap1 {
+  width: 100%;
+  height: 5px;
+  background: transparent;
+}
+.top-search-bar {
+  width: 100%;
+  background-color: #FF750F;
+  position: relative;
+  height: 54px;
+}
+.input_wrapper {
+  overflow: hidden;
+  margin-bottom: 8px;
+  height:46px;
+}
+.input_wrapper input {
+  width: 100%;
+  height: 30px;
+}
+#nav-icon-location {
+  text-align: center;
+  margin: 0 5px;
+  line-height: 54px;
+  color: white;
+  left: 0;
+  font-size: 15px;
+  font-weight: normal;
+}
+#nav-search {
+  opacity: 1;
+  background-color: white;
+  height: 33px;
+  border-radius: 20px;
+  top: 10px;
+}
+#nav-icon-message {
+  text-align: center;
+  color: white;
+  width: 40px;
+  margin-top: 15px;
+}
 input[type=search] {
-	background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
-
-p {
-	font-size: 12px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	color: #959595;
+#nav-icon-message-badge {
+  margin-left: -53%;
+  margin-top: -38%;
 }
-
-
-/*title*/
-
-#title {
-	width: 100%;
-	background-color: #FF750F;
-	position: relative;
-	height: 54px;
-}
-
-#title-icon-location {
-	 text-align: center;
-    display: block;
-    width: 56px;
-    height: 20px;
-    color: white;
-    position: absolute;
-    left: 0;
-    top: 30%;
-    font-size: 15px;
-    font-weight: normal;
-}
-
-#title-search {
-	position: absolute;
-    left: 53px;
-    opacity: 1;
-    background-color: white;
-    width: 70%;
-    height: 33px;
-    border-radius: 20px;
-    top: 10px;
-}
-
-.mui-icon-search:before {
-    content: '\e466';
-}
-#title-icon-message {
-	text-align: center;
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 21%;
-    color: white;
-    width: 40px;
-}
-input[type=search] {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-input[type=search] {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-
 /*弹出菜单*/
-
+#title {
+  background-color: #FF750F;
+}
+#title #nav-icon-message img {
+  width: 30px;
+  margin-top: -4px;
+}
 #nav {
-	border-bottom: 1px solid #BFBFC3;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	height: 38px;
-	background: #fff;
-	position: relative;
-	z-index: 500;
-	color: #686968;
-	font-family: 微软雅黑;
-	background-color: white;
+  border-bottom: 1px solid #BFBFC3;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 38px;
+  background: #fff;
+  position: relative;
+  z-index: 500;
+  color: #686968;
+  font-family: 微软雅黑;
+  background-color: white;
 }
-
 #nav li.top {
-	display: block;
-	float: left;
-	height: 38px;
-	width: 33%;
+  display: block;
+  float: left;
+  height: 38px;
+  width: 33%;
 }
-
 #nav li a.top_link {
-	display: block;
-	height: 35px;
-	line-height: 28px;
-	color: #ccc;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 0;
-	cursor: pointer;
+  display: block;
+  height: 35px;
+  line-height: 28px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  cursor: pointer;
 }
-
 #nav li a.top_link span {
-	float: left;
-	display: block;
-	padding: 0 24px 0 12px;
-	height: 35px;
+  float: left;
+  display: block;
+  padding: 0 24px 0 12px;
+  height: 35px;
 }
-
 #nav li a.top_link span.down {
-	width: 100%;
-	text-align: center;
-	float: left;
-	display: block;
-	padding: 5px 23px;
-	color: #686968;
-	height: 35px;
-	background: white;
-	font-size: 14px;
-	font-weight: normal;
-	font-family: 微软雅黑;
+  width: 100%;
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 5px 23px;
+  color: #686968;
+  height: 35px;
+  background: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 微软雅黑;
 }
-
 #nav li:hover a.top_link {
-	background: white;
+  background: white;
 }
-
-
-
+.down {
+  position: relative;
+}
+.triangle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 /* Default list styling */
-
 #nav li:hover {
-	position: relative;
-	z-index: 200;
+  position: relative;
+  z-index: 200;
 }
-
 #nav li:hover ul.sub {
-	left: 1px;
-	top: 38px;
-	background: white;
-	padding: 0;
-	border: none;
-	white-space: nowrap;
-	width: 303%;
-	height: auto;
-	z-index: 300;
-	opacity: 0.97;
+  left: 1px;
+  top: 38px;
+  background: white;
+  padding: 0;
+  border: none;
+  white-space: nowrap;
+  width: 303%;
+  height: auto;
+  z-index: 300;
+  opacity: 0.97;
 }
-
 #nav li:hover ul.sub li {
-	display: block;
-	height: 32px;
-	position: relative;
-	float: left;
-	width: 100%;
-	font-weight: normal;
-	border-bottom: 1px solid #ccc;
+  display: block;
+  height: 32px;
+  position: relative;
+  float: left;
+  width: 100%;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
 }
-
 #nav li:hover ul.sub li a {
-	display: block;
-	font-size: 14px;
-	height: 100%;
-	width: 100%;
-	line-height: 28px;
-	text-indent: 12%;
-	color: #000;
-	text-decoration: none;
-	border: none;
+  display: block;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  line-height: 28px;
+  text-indent: 12%;
+  color: #000;
+  text-decoration: none;
+  border: none;
 }
-
 #nav li ul.sub li a.fly {
-	width: 100%;
-	background-color:white;
+  width: 100%;
+  background-color: white;
 }
-
 #nav li:hover ul.sub li a:hover {
-	background: #ccc;
-	color: #E89A3F;
-	border-color: #fff;
+  color: #FF750F;
 }
-
-
+#nav li:hover ul.sub li:hover {
+  border-bottom-color: #FF750F;
+}
 #nav li:hover li:hover ul,
 #nav li:hover li:hover li:hover ul,
 #nav li:hover li:hover li:hover li:hover ul,
 #nav li:hover li:hover li:hover li:hover li:hover ul {
-	left: 50%;
-	top: -2px;
-	background: #ccc;
-	padding: 0;
-	border: 1px solid white;
-	white-space: nowrap;
-	width: 50%;
-	z-index: 400;
-	height: auto;
-	border-left: none;
+  left: 50%;
+  top: -2px;
+  background: #ccc;
+  padding: 0;
+  border: 1px solid white;
+  white-space: nowrap;
+  width: 50%;
+  z-index: 400;
+  height: auto;
+  border-left: none;
 }
-
 #nav ul,
 #nav li:hover ul ul,
 #nav li:hover li:hover ul ul,
 #nav li:hover li:hover li:hover ul ul,
 #nav li:hover li:hover li:hover li:hover ul ul {
-	position: absolute;
-	left: -9999px;
-	top: -9999px;
-	width: 0;
-	height: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
 /*#nav li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li:hover li a.fly {
@@ -249,11 +240,13 @@ input[type=search] {
 	color: #000;
 	border-color: #E89A3F;
 }*/
-
-#nav li:hover li:hover a.fly, #nav li:hover li:hover li:hover a.fly, #nav li:hover li:hover li:hover li:hover a.fly, #nav li:hover li:hover li:hover li:hover li:hover a.fly {
- background:#ccc;
- color:#000000;
- border-color:#fff;
+#nav li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover a.fly,
+#nav li:hover li:hover li:hover li:hover li:hover a.fly {
+  background: #ccc;
+  color: #000000;
+  border-color: #fff;
 }
 /*#nav li:hover li:hover li a.fly,
 #nav li:hover li:hover li:hover li a.fly,
@@ -262,73 +255,76 @@ input[type=search] {
 	color: #000;
 	border-color: #bbd37e;
 }*/
-
 #near {
-	left: -100%;
+  left: -100%;
 }
-#nav li:hover ul.sub .choose a{
-	color:#FF750F ;
-	
+#nav li:hover ul.sub .choose a {
+  color: #FF750F;
 }
-#nav li:hover ul.sub .choose{
-	    border-bottom: 1px solid #FF750F;
-}
-.subTwo{
-	
+#nav li:hover ul.sub .choose {
+  border-bottom: 1px solid #FF750F;
 }
 #nav li:hover ul.sub li .subTwo li {
-    border-bottom: 1px solid #E2E2E2 ;
+  border-bottom: 1px solid #E2E2E2;
+}
+#nav li:hover ul.nearList {
+  left: -100%;
+}
+#nav li:hover ul.rangeList {
+  left: -200%;
 }
 /*弹出时的mask*/
-
 .mui-backdrop {
-	background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
-
 .mui-popover .mui-popover-arrow:after {
-	background: transparent;
+  background: transparent;
 }
-
-
-/*猜你喜欢*/
-
-.guess {
-	width: 100%;
-	height: 28px;
+.merchant-item a {
+  outline: none;
+  text-decoration: none;
 }
-
-#guessContent img {
-	border: 0;
-	width: 16px;
+.merchant-item .merchant-thumbnail {
+  border: 0;
+  height: 93px;
+  width: 126px;
+  margin-right: 14px;
 }
-
-.guess p {
-	line-height: 28px;
-	text-align: center;
-	font-size: 16px;
-	color: #898989;
+.merchant-item .merchant-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
 }
-
-#guessContent .mui-icon {
-	color: #E89A3F;
+.merchant-item .merchant-score {
+  margin-top: 9px;
+  margin-bottom: 6px;
 }
-
-#guessContent .mui-table-view-cell .mine-MyCollect-ltem-Title p {
-	margin-bottom: 0;
-	font-size: 16px;
-	color: #000000;
-	/* font-family: 幼圆; */
-	font-weight: 500;
+.merchant-item .merchant-score span {
+  display: inline-block;
+  width: 80px;
+  height: 15px;
+  background-image: url(../../img/icon/stars5_blank.png);
 }
-
-.mine-MyCollect-ltem-Profit {
-	color: #FF6600;
-	font-weight: 700;
-	font-size: 14px;
-	font-family: MicrosoftYaHei-Bold;
+.merchant-item .merchant-score img {
+  height: 15px;
+  width: 100%;
 }
-
-#mine-MyCollect-ltem-Grade {
-	margin-top: 9px;
-	margin-bottom: 6px;
+.merchant-item .merchant-brief p {
+  font-size: 12px;
+  color: #959595;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.merchant-item .gap {
+  width: 100%;
+  height: 24px;
+  background: transparent;
+}
+.merchant-item .merchant-cashback {
+  color: #FF750F;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: MicrosoftYaHei-Bold;
 }

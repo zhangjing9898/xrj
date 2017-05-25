@@ -1,68 +1,104 @@
-*{
-	padding: 0;
-	margin: 0;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
 }
 /*nav*/
-
 #nav img {
-    border: 0;
-    position: absolute;
-    top: 10px;
+  border: 0;
+  position: absolute;
+  top: 10px;
 }
-#nav .mui-title {
-    left: -46%;
-    top: 2px;
-    color: #777;
+.mui-content {
+  background-color: #DADADA;
 }
-#nav {
-    box-shadow: 0 1px 1px #ccc;
-    background-color: white;
+.mui-content #score {
+  height: 69px;
+  background-color: white;
+  margin-top: 15px;
+  position: relative;
 }
-/*score*/
-#score {
-    background-color: white;
-    margin-top: 15px;
-    position:relative;
+.mui-content #score #scoreAll {
+  font-size: 19px;
+  display: inline-block;
+  position: absolute;
+  top: 23px;
+  left: 16px;
 }
-#scoreAll{
-    font-size: 19px;
-    display: inline-block;
-    position: absolute;
-    top: 23px;
-    left: 16px;
+.mui-content #score #scoreComment {
+  font-size: 16px;
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 10px;
 }
-#scoreComment {
-    font-size: 16px;
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    right: 24px;
+.mui-content #score #starNum {
+  margin-left: 60px;
+  position: absolute;
+  top: 14px;
 }
-#starNum{    
-	margin-left: 60px;
-	position: absolute;
-    top: 14px;
+.mui-content #score #starNum img {
+  width: 14%;
 }
-#starNum img{
-   width: 14%;
+.mui-content #comment {
+  margin: 10px 0px;
 }
-/*comment*/
-#comment input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
-    font-size: 14px;
-    height: 165px;
-    border: 1px solid rgba(0, 0, 0, 0);
+.mui-content #comment input[type=color],
+.mui-content #comment input[type=date],
+.mui-content #comment input[type=datetime-local],
+.mui-content #comment input[type=datetime],
+.mui-content #comment input[type=email],
+.mui-content #comment input[type=month],
+.mui-content #comment input[type=number],
+.mui-content #comment input[type=password],
+.mui-content #comment input[type=search],
+.mui-content #comment input[type=tel],
+.mui-content #comment input[type=text],
+.mui-content #comment input[type=time],
+.mui-content #comment input[type=url],
+.mui-content #comment input[type=week],
+.mui-content #comment select,
+.mui-content #comment textarea {
+  font-size: 14px;
+  height: 165px;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
-/*button*/
-#release {
-    border: none;
-    left: 9%;
-    /* margin: 0px auto; */
-    width: 82%;
-    height: 46px;
-    background-color: #FF750F;
-    color: white;
+.mui-content #release {
+  border: none;
+  left: 9%;
+  width: 82%;
+  height: 46px;
+  background-color: #FF750F;
+  color: white;
 }

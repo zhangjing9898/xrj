@@ -1,0 +1,79 @@
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
+}
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
+}
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
+}
+/*title*/
+/*content*/
+.mui-content {
+  background-color: #DADADA;
+}
+.mui-content .ourIntroduce {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  background-color: white;
+  padding: 15px 0;
+  height: 200px;
+}
+.mui-content .ourIntroduce img {
+  position: absolute;
+  left: 50%;
+  margin-left: -105px;
+}
+.mui-content .ourIntroduce p {
+  position: absolute;
+  bottom: 10px;
+  padding: 0 10px;
+}
+.mui-content .mui-table-view-cell:after {
+  left: 0;
+  background-color: #CCCCCC;
+}
+.mui-content .mui-table-view-cell p {
+  font-size: 13px;
+  color: #696969;
+}
+.mui-bar-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -120px;
+}
+.mui-bar-footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #696969;
+  margin-bottom: 5px;
+}

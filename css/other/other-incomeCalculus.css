@@ -1,77 +1,201 @@
-*{
-	padding: 0;
-	margin: 0;
+/*
+ * common variables
+ */
+/*
+*   common mixins
+*/
+/*
+ * global stylesheet
+ */
+* {
+  padding: 0;
+  margin: 0;
 }
-/*global*/
-body{
-	font-family: "微软雅黑";
-	color: #757575;
+body {
+  font-family: '微软雅黑';
+  background-color: #DADADA;
 }
-.gap{
-	width: 100%;
-	height: 10px;
-	background: transparent;
+a {
+  outline: none;
+  text-decoration: none;
 }
-/*title*/
-.mui-bar {
-    background-color: white;
+.mui-bar-nav {
+  top: 0px;
+  -webkit-box-shadow: 0 1px 0 #ccc;
+  box-shadow: 0 1px 0 #ccc;
+  background-color: white;
 }
-.mui-title {
-    text-align: left;
+.mui-bar-nav .mui-title {
+  color: #696969;
+  font-size: 15px;
+  text-align: left;
 }
-/*incomeInfo*/
-#incomeInfo{
-	margin-top: 9px;
-	height: 32%;
-	background-color: white;
+.mui-bar-nav .mui-icon-back:before,
+.mui-bar-nav .mui-icon-left-nav:before {
+  color: #696969;
 }
-img {
-    width: 90%;
-    margin-left: 5%;
-    border: 0;
+body {
+  color: #757575;
 }
-#incomeInfo p{
-	margin-left: 4.7%;
-    font-size: 14px;
-    margin-bottom: 2px;
-    color: #696969;
+.gap {
+  width: 100%;
+  height: 10px;
+  background: transparent;
 }
-/*incomeAim*/
-#incomeAim{
-	height: 138px;
-    background-color: white;
-    margin-top: 12px;
-    position: relative;
+/*content*/
+.mui-content {
+  background-color: #DADADA;
 }
-input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
-    width: 80%;
-    position: absolute;
-    top: 54px;
-    margin-bottom:0; 
-    margin-left: 10%;
+.mui-content .step-one #incomeInfo {
+  margin-top: 9px;
+  height: 32%;
+  background-color: white;
 }
-#incomeAim p{
-    font-size: 16px;
-    margin-left: 10%;
-    color: #696969;
-    position: absolute;
-    top: 23px;
+.mui-content .step-one #incomeInfo img {
+  width: 90%;
+  margin-left: 5%;
+  border: 0;
 }
-/*button*/
-.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
-    width: 84%;
-    height: 51px;
-    margin-left: 8%;
-    margin-top: 13px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    background-color: #FF750F;
+.mui-content .step-one #incomeInfo p {
+  margin-left: 4.7%;
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: #696969;
 }
-/*footer*/
-footer{
-	display: block;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 10px;
+.mui-content .step-one #incomeAim {
+  height: 138px;
+  background-color: white;
+  margin-top: 12px;
+  position: relative;
+}
+.mui-content .step-one #incomeAim input[type=text] {
+  width: 80%;
+  position: absolute;
+  top: 54px;
+  margin-bottom: 0;
+  margin-left: 10%;
+  font-weight: 700;
+}
+.mui-content .step-one #incomeAim p {
+  font-size: 16px;
+  margin-left: 10%;
+  color: #696969;
+  position: absolute;
+  top: 23px;
+}
+.mui-content .step-one .mui-btn {
+  width: 84%;
+  height: 51px;
+  margin-left: 8%;
+  margin-top: 13px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  background-color: #FF750F;
+}
+.mui-content .step-one footer {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+.mui-content .step-two #alertInfo {
+  width: 100%;
+  height: 10%;
+  background-color: #FFE3CE;
+  margin-top: 8px;
+}
+.mui-content .step-two #alertInfo p {
+  padding-top: 6px;
+  margin-bottom: 5px;
+  color: #696969;
+  margin-left: 4%;
+}
+.mui-content .step-two #alertInfo h6 {
+  font-size: 13px;
+  color: #696969;
+  margin-left: 4%;
+}
+.mui-content .step-two #list {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.mui-content .step-two #list .increaseMemberInfo {
+  width: 170px;
+  left: 10%;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.mui-content .step-two #list .increaseMemberInfo p {
+  margin-left: 32px;
+}
+.mui-content .step-two #list .increaseMemberInfo img {
+  left: 0;
+  position: absolute;
+  top: 10%;
+  width: 25px;
+}
+.mui-content .step-two #list .increaseMemberInfo h3 {
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  left: 34%;
+  margin-top: 8px;
+}
+.mui-content .step-two #list .increaseMemberInfo .choose {
+  color: #FF750F;
+}
+.mui-content .step-two #list .increaseMemberInfo .choose1 {
+  color: #FF750F;
+  font-weight: bold;
+}
+.mui-content .step-two #list .increaseMemberInfo strong {
+  font-weight: normal;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active {
+  background-color: white;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active .mui-navigate-right {
+  border-bottom: 1px solid #FF750F;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active .mui-navigate-right p {
+  color: #FF750F;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active > .mui-navigate-right:after {
+  color: #FF750F;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active .img {
+  width: 11px;
+  height: 6px;
+  background: url(../../img/icon/down.png) no-repeat;
+  margin-top: 6px;
+  margin-left: -4px;
+}
+.mui-content .step-two #list .mui-table-view-cell.mui-active > a:not(.mui-btn) {
+  border-bottom: 1px solid #FF750F;
+  border-top: 1px solid #CCCCCC;
+}
+.mui-content .step-two #list .mui-table-view-cell:after {
+  left: 0;
+}
+.mui-content .step-two #list .mui-table-view-cell > .mui-navigate-right:after {
+  font-weight: bold;
+  color: #696969;
+}
+.mui-content .step-two #list .mui-table-view-cell #allIncomeNum {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  color: #FF750F;
+}
+.mui-content .step-two #list .mui-table-view-cell .img {
+  width: 6px;
+  height: 11px;
+  background: url(../../img/icon/right.png) no-repeat;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
 }
